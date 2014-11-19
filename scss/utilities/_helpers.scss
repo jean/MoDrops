@@ -1,0 +1,25 @@
+// Pseudo-elements
+%pseudos {
+  display: block;
+  content: ''; 
+  position: absolute;
+}
+
+// Clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Center horizontally and vertically
+%center-hv {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  @include translate(-50%, -50%);
+}

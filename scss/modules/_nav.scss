@@ -1,0 +1,717 @@
+//nav styles
+
+// Effect 1: Brackets
+%brackets-nav a {
+  &::before, &::after {
+    font-size: 125%;
+    @include transparent;
+    @include transition;
+  }
+  &::before {
+    @include translateX(20px);
+    margin-right: .55em;
+    content: '[';
+  }
+  &::after {
+    @include translateX(-20px);
+    margin-left: .35em;
+    content: ']';
+  }
+  &:hover, &:focus {
+    &::before, &::after {
+      @include opaque;
+      @include translateX(0);
+    }
+  }
+}
+
+/* NEEDS FIXED FOR SASS
+
+//Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links
+
+.rollup-nav a {
+line-height: 44px;
+@include perspective(1000px);
+& span {
+position: relative;
+background-color: lighten($kabluey, 10);
+padding: 0 14px;
+background: #2195de;
+@include transition(transform, .3s);
+@include transform-origin(50%, 0);
+@include transform-style(preserve-3d);
+&::before {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: darken($kabluey, 15);
+content: attr(data-hover);
+@include transition(background, .3s);
+@include transform(rotateX(-90deg));
+@include transform-origin(50%, 0);
+}
+}
+&:hover span, &:focus span {
+@include rotateX(90deg);
+@include translateY(-22px);
+&::before {
+background-color: lighten($kabluey, 20);
+}
+}
+}
+*/
+
+//  Effect 3: Faint underline slides+fades in
+%faint-underline-nav a {
+  padding-bottom: 1em;
+  border-bottom: 4px solid rgba($link-styling-selected, 0.0);
+  @include transition(all 0.3s ease-in-out);
+  &:hover, &:focus{
+    padding-bottom: .675em;
+    border-bottom: 4px solid rgba($link-styling-selected, 0.15);
+  }
+}
+
+// Effect 4: bottom border drop+enlarge
+%bold-underline-nav a {
+  padding: 0 0 10px;
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $white;
+    content: '';
+    @include transparent;
+    @include transition(all 0.3s ease-in-out);
+  }
+  &:focus::after, &:hover::after {
+    height: 5px;
+    @include opaque;
+    top: 0;
+  }
+}
+
+%bold-underline-navdiet {
+  a {
+    border-bottom: 1px solid rgba($link-styling-color, 0.0);
+    height: 35px;
+    @include transition;
+    &:hover, &:focus {
+      border-bottom: 5px solid rgba($link-styling-color, 1.0);
+      height: 30px;
+    }
+  }
+}
+
+// Effect 5: same word slide up
+%wordslide-nav a{
+  overflow: hidden;
+  padding: 0 4px;
+  height: 1em;
+  span {
+    color: $nav-link-color;
+    position: relative;
+    display: inline-block;
+    @include transition;
+    &::before {
+      color: $nav-link-selected;
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      font-weight: bold;
+      @include translate3d(0, 0, 0);
+    }
+  }
+  &:hover span, &:focus span {
+    @include translateY(-100%);
+  }
+}
+
+
+// Effect 6: slide down "L" frame
+%lframe-nav a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $link-styling-color;
+    content: '';
+    @include transition;
+  }
+  &::after {
+    width: 2px;
+  }
+  &:hover, &:focus {
+    &::before {
+      top: 100%;
+      @include opaque;
+    }
+    &::after {
+      height: 100%;
+    }
+  }
+}
+
+// Effect 7: slide up sandwich links
+
+//@extend-elements
+%sandwich_slide {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $link-styling-color;
+  content: '';
+  @include transition;
+  @include scale(.85);
+}
+
+.sandwich-slide-nav a {
+  padding: 11px 10px 10px;
+  font-weight: 400;
+  &::before, &::after {
+    @extend %sandwich_slide;
+  }
+  &:hover, &:focus {
+    &::before, &::after {
+      @include scale(1);
+    }
+    &::after {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}
+
+// Effect 8: Floating Box links
+
+//@extend-elements
+%box_floater {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba($link-styling-color, 0.3);
+  content: '';
+  @include transition(all .4s ease-in);
+}
+
+.box-float-nav a {
+  padding: 12px 20px;
+  &::before {
+    @extend %box_floater;
+  }
+  &::after {
+    @extend %box_floater;
+    border: 3px solid rgba($link-styling-selected, 1.0);
+    @include transparent;
+    @include translate(6px, -7px);;
+  }
+  &:hover, &:focus  {
+    &::before {
+      @include transparent;
+      @include translate(-5px, 5px);
+    }
+    &::after {
+      @include opaque;
+      @include translate(0px, 0px);
+    }
+  }
+}
+
+// Effect 9: Detail text and borders
+//@extend-elements
+//original selectors
+//.detail-text-nav a::before, .detail-text-nav a::after
+%extend_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $link-styling-color;
+  content: '';
+  opacity: 0.2;
+  @include transition;
+}
+
+
+.detail-text-nav a {
+  margin: 0 20px;
+  padding: 18px 20px;
+  color: $nav-link-color;
+  &::before, &::after {
+    @extend %extend_1;
+  }
+  &::after {
+    top: 100%;
+    opacity: 0;
+    @include translateY(-10px);
+  }
+  span {
+    &:first-child {
+      z-index: 2;
+      display: block;
+      font-weight: 300;
+    }
+    &:last-child {
+      z-index: 1;
+      display: block;
+      padding: 8px 0 0;
+      color: lighten($link-styling-selected, 50);
+      text-transform: none;
+      font-style: italic;
+      font-size: 0.75em;
+      font-family: $font-stack--serif;
+      opacity: 0;
+      @include transition;
+      @include translateY(-100%);
+    }
+  }
+  &:hover, &:focus {
+    &::before, &::after, span:last-child {
+      opacity: 1;
+      @include translateY(0px);
+    }
+    &::before {
+      height: 6px;
+    }
+    & span:first-child {
+      color: $nav-link-selected;
+    }
+  }
+}
+
+// Effect 10: reveal, slide, push out right
+.slide-white-nav {
+  position: relative;
+  z-index: 1;
+  a {
+    overflow: hidden;
+    margin: 0 15px;
+    span {
+      display: block;
+      padding: 10px 20px;
+      color: $nav-link-color;
+      background: darken($nav-bg-color, 5);
+      @include transition(transform .3s);
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      padding: 10px 20px;
+      width: 100%;
+      height: 100%;
+      background: $link-styling-selected;
+      color: $nav-link-selected;
+      content: attr(data-hover);
+      @include transition(transform .3s);
+    }
+    &:hover, &:focus {
+      span {
+        @include translateX(100%);
+      }
+      &::before {
+        color: $nav-link-selected;
+        @include translateX(0);
+      }
+    }
+  }
+}
+
+// Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779
+.lea-verou-nav a {
+  padding: 10px 0;
+  border-top: 2px solid $nav-link-color;
+  color: $nav-link-color;
+  @include transition(all .4s);
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 2px solid rgba($link-styling-color, 0.3);
+    color: $white;
+    content: attr(data-hover);
+    @include transition(max-width .5s);
+  }
+  &:hover, &focus{
+    &::before {
+      max-width: 100%;
+      border-bottom: 2px solid $link-styling-selected;
+    }
+  }
+}
+
+// Effect 12: circles in back of nav
+
+//@extend-elements
+//original selectors
+//.circle-back-nav a::before, .circle-back-nav a::after
+%pretty_circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba($link-styling-selected, $link-styling-opacity);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  @include transition (all .4s);
+  @include transform(translate(-50%, -50%) scale(.2));
+}
+
+.circle-back-nav a {
+  &::before {
+    @extend %pretty_circles;
+  }
+  &::after {
+    @extend %pretty_circles;
+    width: 90px;
+    height: 90px;
+    border-width: 6px;
+    @include transform(translate(-50%, -50%) scale(.8));
+  }
+  &:hover, &:focus {
+    &::before, &::after {
+      opacity: 1;
+      @include transform(translate(-50%, -50%) scale(1));
+    }
+  }
+}
+
+// Effect 13: three white dots under, darken text
+/////NEEDS FIXED
+.three-dots-nav a {
+  @include transition(color .3s);
+  &::before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    content: '.';
+    font-size: 1.7em;
+    @include transparent;
+    @include text-shadow(0 0 0 transparent);
+    @include transition(all .3s);
+    @include translateX(-50%);
+    pointer-events: none;
+  }
+  &:hover, &:focus {
+    &::before {
+      @include opaque;
+      @include text-shadow($link-styling-selected 10px 0, $link-styling-selected -10px 0);
+      @include scale(1.3);
+      top: 80%;
+    }
+  }
+}
+
+
+// Effect 14: border switch
+//@extend-elements
+//original selectors
+//.flying-chopsticks-nav a::before, .flying-chopsticks-nav a::after
+%flying_chopsticks {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background: $white;
+  content: '';
+  opacity: .2;
+  @include transition (all .3s);
+}
+
+.flying-chopsticks-nav a {
+  padding: 0 20px;
+  height: 45px;
+  line-height: 45px;
+  &::before {
+    @extend %flying_chopsticks;
+    top: 0;
+    left: 0;
+    @include rotate(90deg);
+    @include transform-origin(0 0);
+  }
+  &::after {
+    @extend %flying_chopsticks;
+    right: 0;
+    bottom: 0;
+    @include rotate(90deg);
+    @include transform-origin(100% 0);
+  }
+  &:hover, &:focus {
+    &::before {
+      opacity: 1;
+      left: 50%;
+      @include transform(rotate(0deg) translateX(-50%));
+    }
+    &::after {
+      opacity: 1;
+      right: 50%;
+      @include transform(rotate(0deg) translateX(50%));
+    }
+  }
+}
+
+// Effect 15: scale down and fade reveal
+
+.shrink-back-nav a {
+  color: $shadow;
+  font-weight: 700;
+  &::before {
+    color: $white;
+    content: attr(data-hover);
+    position: absolute;
+    @include transition(all .3s);
+  }
+  &:hover, &:focus {
+    &::before {
+      @include scale(.9);
+      opacity: 0;
+    }
+  }
+}
+
+// Effect 16: fall down and rotate over
+.cl-effect-16 a {
+  color: darken($birch, 20);
+  @include text-shadow(0 0 1px $shadow);
+  &::before {
+    color: $white;
+    content: attr(data-hover);
+    position: absolute;
+    opacity: 0;
+    @include text-shadow(rgba(255, 255, 255, .3) 0 0 1px);
+    @include transform(rotate(4deg) scale(1.1) translate(10px, -10px));
+    @include transition(all .4s);
+    pointer-events: none;
+  }
+  &:hover,&:focus {
+    &::before {
+      @include transform(rotate(0) scale(1) translate(0, 0));
+      opacity: 1;
+    }
+  }
+}
+
+// Effect 17: move up fade out, push border
+.cl-effect-17 a {
+  color: darken($kabluey, 20);
+  padding: 10px 0;
+  &::before {
+    color: $white;
+    @include text-shadow(rgba(255, 255, 255, .3) 0 0 1px);
+    content: attr(data-hover);
+    position: absolute;
+    @include transition(all .3s);
+    pointer-events: none;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: $white;
+    opacity: 0;
+    @include translateY(5px);
+    @include transition(all .3s);
+    pointer-events: none;
+  }
+  &:hover, &:focus {
+    &::before {
+      opacity: 0;
+      @include translateY(-2px);
+    }
+    &::after {
+      opacity: 1;
+      @include translateY(0);
+    }
+  }
+}
+
+// Effect 18: x-out
+
+//@extend-elements
+//original selectors
+//.cl-effect-18 a::before, .cl-effect-18 a::after
+%x_it_out {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  background: darken($sk-purple, 15);
+  content: '';
+  z-index: -1;
+  @include transition(all .4s);
+  pointer-events: none;
+}
+
+.x-out-nav {
+  position: relative;
+  z-index: 1;
+  margin: 1em 0;
+  padding: $less-padding;
+  &.sticky {
+    position: fixed;
+  }
+  a {
+    padding: 0 6px;
+    color: lighten($sk-blue, 20);
+    font-weight: 700;
+    @include transition(color .3s);
+    &::before {
+      @extend %x_it_out;
+      @include translateY(-18px);
+    }
+    &::after {
+      @extend %x_it_out;
+      @include translateY(18px);
+    }
+    &:hover, &:focus {
+      color: $white;
+      &::before {
+        opacity: 0.7;
+        @include rotate(45deg);
+      }
+      &::after {
+        opacity: 0.7;
+        @include rotate(-45deg);
+      }
+    }
+  }
+}
+
+// Effect 19: 3D side spin right
+//.cl-effect-19 a {
+//  line-height: 2em;
+//  margin: 15px;
+//  @include perspective(800px);
+//  width: 200px;
+//  span {
+//    position: relative;
+//    display: inline-block;
+//    width: 100%;
+//    padding: 0 14px;
+//    background: lighten($dead-red, 10);
+//    @include transition(transform .4s, background .4s);
+//    @include transform-style(preserve-3d);
+//    @include transform-origin(50% 50% -100px);
+//    &::before {
+//      position: absolute;
+//      top: 0;
+//      left: 100%;
+//      width: 100%;
+//      height: 100%;
+//      background: darken($dead-red, 10);
+//      content: attr(data-hover);
+//      @include transition(background .4s);
+//      @include rotateY(90deg);
+//      @include transform-origin(0 50% 100px);
+//      pointer-events: none;
+//    }
+//  }
+//  &:hover span,
+//  &:focus span {
+//    background: lighten($dead-red, 10);
+//    @include rotateY(-90deg);
+//    &::before {
+//      background: lighten($dead-red, 20);
+//    }
+//  }
+//}
+
+// Effect 20: Flipboard
+.cl-effect-20 a {
+  line-height: 2em;
+  @include perspective(800px);
+  span {
+    position: relative;
+    display: inline-block;
+    padding: 3px 15px 0;
+    background: lighten($blue-steel, 5);
+    @include box-shadow(inset 0 3px darken($blue-steel, 20));
+    @include transition(background 0.6s);
+    @include transform-style(preserve-3d);
+    @include transform-origin(0 50% 0 3d-only);
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      color: darken($blue-steel, 30);
+      content: attr(data-hover);
+      @include rotateX(270deg);
+      @include transition(transform 0.6s);
+      @include transform-origin(0 0% 0 3d-only);
+      pointer-events: none;
+    }
+  }
+  &:hover span,
+  &:focus span {
+    background: darken($blue-steel, 30);
+    &::before {
+      @include rotateX(10deg);
+    }
+  }
+}
+
+// Effect 21: sandwhich nav w/ white-out
+//@extend-elements
+//original selectors
+//.cl-effect-21 a::before, .cl-effect-21 a::after
+%white_sandwich {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $white;
+  content: '';
+  opacity: 0;
+  @include transition(opacity 0.3s, transform 0.3s);
+  @include translateY(-10px);
+}
+
+.sandwich-nav a {
+  padding: 10px;
+  color: darken($jade, 10);
+  font-weight: 700;
+  @include transition(color 0.5s);
+  &::before {
+    @extend %white_sandwich;
+    top: 0;
+    @include translateY(-10px);
+  }
+  &::after {
+    @extend %white_sandwich;
+    bottom: 0;
+    @include translateY(10px);
+  }
+  &:hover, &:focus {
+    color: $white;
+    &::before, &::after {
+      opacity: 1;
+      @include translateY(0px);
+    }
+  }
+}

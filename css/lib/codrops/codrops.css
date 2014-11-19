@@ -1,0 +1,3397 @@
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic");
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700);
+/* line 5, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../../../scss/utilities/_helpers.scss */
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 1, ../../../scss/base/_base.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Source Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #435a6b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 12, ../../../../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 10, ../../../scss/base/_base.scss */
+header {
+  font-weight: 300;
+  font-family: "Source Sans", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  background: #0cb6f1;
+}
+
+/* line 22, ../../../scss/base/_base.scss */
+a {
+  font-weight: 500;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 28, ../../../scss/base/_base.scss */
+h1 {
+  font-weight: 300;
+  font-size: 3.66667em;
+  line-height: 1.09524;
+  margin-bottom: 1.66667em;
+}
+
+/* line 34, ../../../scss/base/_base.scss */
+h2 {
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.11111;
+  margin-bottom: 1.66667em;
+}
+
+/* line 40, ../../../scss/base/_base.scss */
+h3 {
+  font-weight: 300;
+  font-size: 1.66667em;
+  line-height: 1.09524;
+  margin-bottom: 1.66667em;
+}
+
+/* line 46, ../../../scss/base/_base.scss */
+h4 {
+  font-weight: 300;
+  font-size: 1.33333em;
+  line-height: 1.09524;
+  margin-bottom: 1.66667em;
+}
+
+/* line 53, ../../../scss/base/_base.scss */
+p {
+  font-size: 16px;
+}
+
+/* line 57, ../../../scss/base/_base.scss */
+.site-logo {
+  background-image: url("../img/sk-logo.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 148px;
+  display: block;
+}
+
+/* line 2, ../../../scss/lib/codrops/_navdemo.scss */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-color: #323238;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 9, ../../../scss/lib/codrops/_navdemo.scss */
+header {
+  font-family: 'Lato', Arial, sans-serif;
+  margin: 0 auto;
+  padding: 2em 0 0 0;
+  text-align: center;
+  color: #89867e;
+  background: #0cb6f1 !important;
+}
+/* line 16, ../../../scss/lib/codrops/_navdemo.scss */
+header h1 {
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 400;
+}
+/* line 22, ../../../scss/lib/codrops/_navdemo.scss */
+header span {
+  display: block;
+  font-size: 60%;
+  color: #ceccc6;
+  padding: 0 0 0.6em 0.1em;
+}
+
+/* line 30, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section {
+  padding: 10em 3em;
+  text-align: center;
+}
+/* line 34, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.blue-steel {
+  background-color: #435a6c;
+}
+/* line 37, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.kabluey {
+  background-color: #0e83cd;
+}
+/* line 40, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.goldy {
+  background-color: #f39c12;
+}
+/* line 43, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.mean-green {
+  background-color: #3fa46a;
+}
+/* line 46, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.dead-red {
+  background-color: #cd4436;
+}
+/* line 49, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.ashy-larry {
+  background-color: #ecf0f1;
+}
+/* line 52, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.grimace {
+  background-color: #9e487f;
+}
+/* line 55, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.jade {
+  background-color: #16a085;
+}
+/* line 58, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.birch {
+  background-color: #aab7b7;
+}
+/* line 61, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.emerald {
+  background-color: #07E694;
+}
+/* line 64, ../../../scss/lib/codrops/_navdemo.scss */
+.container > section.sk-blue {
+  background-color: #0cb6f1;
+}
+
+/* line 68, ../../../scss/lib/codrops/_navdemo.scss */
+nav a {
+  position: relative;
+  display: inline-block;
+  margin: 0 1.75em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 125%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 84, ../../../scss/lib/codrops/_navdemo.scss */
+.brackets-nav a::before, .brackets-nav a::after {
+  font-size: 130%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all, 0.3s, ease-in;
+  -o-transition: all, 0.3s, ease-in;
+  -webkit-transition: all, 0.3s, ease-in;
+  transition: all, 0.3s, ease-in;
+}
+/* line 89, ../../../scss/lib/codrops/_navdemo.scss */
+.brackets-nav a::before {
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  margin-right: .55em;
+  content: '[';
+}
+/* line 94, ../../../scss/lib/codrops/_navdemo.scss */
+.brackets-nav a::after {
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  margin-left: .35em;
+  content: ']';
+}
+/* line 100, ../../../scss/lib/codrops/_navdemo.scss */
+.brackets-nav a:hover::before, .brackets-nav a:hover::after, .brackets-nav a:focus::before, .brackets-nav a:focus::after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 110, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav a::before, .sk-brackets-nav a::after {
+  color: #FAF843;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  font-weight: 100;
+  -moz-transition: all, 0.3s, ease-in;
+  -o-transition: all, 0.3s, ease-in;
+  -webkit-transition: all, 0.3s, ease-in;
+  transition: all, 0.3s, ease-in;
+}
+/* line 117, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav a::before {
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  margin-right: .55em;
+  content: '[';
+}
+/* line 122, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav a::after {
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  margin-left: .35em;
+  content: ']';
+}
+/* line 128, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav a:hover::before, .sk-brackets-nav a:hover::after, .sk-brackets-nav a:focus::before, .sk-brackets-nav a:focus::after {
+  font-weight: 400;
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 138, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav1 {
+  background: #0cb6f1;
+  width: 100%;
+  margin: .75em auto;
+  text-align: center;
+  padding: 5em 2em;
+}
+/* line 145, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav1 a::before, .sk-brackets-nav1 a::after {
+  color: #FAF843;
+  margin: .25em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  font-size: 130%;
+  font-weight: 100;
+  -moz-transition: all, 0.6s, ease-in-out;
+  -o-transition: all, 0.6s, ease-in-out;
+  -webkit-transition: all, 0.6s, ease-in-out;
+  transition: all, 0.6s, ease-in-out;
+}
+/* line 153, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav1 a::before {
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  margin-right: .55em;
+  content: '[';
+}
+/* line 158, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav1 a::after {
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  margin-left: .35em;
+  content: ']';
+}
+/* line 164, ../../../scss/lib/codrops/_navdemo.scss */
+.sk-brackets-nav1 a:hover::before, .sk-brackets-nav1 a:hover::after, .sk-brackets-nav1 a:focus::before, .sk-brackets-nav1 a:focus::after {
+  padding: none;
+  font-weight: 700;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* NEEDS FIXED FOR SASS
+
+//Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links
+
+.rollup-nav a {
+line-height: 44px;
+@include perspective(1000px);
+& span {
+position: relative;
+background-color: lighten($kabluey, 10);
+padding: 0 14px;
+background: #2195de;
+@include transition(transform, .3s);
+@include transform-origin(50%, 0);
+@include transform-style(preserve-3d);
+&::before {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: darken($kabluey, 15);
+content: attr(data-hover);
+@include transition(background, .3s);
+@include transform(rotateX(-90deg));
+@include transform-origin(50%, 0);
+}
+}
+&:hover span, &:focus span {
+@include rotateX(90deg);
+@include translateY(-22px);
+&::before {
+background-color: lighten($kabluey, 20);
+}
+}
+}
+
+*/
+/* line 216, ../../../scss/lib/codrops/_navdemo.scss */
+.faint-underline-nav a {
+  padding: .675em 0;
+}
+/* line 218, ../../../scss/lib/codrops/_navdemo.scss */
+.faint-underline-nav a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #0d0d0d;
+  content: '';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-transform: translate(0px, 10px);
+  -ms-transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
+}
+/* line 230, ../../../scss/lib/codrops/_navdemo.scss */
+.faint-underline-nav a:hover::after, .faint-underline-nav a:focus::after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+/* line 238, ../../../scss/lib/codrops/_navdemo.scss */
+.bold-underline-nav a {
+  padding: 0 0 10px;
+}
+/* line 240, ../../../scss/lib/codrops/_navdemo.scss */
+.bold-underline-nav a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  content: '';
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 252, ../../../scss/lib/codrops/_navdemo.scss */
+.bold-underline-nav a:focus::after, .bold-underline-nav a:hover::after {
+  height: 5px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 260, ../../../scss/lib/codrops/_navdemo.scss */
+.wordslide-nav a {
+  overflow: hidden;
+  padding: 0 4px;
+  height: 1em;
+}
+/* line 264, ../../../scss/lib/codrops/_navdemo.scss */
+.wordslide-nav a span {
+  position: relative;
+  display: inline-block;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 268, ../../../scss/lib/codrops/_navdemo.scss */
+.wordslide-nav a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: bold;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 276, ../../../scss/lib/codrops/_navdemo.scss */
+.wordslide-nav a:hover span, .wordslide-nav a:focus span {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 282, ../../../scss/lib/codrops/_navdemo.scss */
+.lframe-nav a {
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+/* line 285, ../../../scss/lib/codrops/_navdemo.scss */
+.lframe-nav a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  content: '';
+  -moz-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+/* line 295, ../../../scss/lib/codrops/_navdemo.scss */
+.lframe-nav a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: #ffffff;
+  content: '';
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+/* line 306, ../../../scss/lib/codrops/_navdemo.scss */
+.lframe-nav a:hover::before {
+  top: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 310, ../../../scss/lib/codrops/_navdemo.scss */
+.lframe-nav a:hover::after {
+  height: 100%;
+}
+
+/* line 319, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-slide-nav a::before, .sandwich-slide-nav a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #445151;
+  content: '';
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -moz-transform: scale(0.85, 0.85);
+  -ms-transform: scale(0.85, 0.85);
+  -webkit-transform: scale(0.85, 0.85);
+  transform: scale(0.85, 0.85);
+}
+
+/* line 331, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-slide-nav a {
+  padding: 12px 10px 10px;
+  color: #445151;
+  font-weight: 700;
+}
+/* line 338, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-slide-nav a::after {
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 344, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-slide-nav a:hover::before, .sandwich-slide-nav a:focus::before {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 347, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-slide-nav a:hover::after, .sandwich-slide-nav a:focus::after {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  top: 0;
+  opacity: 1;
+}
+
+/* line 358, ../../../scss/lib/codrops/_navdemo.scss */
+.box-float-nav a::before, .box-float-nav a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #394d5c;
+  content: '';
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 369, ../../../scss/lib/codrops/_navdemo.scss */
+.box-float-nav a {
+  padding: 10px 20px;
+}
+/* line 374, ../../../scss/lib/codrops/_navdemo.scss */
+.box-float-nav a::after {
+  border-color: #ffffff;
+  opacity: 0;
+  -moz-transform: translate(6px, -7px);
+  -ms-transform: translate(6px, -7px);
+  -webkit-transform: translate(6px, -7px);
+  transform: translate(6px, -7px);
+}
+/* line 381, ../../../scss/lib/codrops/_navdemo.scss */
+.box-float-nav a:hover::before, .box-float-nav a:focus::before {
+  opacity: 0;
+  -moz-transform: translate(-5px, 5px);
+  -ms-transform: translate(-5px, 5px);
+  -webkit-transform: translate(-5px, 5px);
+  transform: translate(-5px, 5px);
+}
+/* line 385, ../../../scss/lib/codrops/_navdemo.scss */
+.box-float-nav a:hover::after, .box-float-nav a:focus::after {
+  opacity: 1;
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+/* line 400, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a::before, .detail-text-nav a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  content: '';
+  opacity: .2;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 412, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a {
+  margin: 0 20px;
+  padding: 18px 20px;
+}
+/* line 418, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a::after {
+  top: 100%;
+  opacity: 0;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 426, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a span:first-child {
+  z-index: 2;
+  display: block;
+  font-weight: 300;
+}
+/* line 431, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a span:last-child {
+  z-index: 1;
+  display: block;
+  padding: 8px 0 0;
+  color: #0d0d0d;
+  opacity: .4;
+  text-transform: none;
+  font-style: italic;
+  font-size: .75em;
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  opacity: 0;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+/* line 447, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a:hover::before, .detail-text-nav a:focus::before {
+  height: 6px;
+  opacity: 1;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 452, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a:hover::after, .detail-text-nav a:focus::after {
+  opacity: 1;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 456, ../../../scss/lib/codrops/_navdemo.scss */
+.detail-text-nav a:hover span:last-child, .detail-text-nav a:focus span:last-child {
+  opacity: 1;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 465, ../../../scss/lib/codrops/_navdemo.scss */
+.slide-white-nav {
+  position: relative;
+  z-index: 1;
+}
+/* line 468, ../../../scss/lib/codrops/_navdemo.scss */
+.slide-white-nav a {
+  overflow: hidden;
+  margin: 0 15px;
+}
+/* line 471, ../../../scss/lib/codrops/_navdemo.scss */
+.slide-white-nav a span {
+  display: block;
+  padding: 10px 20px;
+  background: #107360;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 477, ../../../scss/lib/codrops/_navdemo.scss */
+.slide-white-nav a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #107360;
+  content: attr(data-hover);
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 491, ../../../scss/lib/codrops/_navdemo.scss */
+.slide-white-nav a:hover span, .slide-white-nav a:focus span {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/* line 494, ../../../scss/lib/codrops/_navdemo.scss */
+.slide-white-nav a:hover::before, .slide-white-nav a:focus::before {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 502, ../../../scss/lib/codrops/_navdemo.scss */
+.lea-verou-nav a {
+  padding: 10px 0;
+  border-top: 2px solid #095585;
+  color: #095585;
+}
+/* line 506, ../../../scss/lib/codrops/_navdemo.scss */
+.lea-verou-nav a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 0;
+  max-width: 0;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  content: attr(data-hover);
+  -moz-transition: max-width 0.5s;
+  -o-transition: max-width 0.5s;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+/* line 519, ../../../scss/lib/codrops/_navdemo.scss */
+.lea-verou-nav a:hover::before, .lea-verou-nav afocus::before {
+  max-width: 100%;
+}
+
+/* line 530, ../../../scss/lib/codrops/_navdemo.scss */
+.circle-back-nav a::before, .circle-back-nav a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -moz-transform: translate(-50%, -50%) scale(0.2);
+  -ms-transform: translate(-50%, -50%) scale(0.2);
+  -webkit-transform: translate(-50%, -50%) scale(0.2);
+  transform: translate(-50%, -50%) scale(0.2);
+}
+
+/* line 548, ../../../scss/lib/codrops/_navdemo.scss */
+.circle-back-nav a::after {
+  width: 90px;
+  height: 90px;
+  border-width: 6px;
+  -moz-transform: translate(-50%, -50%) scale(0.8);
+  -ms-transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(0.8);
+}
+/* line 556, ../../../scss/lib/codrops/_navdemo.scss */
+.circle-back-nav a:hover::before, .circle-back-nav a:hover::after, .circle-back-nav a:focus::before, .circle-back-nav a:focus::after {
+  opacity: 1;
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* line 565, ../../../scss/lib/codrops/_navdemo.scss */
+.three-dots-nav a {
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+/* line 567, ../../../scss/lib/codrops/_navdemo.scss */
+.three-dots-nav a::before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: transparent;
+  content: '.';
+  text-shadow: 0 0 0 transparent;
+  font-size: 1.7em;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+/* line 579, ../../../scss/lib/codrops/_navdemo.scss */
+.three-dots-nav a:hover, .three-dots-nav a:focus {
+  color: #976008;
+}
+/* line 581, ../../../scss/lib/codrops/_navdemo.scss */
+.three-dots-nav a:hover::before, .three-dots-nav a:hover::after, .three-dots-nav a:focus::before, .three-dots-nav a:focus::after {
+  color: #ffffff;
+  text-shadow: #ffffff 10px 0;
+}
+
+/* line 593, ../../../scss/lib/codrops/_navdemo.scss */
+.flying-chopsticks-nav a::before, .flying-chopsticks-nav a::after {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background: #ffffff;
+  content: '';
+  opacity: .2;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 603, ../../../scss/lib/codrops/_navdemo.scss */
+.flying-chopsticks-nav a {
+  padding: 0 20px;
+  height: 45px;
+  line-height: 45px;
+}
+/* line 607, ../../../scss/lib/codrops/_navdemo.scss */
+.flying-chopsticks-nav a::before {
+  top: 0;
+  left: 0;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -moz-transform-origin: 0 0 50%;
+  -ms-transform-origin: 0 0 50%;
+  -webkit-transform-origin: 0 0 50%;
+  transform-origin: 0 0 50%;
+}
+/* line 614, ../../../scss/lib/codrops/_navdemo.scss */
+.flying-chopsticks-nav a::after {
+  right: 0;
+  bottom: 0;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -moz-transform-origin: 100% 0 50%;
+  -ms-transform-origin: 100% 0 50%;
+  -webkit-transform-origin: 100% 0 50%;
+  transform-origin: 100% 0 50%;
+}
+/* line 622, ../../../scss/lib/codrops/_navdemo.scss */
+.flying-chopsticks-nav a:hover::before, .flying-chopsticks-nav a:focus::before {
+  opacity: 1;
+  left: 50%;
+  -moz-transform: rotate(0deg) translateX(-50%);
+  -ms-transform: rotate(0deg) translateX(-50%);
+  -webkit-transform: rotate(0deg) translateX(-50%);
+  transform: rotate(0deg) translateX(-50%);
+}
+/* line 627, ../../../scss/lib/codrops/_navdemo.scss */
+.flying-chopsticks-nav a:hover::after, .flying-chopsticks-nav a:focus::after {
+  opacity: 1;
+  right: 50%;
+  -moz-transform: rotate(0deg) translateX(50%);
+  -ms-transform: rotate(0deg) translateX(50%);
+  -webkit-transform: rotate(0deg) translateX(50%);
+  transform: rotate(0deg) translateX(50%);
+}
+
+/* line 637, ../../../scss/lib/codrops/_navdemo.scss */
+.shrink-back-nav a {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+}
+/* line 640, ../../../scss/lib/codrops/_navdemo.scss */
+.shrink-back-nav a::before {
+  color: #ffffff;
+  content: attr(data-hover);
+  position: absolute;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 647, ../../../scss/lib/codrops/_navdemo.scss */
+.shrink-back-nav a:hover::before, .shrink-back-nav a:focus::before {
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  opacity: 0;
+}
+
+/* line 655, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-16 a {
+  color: #738888;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+/* line 658, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-16 a::before {
+  color: #ffffff;
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  text-shadow: rgba(255, 255, 255, 0.3) 0 0 1px;
+  -moz-transform: rotate(4deg) scale(1.1) translate(10px, -10px);
+  -ms-transform: rotate(4deg) scale(1.1) translate(10px, -10px);
+  -webkit-transform: rotate(4deg) scale(1.1) translate(10px, -10px);
+  transform: rotate(4deg) scale(1.1) translate(10px, -10px);
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+/* line 669, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-16 a:hover::before, .cl-effect-16 a:focus::before {
+  -moz-transform: rotate(0) scale(1) translate(0, 0);
+  -ms-transform: rotate(0) scale(1) translate(0, 0);
+  -webkit-transform: rotate(0) scale(1) translate(0, 0);
+  transform: rotate(0) scale(1) translate(0, 0);
+  opacity: 1;
+}
+
+/* line 677, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-17 a {
+  color: #07466e;
+  padding: 10px 0;
+}
+/* line 680, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-17 a::before {
+  color: #ffffff;
+  text-shadow: rgba(255, 255, 255, 0.3) 0 0 1px;
+  content: attr(data-hover);
+  position: absolute;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+/* line 688, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-17 a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0;
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+/* line 702, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-17 a:hover::before, .cl-effect-17 a:focus::before {
+  opacity: 0;
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+/* line 706, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-17 a:hover::after, .cl-effect-17 a:focus::after {
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 718, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a::before, .cl-effect-18 a::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  background: #b06f09;
+  content: '';
+  z-index: -1;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+
+/* line 732, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 {
+  position: relative;
+  z-index: 1;
+}
+/* line 735, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a {
+  padding: 0 5px;
+  color: #b06f09;
+  font-weight: 700;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+/* line 740, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a::before {
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+/* line 744, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a::after {
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+/* line 748, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a:hover, .cl-effect-18 a:focus {
+  color: #ffffff;
+}
+/* line 750, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a:hover::before, .cl-effect-18 a:focus::before {
+  opacity: 0.7;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 754, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-18 a:hover::after, .cl-effect-18 a:focus::after {
+  opacity: 0.7;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 802, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-20 a {
+  line-height: 2em;
+  -moz-perspective: 800px;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+/* line 805, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-20 a span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 15px 0;
+  background: #4d677c;
+  -moz-box-shadow: inset 0 3px #1c262d;
+  -webkit-box-shadow: inset 0 3px #1c262d;
+  box-shadow: inset 0 3px #1c262d;
+  -moz-transition: background 0.6s;
+  -o-transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+  transition: background 0.6s;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transform-origin: 0 50% 0 3d-only 50%;
+  -ms-transform-origin: 0 50% 0 3d-only 50%;
+  -webkit-transform-origin: 0 50% 0 3d-only 50%;
+  transform-origin: 0 50% 0 3d-only 50%;
+}
+/* line 814, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-20 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #080b0e;
+  content: attr(data-hover);
+  -moz-transform: rotateX(270deg);
+  -webkit-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -moz-transform-origin: 0 0% 0 3d-only 50%;
+  -ms-transform-origin: 0 0% 0 3d-only 50%;
+  -webkit-transform-origin: 0 0% 0 3d-only 50%;
+  transform-origin: 0 0% 0 3d-only 50%;
+  pointer-events: none;
+}
+/* line 829, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-20 a:hover span, .cl-effect-20 a:focus span {
+  background: #080b0e;
+}
+/* line 832, ../../../scss/lib/codrops/_navdemo.scss */
+.cl-effect-20 a:hover span::before, .cl-effect-20 a:focus span::before {
+  -moz-transform: rotateX(10deg);
+  -webkit-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}
+
+/* line 842, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-nav a::before, .sandwich-nav a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  content: '';
+  opacity: 0;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  -o-transition: opacity 0.3s, -o-transform 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* line 854, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-nav a {
+  padding: 10px;
+  color: #107360;
+  font-weight: 700;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/* line 859, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-nav a::before {
+  top: 0;
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+/* line 864, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-nav a::after {
+  bottom: 0;
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+/* line 869, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-nav a:hover, .sandwich-nav a:focus {
+  color: #ffffff;
+}
+/* line 871, ../../../scss/lib/codrops/_navdemo.scss */
+.sandwich-nav a:hover::before, .sandwich-nav a:hover::after, .sandwich-nav a:focus::before, .sandwich-nav a:focus::after {
+  opacity: 1;
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: feathericons;
+  src: url("../fonts/feathericons/feathericons.eot?-8is7zf");
+  src: url("../fonts/feathericons/feathericons.eot?#iefix-8is7zf") format("embedded-opentype"), url("../fonts/feathericons/feathericons.woff?-8is7zf") format("woff"), url("../fonts/feathericons/feathericons.ttf?-8is7zf") format("truetype"), url("../fonts/feathericons/feathericons.svg?-8is7zf") format("svg");
+}
+/* line 9, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  margin: -0.135em;
+  width: 33.333%;
+  height: 400px;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 22, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
+}
+
+/* line 29, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure figcaption {
+  padding: 2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+}
+
+/* line 37, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure figcaption::before, .portfolio-grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 41, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure figcaption, .portfolio-grid figure a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 49, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 57, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 62, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure h2 span {
+  font-weight: 800;
+}
+
+/* line 66, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure h2, .portfolio-grid figure p {
+  margin: 0;
+}
+
+/* line 70, ../../../scss/lib/codrops/_imagehovers.scss */
+.portfolio-grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* line 75, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily img {
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-40px, 0, 0);
+}
+
+/* line 82, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily figcaption {
+  top: auto;
+  bottom: 0;
+  height: 50%;
+  text-align: left;
+}
+
+/* line 89, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily h2, figure.effect-lily p {
+  transform: translate3d(0, 40px, 0);
+}
+
+/* line 93, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily h2 {
+  transition: transform 0.35s;
+}
+
+/* line 97, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily p {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.35s;
+}
+
+/* line 103, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily:hover img, figure.effect-lily:hover p {
+  opacity: 1;
+}
+
+/* line 107, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily:hover img, figure.effect-lily:hover h2, figure.effect-lily:hover p {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 111, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lily:hover p {
+  transition-delay: 0.05s;
+  transition-duration: 0.35s;
+}
+
+/* line 116, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sadie figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+  content: '';
+  opacity: 0;
+  transform: translate3d(0, 50%, 0);
+}
+
+/* line 128, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sadie h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #484c61;
+  transition: transform 0.35s, color 0.35s;
+  transform: translate3d(0, -50%, 0);
+}
+
+/* line 138, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sadie figcaption::before, figure.effect-sadie p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 142, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sadie p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+}
+
+/* line 152, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sadie:hover h2 {
+  color: #ffffff;
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+}
+
+/* line 157, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 162, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy {
+  background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+}
+
+/* line 166, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy img {
+  width: calc(100% + 60px);
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-50px, 0, 0);
+}
+
+/* line 172, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #ffffff;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-20px, 0, 0);
+}
+
+/* line 185, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy figcaption {
+  padding: 3em;
+  text-align: left;
+}
+
+/* line 190, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy h2 {
+  padding: 30% 0 10px;
+}
+
+/* line 194, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy p {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+}
+
+/* line 200, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy:hover img {
+  opacity: 0.7;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 205, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-roxy:hover figcaption::before, figure.effect-roxy:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 210, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba {
+  background: #9e5406;
+}
+
+/* line 214, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba img {
+  opacity: 0.7;
+  transition: opacity 0.35s;
+}
+
+/* line 219, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba:hover img {
+  opacity: 0.4;
+}
+
+/* line 223, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 234, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transform: scale(0, 1);
+}
+
+/* line 240, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  transform: scale(1, 0);
+}
+
+/* line 246, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba h2 {
+  padding-top: 30%;
+  transition: transform 0.35s;
+  transform: translate3d(0, -20px, 0);
+}
+
+/* line 252, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 259, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba:hover figcaption::before, figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 264, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-bubba:hover h2, figure.effect-bubba:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 269, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo {
+  perspective: 1000px;
+}
+
+/* line 273, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo img {
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 0, 300px);
+}
+
+/* line 278, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo:hover img {
+  opacity: 0.6;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 283, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo figcaption::before, figure.effect-romeo figcaption::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  background: #ffffff;
+  content: '';
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* line 295, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo:hover figcaption::before {
+  opacity: 0.5;
+  transform: translate3d(-50%, -50%, 0) rotate(45deg);
+}
+
+/* line 300, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo:hover figcaption::after {
+  opacity: 0.5;
+  transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+}
+
+/* line 305, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo h2, figure.effect-romeo p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transition: transform 0.35s;
+}
+
+/* line 313, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo h2 {
+  transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+}
+
+/* line 317, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo p {
+  padding: 0.25em 2em;
+  transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+}
+
+/* line 322, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo:hover h2 {
+  transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+}
+
+/* line 326, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-romeo:hover p {
+  transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+}
+
+/* line 330, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla {
+  background: #18a367;
+}
+
+/* line 334, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla img {
+  min-width: 100%;
+  height: calc(100% + 40px);
+}
+
+/* line 339, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla figcaption {
+  padding: 3em;
+}
+
+/* line 343, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla figcaption::before, figure.effect-layla figcaption::after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+
+/* line 349, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla figcaption::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transform: scale(0, 1);
+  transform-origin: 0 0;
+}
+
+/* line 360, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla figcaption::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  transform: scale(1, 0);
+  transform-origin: 100% 0;
+}
+
+/* line 371, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla h2 {
+  padding-top: 26%;
+  transition: transform 0.35s;
+}
+
+/* line 376, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla p {
+  padding: 0.5em 2em;
+  text-transform: none;
+  opacity: 0;
+  transform: translate3d(0, -10px, 0);
+}
+
+/* line 383, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla img, figure.effect-layla h2 {
+  transform: translate3d(0, -30px, 0);
+}
+
+/* line 387, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla img, figure.effect-layla figcaption::before, figure.effect-layla figcaption::after, figure.effect-layla p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 391, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla:hover img {
+  opacity: 0.7;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 396, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla:hover figcaption::before, figure.effect-layla:hover figcaption::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 401, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla:hover h2, figure.effect-layla:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 406, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-layla:hover figcaption::after, figure.effect-layla:hover h2, figure.effect-layla:hover p, figure.effect-layla:hover img {
+  transition-delay: 0.15s;
+}
+
+/* line 410, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey {
+  background: #4a3753;
+}
+
+/* line 414, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey img {
+  opacity: 0.9;
+  transition: opacity 0.35s;
+}
+
+/* line 419, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey:hover img {
+  opacity: 0.5;
+}
+
+/* line 423, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey figcaption::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #ffffff;
+  content: '';
+  transform: translate3d(0, 10px, 0);
+}
+
+/* line 434, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1.5em;
+  width: 100%;
+  text-align: left;
+  transform: translate3d(0, -30px, 0);
+}
+
+/* line 444, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey h2 i {
+  font-style: normal;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, -30px, 0);
+}
+
+/* line 451, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey figcaption::before, figure.effect-honey h2 {
+  transition: transform 0.35s;
+}
+
+/* line 455, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-honey:hover figcaption::before, figure.effect-honey:hover h2, figure.effect-honey:hover h2 i {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 460, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar {
+  background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+
+/* line 464, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar img {
+  opacity: 0.9;
+  transition: opacity 0.35s;
+}
+
+/* line 469, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar figcaption {
+  padding: 3em;
+  background-color: rgba(58, 52, 42, 0.7);
+  transition: background-color 0.35s;
+}
+
+/* line 475, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #ffffff;
+  content: '';
+}
+
+/* line 485, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar h2 {
+  margin: 20% 0 10px;
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 491, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar figcaption::before, figure.effect-oscar p {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(0);
+}
+
+/* line 497, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 501, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar:hover figcaption::before, figure.effect-oscar:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 506, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar:hover figcaption {
+  background-color: rgba(58, 52, 42, 0);
+}
+
+/* line 510, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-oscar:hover img {
+  opacity: 0.4;
+}
+
+/* line 514, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley figcaption {
+  text-align: right;
+}
+
+/* line 518, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley h2, figure.effect-marley p {
+  position: absolute;
+  right: 30px;
+  left: 30px;
+  padding: 10px 0;
+}
+
+/* line 525, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley p {
+  bottom: 30px;
+  line-height: 1.5;
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 531, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley h2 {
+  top: 30px;
+  transition: transform 0.35s;
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 537, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 541, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley h2::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  content: '';
+  transform: translate3d(0, 40px, 0);
+}
+
+/* line 552, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley h2::after, figure.effect-marley p {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 557, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-marley:hover h2::after, figure.effect-marley:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 562, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby {
+  background-color: #17819c;
+}
+
+/* line 566, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby img {
+  opacity: 0.7;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.15);
+}
+
+/* line 572, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby:hover img {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+/* line 577, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby h2 {
+  margin-top: 20%;
+  transition: transform 0.35s;
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 583, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby p {
+  margin: 1em 0 0;
+  padding: 3em;
+  border: 1px solid #ffffff;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 20px, 0) scale(1.1);
+}
+
+/* line 592, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 596, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ruby:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* line 601, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-milo {
+  background: #2e5d5a;
+}
+
+/* line 605, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-milo img {
+  width: calc(100% + 60px);
+  opacity: 1;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-30px, 0, 0) scale(1.12);
+  backface-visibility: hidden;
+}
+
+/* line 613, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-milo:hover img {
+  opacity: 0.5;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* line 618, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-milo h2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1em 1.2em;
+}
+
+/* line 625, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-milo p {
+  padding: 0 10px 0 0;
+  width: 50%;
+  border-right: 1px solid #ffffff;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-40px, 0, 0);
+}
+
+/* line 635, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-milo:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 640, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter {
+  background: linear-gradient(to bottom, #258dc8 0%, #683c13 100%);
+}
+
+/* line 644, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter img {
+  transition: opacity 0.35s;
+}
+
+/* line 648, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter:hover img {
+  opacity: 0.4;
+}
+
+/* line 652, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter figcaption::after {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  height: calc(50% - 30px);
+  border: 7px solid #ffffff;
+  content: '';
+  transition: transform 0.35s;
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 664, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter:hover figcaption::after {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 668, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter figcaption {
+  padding: 3em;
+  text-align: left;
+}
+
+/* line 673, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter p {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  left: 60px;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, -100px, 0);
+}
+
+/* line 683, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-dexter:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 688, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah {
+  background: #42b078;
+}
+
+/* line 692, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah img {
+  width: calc(100% + 20px);
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+  backface-visibility: hidden;
+}
+
+/* line 699, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah:hover img {
+  opacity: 0.4;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 704, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah figcaption {
+  text-align: left;
+}
+
+/* line 708, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+/* line 714, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  content: '';
+  transition: transform 0.35s;
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 726, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah:hover h2::after {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 730, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah p {
+  padding: 1em 0;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(100%, 0, 0);
+}
+
+/* line 737, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-sarah:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 742, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe figcaption {
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 3.75em;
+  background: #ffffff;
+  color: #3c4a50;
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 753, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe h2 {
+  float: left;
+  display: inline-block;
+}
+
+/* line 758, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe figcaption > span {
+  float: right;
+}
+
+/* line 762, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe p {
+  position: absolute;
+  bottom: 8em;
+  padding: 2em;
+  color: #ffffff;
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: opacity 0.35s;
+}
+
+/* line 774, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe h2, figure.effect-zoe figcaption > span {
+  transition: transform 0.35s;
+  transform: translate3d(0, 200%, 0);
+}
+
+/* line 779, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe figcaption > span::before {
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: feathericons;
+  speak: none;
+}
+
+/* line 786, ../../../scss/lib/codrops/_imagehovers.scss */
+.icon-eye::before {
+  content: '\e000';
+}
+
+/* line 790, ../../../scss/lib/codrops/_imagehovers.scss */
+.icon-paper-clip::before {
+  content: '\e001';
+}
+
+/* line 794, ../../../scss/lib/codrops/_imagehovers.scss */
+.icon-heart::before {
+  content: '\e024';
+}
+
+/* line 798, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe:hover p {
+  opacity: 1;
+}
+
+/* line 802, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe:hover figcaption, figure.effect-zoe:hover h2, figure.effect-zoe:hover figcaption > span {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 806, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe:hover h2 {
+  transition-delay: 0.05s;
+}
+
+/* line 810, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe:hover figcaption > span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+
+/* line 814, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe:hover figcaption > span:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+/* line 818, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-zoe:hover figcaption > span:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+/* line 822, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico img {
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.12);
+}
+
+/* line 827, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico:hover img {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+/* line 832, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico figcaption {
+  padding: 3em;
+}
+
+/* line 836, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #ffffff;
+  content: '';
+  transform: scale(1.1);
+}
+
+/* line 847, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico figcaption::before, figure.effect-chico p {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 852, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico h2 {
+  padding: 20% 0 20px;
+}
+
+/* line 856, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico p {
+  margin: 0 auto;
+  max-width: 200px;
+  transform: scale(1.5);
+}
+
+/* line 862, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-chico:hover figcaption::before, figure.effect-chico:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 867, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia {
+  background: #2f3238;
+}
+
+/* line 871, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia img {
+  max-width: none;
+  height: 400px;
+  transition: opacity 1s, transform 1s;
+  backface-visibility: hidden;
+}
+
+/* line 878, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia figcaption {
+  text-align: left;
+}
+
+/* line 882, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia h2 {
+  position: relative;
+  padding: 0.5em 0;
+}
+
+/* line 887, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 75%;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-360px, 0, 0);
+}
+
+/* line 900, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia p:first-child {
+  transition-delay: 0.15s;
+}
+
+/* line 904, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia p:nth-of-type(2) {
+  transition-delay: 0.1s;
+}
+
+/* line 908, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia p:nth-of-type(3) {
+  transition-delay: 0.05s;
+}
+
+/* line 912, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia:hover p:first-child {
+  transition-delay: 0s;
+}
+
+/* line 916, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia:hover p:nth-of-type(2) {
+  transition-delay: 0.05s;
+}
+
+/* line 920, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia:hover p:nth-of-type(3) {
+  transition-delay: 0.1s;
+}
+
+/* line 924, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia:hover img {
+  opacity: 0.4;
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+/* line 929, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-julia:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 934, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath {
+  background: #df4e4e;
+}
+
+/* line 938, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath img, figure.effect-goliath h2 {
+  transition: transform 0.35s;
+}
+
+/* line 942, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath img {
+  backface-visibility: hidden;
+}
+
+/* line 946, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath h2, figure.effect-goliath p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+/* line 953, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath p {
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 50px, 0);
+}
+
+/* line 961, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath:hover img {
+  transform: translate3d(0, -80px, 0);
+}
+
+/* line 965, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath:hover h2 {
+  transform: translate3d(0, -100px, 0);
+}
+
+/* line 969, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-goliath:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 974, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera {
+  background: #303fa9;
+}
+
+/* line 978, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera h2 {
+  font-size: 158.75%;
+}
+
+/* line 982, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera h2, figure.effect-hera p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-50%, -50%, 0);
+  transform-origin: 50%;
+}
+
+/* line 991, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera figcaption::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
+  transform-origin: 50%;
+}
+
+/* line 1005, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p {
+  width: 100px;
+  text-transform: none;
+  font-size: 121%;
+  line-height: 2;
+}
+
+/* line 1012, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a {
+  color: white;
+}
+
+/* line 1016, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a:hover, figure.effect-hera p a:focus {
+  opacity: 0.6;
+}
+
+/* line 1020, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a i {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 1025, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a:first-child i {
+  transform: translate3d(-60px, -60px, 0);
+}
+
+/* line 1029, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a:nth-child(2) i {
+  transform: translate3d(60px, -60px, 0);
+}
+
+/* line 1033, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a:nth-child(3) i {
+  transform: translate3d(-60px, 60px, 0);
+}
+
+/* line 1037, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera p a:nth-child(4) i {
+  transform: translate3d(60px, 60px, 0);
+}
+
+/* line 1041, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera:hover figcaption::before {
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
+}
+
+/* line 1046, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera:hover h2 {
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+}
+
+/* line 1051, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-hera:hover p i:empty {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* line 1056, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston {
+  background: #162633;
+  text-align: left;
+}
+
+/* line 1061, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston img {
+  transition: opacity 0.45s;
+  backface-visibility: hidden;
+}
+
+/* line 1066, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/triangle.svg) no-repeat center center;
+  background-size: 100% 100%;
+  content: '';
+  transition: opacity 0.45s, transform 0.45s;
+  transform: rotate3d(0, 0, 1, 45deg);
+  transform-origin: 0 100%;
+}
+
+/* line 1080, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston h2 {
+  transition: transform 0.35s;
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 1085, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.5em 7% 0;
+}
+
+/* line 1092, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston a {
+  margin: 0 10px;
+  color: #5d504f;
+  font-size: 170%;
+}
+
+/* line 1098, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston a:hover, figure.effect-winston a:focus {
+  color: #cc6055;
+}
+
+/* line 1102, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston p a i {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 50px, 0);
+}
+
+/* line 1108, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover img {
+  opacity: 0.6;
+}
+
+/* line 1112, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1116, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover figcaption::before {
+  opacity: 0.7;
+  transform: rotate3d(0, 0, 1, 20deg);
+}
+
+/* line 1121, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover p i {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1126, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover p a:nth-child(3) i {
+  transition-delay: 0.05s;
+}
+
+/* line 1130, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover p a:nth-child(2) i {
+  transition-delay: 0.1s;
+}
+
+/* line 1134, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-winston:hover p a:first-child i {
+  transition-delay: 0.15s;
+}
+
+/* line 1138, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena {
+  background: white;
+}
+
+/* line 1142, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena img {
+  opacity: 0.95;
+  transition: transform 0.35s;
+  transform-origin: 50% 50%;
+}
+
+/* line 1148, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena:hover img {
+  transform: scale3d(0.95, 0.95, 1);
+}
+
+/* line 1152, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena h2 {
+  transition: transform 0.35s;
+  transform: translate3d(0, 20px, 0);
+}
+
+/* line 1157, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena p {
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  transform-origin: 50% 0;
+}
+
+/* line 1164, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1168, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-selena:hover p {
+  opacity: 1;
+  transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+}
+
+/* line 1173, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry {
+  background: #34495e;
+}
+
+/* line 1177, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry figcaption {
+  padding: 1em;
+}
+
+/* line 1181, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry figcaption::before, figure.effect-terry figcaption::after {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-style: solid;
+  border-color: #101010;
+  content: '';
+  transition: transform 0.35s;
+}
+
+/* line 1191, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry figcaption::before {
+  right: 0;
+  bottom: 0;
+  border-width: 0 70px 60px 0;
+  transform: translate3d(70px, 60px, 0);
+}
+
+/* line 1198, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry figcaption::after {
+  top: 0;
+  left: 0;
+  border-width: 15px 0 0 15px;
+  transform: translate3d(-15px, -15px, 0);
+}
+
+/* line 1205, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry img, figure.effect-terry p a {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 1209, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry img {
+  opacity: 0.85;
+}
+
+/* line 1213, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.4em 10px;
+  width: 50%;
+  transition: transform 0.35s;
+  transform: translate3d(100%, 0, 0);
+}
+
+@media screen and (max-width: 920px) {
+  /* line 1224, ../../../scss/lib/codrops/_imagehovers.scss */
+  figure.effect-terry h2 {
+    padding: 0.75em 10px;
+    font-size: 120%;
+  }
+}
+/* line 1231, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry p {
+  float: right;
+  clear: both;
+  text-align: left;
+  text-transform: none;
+  font-size: 111%;
+}
+
+/* line 1239, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry p a {
+  display: block;
+  margin-bottom: 1em;
+  color: white;
+  opacity: 0;
+  transform: translate3d(90px, 0, 0);
+}
+
+/* line 1247, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry p a:hover, figure.effect-terry p a:focus {
+  color: #f3cf3f;
+}
+
+/* line 1251, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover figcaption::before, figure.effect-terry:hover figcaption::after {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1255, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover img {
+  opacity: 0.6;
+}
+
+/* line 1259, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover h2, figure.effect-terry:hover p a {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1263, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover p a {
+  opacity: 1;
+}
+
+/* line 1267, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover p a:first-child {
+  transition-delay: 0.025s;
+}
+
+/* line 1271, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover p a:nth-child(2) {
+  transition-delay: 0.05s;
+}
+
+/* line 1275, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover p a:nth-child(3) {
+  transition-delay: 0.075s;
+}
+
+/* line 1279, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-terry:hover p a:nth-child(4) {
+  transition-delay: 0.1s;
+}
+
+/* line 1283, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe {
+  background: #675983;
+}
+
+/* line 1287, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe img {
+  opacity: 0.85;
+  transition: opacity 0.35s;
+}
+
+/* line 1292, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe:hover img {
+  opacity: 0.6;
+}
+
+/* line 1296, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/triangle2.svg) no-repeat center center;
+  background-size: 100% 100%;
+  content: '';
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale3d(5, 2.5, 1);
+  transform-origin: 50% 50%;
+}
+
+/* line 1310, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe:hover figcaption::before {
+  opacity: 0.6;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 1315, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe h2 {
+  margin-top: 1em;
+  transition: transform 0.35s;
+  transform: translate3d(0, 40px, 0);
+}
+
+/* line 1321, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1325, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe p a {
+  color: white;
+  font-size: 140%;
+  opacity: 0;
+  position: relative;
+  display: inline-block;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 1334, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe p a:first-child {
+  transform: translate3d(-60px, -60px, 0);
+}
+
+/* line 1338, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe p a:nth-child(2) {
+  transform: translate3d(0, 60px, 0);
+}
+
+/* line 1342, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe p a:nth-child(3) {
+  transform: translate3d(60px, -60px, 0);
+}
+
+/* line 1346, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-phoebe:hover p a {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1351, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo {
+  background: #3498db;
+}
+
+/* line 1355, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo img {
+  opacity: 0.95;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+/* line 1361, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  content: '';
+  transition: transform 0.6s;
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+/* line 1373, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3em;
+  padding: 0 1em;
+  max-width: 150px;
+  border-right: 4px solid white;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+/* line 1386, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo h2 {
+  text-align: left;
+}
+
+/* line 1390, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo:hover img {
+  opacity: 0.6;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 1395, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo:hover figcaption::before {
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+/* line 1399, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-apollo:hover p {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+/* line 1404, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira {
+  background: white;
+  text-align: left;
+}
+
+/* line 1409, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira img {
+  transition: opacity 0.35s;
+}
+
+/* line 1413, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira figcaption {
+  z-index: 1;
+}
+
+/* line 1417, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira p {
+  padding: 2.25em 0.5em;
+  font-weight: 600;
+  font-size: 100%;
+  line-height: 1.5;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, -10px, 0);
+}
+
+/* line 1427, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira p a {
+  margin: 0 0.5em;
+  color: #101010;
+}
+
+/* line 1432, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira p a:hover, figure.effect-kira p a:focus {
+  opacity: 0.6;
+}
+
+/* line 1436, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira figcaption::before {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  left: 2em;
+  z-index: -1;
+  height: 3.5em;
+  background: white;
+  content: '';
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
+  transform-origin: 50% 0;
+}
+
+/* line 1450, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira:hover img {
+  opacity: 0.5;
+}
+
+/* line 1454, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1459, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-kira:hover figcaption::before {
+  opacity: 0.7;
+  transform: translate3d(0, 5em, 0) scale3d(1, 1, 1);
+}
+
+/* line 1464, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve {
+  z-index: auto;
+  overflow: visible;
+  background: black;
+}
+
+/* line 1470, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve:before, figure.effect-steve h2:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: black;
+  content: '';
+  transition: opacity 0.35s;
+}
+
+/* line 1482, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve:before {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+/* line 1487, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve figcaption {
+  z-index: 1;
+}
+
+/* line 1491, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve img {
+  opacity: 1;
+  transition: transform 0.35s;
+  transform: perspective(1000px) translate3d(0, 0, 0);
+}
+
+/* line 1497, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve h2, figure.effect-steve p {
+  background: white;
+  color: #2d434e;
+}
+
+/* line 1502, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve h2 {
+  position: relative;
+  margin-top: 2em;
+  padding: 0.25em;
+}
+
+/* line 1508, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve h2:before {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 1512, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve p {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-weight: 800;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale3d(0.9, 0.9, 1);
+}
+
+/* line 1521, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve:hover:before {
+  opacity: 1;
+}
+
+/* line 1525, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve:hover img {
+  transform: perspective(1000px) translate3d(0, 0, 21px);
+}
+
+/* line 1529, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve:hover h2:before {
+  opacity: 0;
+}
+
+/* line 1533, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-steve:hover p {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 1538, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses {
+  background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
+}
+
+/* line 1542, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses img {
+  opacity: 0.85;
+  transition: opacity 0.35s;
+}
+
+/* line 1547, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses h2, figure.effect-moses p {
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+  border: 2px solid white;
+}
+
+/* line 1554, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses h2 {
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+  text-align: left;
+  transition: transform 0.35s;
+  transform: translate3d(10px, 10px, 0);
+}
+
+/* line 1563, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses p {
+  float: right;
+  padding: 20px;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* line 1572, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses:hover h2 {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1576, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1581, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-moses:hover img {
+  opacity: 0.6;
+}
+
+/* line 1585, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz {
+  background: linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
+}
+
+/* line 1589, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz img {
+  opacity: 0.9;
+}
+
+/* line 1593, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz figcaption::after, figure.effect-jazz img, figure.effect-jazz p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 1597, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz figcaption::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  content: '';
+  opacity: 0;
+  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+  transform-origin: 50% 50%;
+}
+
+/* line 1611, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz h2, figure.effect-jazz p {
+  opacity: 1;
+  transform: scale3d(0.8, 0.8, 1);
+}
+
+/* line 1616, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz h2 {
+  padding-top: 26%;
+  transition: transform 0.35s;
+}
+
+/* line 1621, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz p {
+  padding: 0.5em 2em;
+  text-transform: none;
+  font-size: 0.85em;
+  opacity: 0;
+}
+
+/* line 1628, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz:hover img {
+  opacity: 0.7;
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+/* line 1633, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz:hover figcaption::after {
+  opacity: 1;
+  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+}
+
+/* line 1638, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-jazz:hover h2, figure.effect-jazz:hover p {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 1643, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming {
+  background: #030c17;
+}
+
+/* line 1647, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming img {
+  opacity: 0.9;
+  transition: opacity 0.35s;
+}
+
+/* line 1652, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 2px solid white;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
+  content: '';
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale3d(1.4, 1.4, 1);
+}
+
+/* line 1666, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming h2 {
+  margin: 20% 0 10px;
+  transition: transform 0.35s;
+}
+
+/* line 1671, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming p {
+  padding: 1em;
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.5);
+}
+
+/* line 1678, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming:hover h2 {
+  transform: scale(0.9);
+}
+
+/* line 1682, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming:hover figcaption::before, figure.effect-ming:hover p {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 1687, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming:hover figcaption {
+  background-color: rgba(58, 52, 42, 0);
+}
+
+/* line 1691, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-ming:hover img {
+  opacity: 0.4;
+}
+
+/* line 1695, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi {
+  background: linear-gradient(-45deg, #000000 0%, #ffffff 100%);
+}
+
+/* line 1699, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi img {
+  margin: -10px 0 0 -10px;
+  max-width: none;
+  width: calc(100% + 10px);
+  opacity: 0.9;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(10px, 10px, 0);
+  backface-visibility: hidden;
+}
+
+/* line 1709, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi figcaption::before, figure.effect-lexi p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 1713, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi figcaption::before {
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.2);
+  content: '';
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 1);
+  transform-origin: 50% 50%;
+}
+
+/* line 1728, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi:hover img {
+  opacity: 0.6;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1733, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi h2 {
+  text-align: left;
+  transition: transform 0.35s;
+  transform: translate3d(5px, 5px, 0);
+}
+
+/* line 1739, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.5em 1.5em 0;
+  width: 140px;
+  text-align: right;
+  opacity: 0;
+  transform: translate3d(20px, 20px, 0);
+}
+
+/* line 1750, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi:hover figcaption::before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 1755, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-lexi:hover h2, figure.effect-lexi:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 1760, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-duke {
+  background: linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
+}
+
+/* line 1764, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-duke img, figure.effect-duke p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+/* line 1768, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-duke:hover img {
+  opacity: 0.1;
+  transform: scale3d(2, 2, 1);
+}
+
+/* line 1773, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-duke h2 {
+  transition: transform 0.35s;
+  transform: scale3d(0.8, 0.8, 1);
+  transform-origin: 50% 100%;
+}
+
+/* line 1779, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-duke p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  padding: 30px;
+  border: 2px solid white;
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  transform: scale3d(0.8, 0.8, 1);
+  transform-origin: 50% -100%;
+}
+
+/* line 1793, ../../../scss/lib/codrops/_imagehovers.scss */
+figure.effect-duke:hover h2, figure.effect-duke:hover p {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+@media screen and (max-width: 69.5em) {
+  /* line 1802, ../../../scss/lib/codrops/_imagehovers.scss */
+  .portfolio-grid figure {
+    width: 50%;
+  }
+
+  /* line 1806, ../../../scss/lib/codrops/_imagehovers.scss */
+  .portfolio-grid figure figcaption {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 41.5em) {
+  /* line 1813, ../../../scss/lib/codrops/_imagehovers.scss */
+  .portfolio-grid figure {
+    width: 100%;
+  }
+}

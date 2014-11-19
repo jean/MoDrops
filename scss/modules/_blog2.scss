@@ -1,0 +1,69 @@
+.blog-section {
+  @include layout(full no-gutters nest);
+  figure {
+    position: relative;
+    height: 400px;
+    background-color: $sk-blue;
+    overflow: hidden;
+    img {
+      position: absolute;  
+      top: 50%;
+      left: 50%;
+      width: 110%;
+      @include translate(-50%, -50%);
+      @include opacity(.2);
+      @include transition(all 1s ease);
+    }
+    figcaption {
+      position: relative;
+      box-sizing: content-box;
+      top: 60%;
+      margin-left: span(2);
+      margin-right: span(4);
+      color: $white;
+      padding-left: 1em;
+      @include transition;
+      h3 {
+        @extend %headline-1;         
+        display: block;        
+      }
+      p {
+        display: block;
+        @include transparent;
+        @include translateY(40%);
+        @include transition(all .7s ease-in-out .3s);
+      }
+      button {
+        font-family: $font-stack--display;
+        font-size: 1.25em;
+        color: $white;
+        background: transparent;
+        padding: .75em 1.25em;
+        margin: .75em 0;
+        border: 1px solid $white;
+        @include translateY(60%);
+        @include transparent;
+        @include transition(all .7s ease-in-out .6s);
+        &:hover, &:focus {          
+          background: rgba($sk-yellow, 0.8);
+          @include text-shadow;
+          @include box-shadow;
+          @include transition;
+        }
+      }
+    }
+    &:hover, &:focus {
+      figcaption {
+        top: 20%;
+        p, button {
+          @include opaque;
+          @include translateY(0);
+        }
+      }
+      img {
+        @include opacity(0.8);
+        width: 100%;
+      }
+    }
+  }
+}

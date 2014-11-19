@@ -1,0 +1,131 @@
+// Font Imports
+$font-url--google   : 'http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,900italic';
+$font-url--google   : 'http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic';
+$font-url--google   : 'http://fonts.googleapis.com/css?family=Raleway:200,300,400,700';
+
+// Font Stacks
+$font-stack--display  : 'Raleway', Arial, sans-serif;
+$font-stack--sans     : 'Lato', Helvetica, Arial, sans-serif;
+$font-stack--serif    : 'Droid Serif', Lucida, Georgia, serif;
+
+
+// Font Weights
+$font-weight--thinner    : 100;
+$font-weight--thin       : 200;
+$font-weight--light      : 300;
+$font-weight--normal     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+//Styling Guide inspired by Guy Routledge
+//SRC: http://www.guyroutledge.co.uk/blog/style-guide-colours-with-sass/
+
+// Basic Colors
+$white    : #ffffff;
+$black    : #0d0d0d;
+$gray     : #748387;
+$shadow   : rgba(0, 0, 0, .2);
+$copy     : #435a6b;
+
+//CoDrops link hover effects colors
+$blue-steel: #435a6c;
+$kabluey: #0e83cd;
+$goldy: #f39c12;
+$mean-green: #3fa46a;
+$dead-red: #cd4436;
+$ashy-larry: #ecf0f1;
+$grimace: #9e487f;
+$jade: #16a085;
+$birch: #aab7b7;
+$emerald: #07E694;
+
+// SilenceKillsDesign Colors
+//$sk-blue: #0cb6f1;
+$sk-blue: #0888F0;
+$sk-purple: #6357d0;
+$sk-yellow: #FAF843;
+$sk-pink: #FF4D67;
+$sk-green: #5EE569;
+$sk-dark-gray: #333a40;
+$sk-light-gray: #e6e6f2;
+
+// UI Colors
+$ui-colors: (
+  default   : $sk-dark-gray,
+  success   : $sk-green,
+  error     : $sk-pink,
+  warning   : $sk-yellow,
+  info      : $sk-purple
+);
+
+
+// Color Palette Modifiers
+$color-palettes: (
+  gray: (
+    xx-light : lighten($gray, 43%),
+    x-light  : lighten($gray, 35%),
+    light    : lighten($gray, 12%),
+    base     : $gray,
+    dark     : darken($gray, 8%),
+    x-dark   : darken($gray, 16%)
+  ),
+  black: (
+    light    : lighten($black, 10%),
+    base     : $black,
+    dark     : darken($black, 10%)
+  ),
+  sk-blue: (
+    light    : lighten($sk-blue, 10),
+    base     : $sk-blue,
+    dark    : darken($sk-blue, 20)
+  )
+);
+
+
+// Path to Assets
+$path--rel      : "../img";
+
+// Transitions
+$trns-duration  : .3s;
+
+// Border Radius
+$default-border-radius: 0px;
+
+//Default Shadows
+$default-box-shadow-color: $shadow;
+$default-text-shadow-color: $shadow;
+
+
+//Header Settings
+$header-bg : $sk-blue;
+
+// Nav Settings
+$nav-bg-color: $sk-blue;
+$nav-align: center; //else: left, right
+$sticky-nav-opacity: .7; // value from 0 - 1
+$sticky-nav-position: right;
+
+$nav-link-color: lighten($nav-bg-color, 23);
+$nav-link-selected: $white;
+$link-styling-color: $sk-yellow;
+$link-styling-selected: $sk-yellow;
+$link-styling-opacity: 0.2; //for use with the circle back nav. value from 0.0 to 1.0
+
+$default-transition-property : all;
+$default-transition-duration : .3s;
+$default-transition-function : ease-in-out;
+
+//padding
+$less-padding: 3em 0;
+$default-padding: 5em 0;
+$more-padding: 8em 0;
+
+
+// Type Settings
+$base__font-size     : 18px;
+$base__line-height   : 24px;
+$letter-space        : .02em;
+$rhythm-unit         : "em";
+
+$headline-color : $sk-blue;
+$subhead-color  : lighten($copy, 15);

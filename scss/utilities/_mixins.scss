@@ -1,0 +1,108 @@
+// Generating :before or :after pseudo-element shapes
+@mixin p-el($el, $el-w: null, $el-h: null) {
+  @if $el == "before" or $el == "after" { 
+    &:#{$el} {
+      @extend %pseudos;
+      width: $el-w;
+      height: $el-h;
+      @content;
+    }
+  } 
+  @else {
+    @error "`#{$el}` is not a valid pseudo-element.";
+  }
+}
+
+
+// BEM selectors
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Generate modifier color classes
+//@mixin ui-colors($map, $p-el:null) {
+//  @each $theme, $color in $map {
+//    @include m($theme) {
+//      background-color: $color;
+//
+//      // If an $p-el value is passed, generate pseudo-element bg colors. Used on progbars.
+//      @if $p-el {
+//        &:after {
+//          background-color: lighten($color, 8%);
+//        } 
+//      }
+//    }
+//  }
+//}
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+//this is for font smoothing in osx and pc
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// Image replacement
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+  background-image: url('#{$path--rel}/#{$img}');
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $disp;
+}
+
+//Truncate Text values are: clip, ellipsis, or a string
+@mixin truncateText($overflow: ellipsis){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow;
+}
+
+//Animation
+
+//Compass CSS3 mixins don’t yet handle vendor prefixes for CSS animations, so this is a very simple mixin to simulate that functionality
+// There is a FF bug that requires all time values to have units, even 0
+@mixin animation($name, $duration: 1000ms, $iterations: infinite, $timing-function: ease, $delay: 0ms) {
+  -webkit-animation: $name $duration $iterations $timing-function $delay;
+  -moz-animation: $name $duration $iterations $timing-function $delay;
+  -o-animation: $name $duration $iterations $timing-function $delay;
+  animation: $name $duration $iterations $timing-function $delay;
+}
+
+
+//Add both horizontal and baseline grids to an element's background
+@mixin grid-background($total: $grid-background-total-columns, $column: $grid-background-column-width, $gutter: $grid-background-gutter-width, $baseline: $grid-background-baseline-height, $offset: $grid-background-offset, $column-color: $grid-background-column-color, $gutter-color: $grid-background-gutter-color, $baseline-color: $grid-background-baseline-color, $force-fluid: $grid-background-force-fluid) {
+  @if $show-grid-backgrounds {
+    @if $show-baseline-grid-backgrounds and $show-column-grid-backgrounds {
+      @include background-image(get-baseline-gradient($baseline-color), get-column-gradient($total, $column, $gutter, $offset, $column-color, $gutter-color, $force-fluid));
+      @include background-size(100% $baseline, auto);
+      background-position: left top;
+    }
+    @else {
+      @include baseline-grid-background($baseline, $baseline-color);
+      @include column-grid-background($total, $column, $gutter, $offset, $column-color, $gutter-color, $force-fluid);
+    }
+  }
+}

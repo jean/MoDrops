@@ -1,0 +1,138 @@
+// Screen reader text
+.srt {
+  @include squish-text;
+}
+
+body {
+  @include container;
+  font-size: $base__font-size;
+  font-family: $font-stack--sans;
+  color: $copy;
+}
+
+section {
+  @include layout(full nest);
+  @extend %clearfix;
+  display: block;
+  padding: $less-padding;
+  background: $white;
+}
+
+.inner {
+  margin-left: span(2);
+  margin-right: span(2);
+}
+
+header {
+  box-sizing: border-box;
+  font-weight: $font-weight--normal;
+  font-family: $font-stack--sans;
+  margin: 0 auto;
+  text-align: center;
+  background: $header-bg;
+  svg {
+    fill: $white;
+    &:hover {
+      fill: $sk-yellow;
+    }
+  }
+}
+
+
+nav {
+  display: block;
+  background: $nav-bg-color;
+  margin: 1em auto;
+  padding: $less-padding;
+  text-align: $nav-align;  
+  & a {
+    color: $nav-link-color;
+    font-weight: $font-weight--bold;
+    position: relative;
+    display: inline-block;
+    margin: .875em 2em;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;    
+    font-size: 1.125em;
+    & span {
+      color: $nav-link-color;
+    }
+    &::before, &::after {
+      color: $link-styling-color;
+    }
+    &:hover, &:focus {
+      color: $nav-link-selected;
+      &::before, &::after {
+        color: $link-styling-selected;
+      }
+    }
+  }
+//  @extend %brackets-nav;
+  
+//  @extend %faint-underline-nav;
+//  @extend %bold-underline-nav
+//  @extend %bold-underline-navdiet;
+//// FIX THIS  @extend %wordslide-nav;
+  @extend %lframe-nav;
+}
+
+
+a {
+  font-weight: $font-weight--normal;
+  text-decoration: none;
+  outline: none;
+}
+
+h1 {
+  @extend %headline-1;
+}
+h2 {
+  @extend %headline-2;
+}
+h3 {
+  font-weight: $font-weight--light;
+  font-size: em(30px);
+  line-height: (46px / 42px);
+  margin-bottom: em(70px, 42px);
+}
+h4 {
+  font-weight: $font-weight--light;
+  font-size: em(24px);
+  line-height: (46px / 42px);
+  margin-bottom: em(70px, 42px);
+}
+
+p {
+  font-family: $font-stack--sans;
+  font-size: $base__font-size;
+  line-height: 1.65;
+}
+  .body-copy {
+    font-weight: $font-weight--light;
+    font-family: $font-stack--serif;
+    color: $copy;
+    letter-spacing: .03em;
+    font-style: italic;
+  }
+
+.site-logo {
+  margin: 2em auto;
+  @include img-replace("silencekillsdesignlogoOL.svg", 80px, 144px, inline-block);
+}
+
+.icon-toggle {
+  @include p-el(before, 40px, 3px) {
+    background: palette(gray);
+    top: 7px;
+  }
+  width: 40px;
+  height: 18px;
+  position: absolute;
+  border-top: solid 3px palette(gray);
+  border-bottom: solid 3px palette(gray);
+}
+
+.btn {
+  @include bg-colors($ui-colors);
+}
