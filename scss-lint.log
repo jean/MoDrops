@@ -1,0 +1,60 @@
+{
+  "C:\\Users\\CWILLI~1\\AppData\\Local\\Temp/scss-lint/tmp.scss": [
+    {
+      "linter": "StringQuotes",
+      "line": 1,
+      "column": 9,
+      "length": 9,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    },
+    {
+      "linter": "StringQuotes",
+      "line": 2,
+      "column": 9,
+      "length": 5,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    },
+    {
+      "linter": "StringQuotes",
+      "line": 3,
+      "column": 9,
+      "length": 7,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    },
+    {
+      "linter": "StringQuotes",
+      "line": 4,
+      "column": 9,
+      "length": 14,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    },
+    {
+      "linter": "StringQuotes",
+      "line": 5,
+      "column": 9,
+      "length": 11,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    },
+    {
+      "linter": "StringQuotes",
+      "line": 6,
+      "column": 9,
+      "length": 6,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    },
+    {
+      "linter": "StringQuotes",
+      "line": 7,
+      "column": 9,
+      "length": 7,
+      "severity": "warning",
+      "reason": "Prefer single quoted strings"
+    }
+  ]
+}

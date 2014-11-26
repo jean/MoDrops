@@ -20,12 +20,12 @@
         <a class="site-logo" href="/">
           <b class="srt">SilenceKillsDesign Logo</b>
         </a>
-        <!-- Nav Toggle -->
-        <span class="icon-toggle">
-          <b class="srt">Toggle</b>
-        </span>
         <!-- Main Nav (Desktop) -->
-        <nav role="navigation">
+        <nav role="navigation" class="is-collapsed-mobile">
+          <!-- Nav Toggle -->
+          <span id="toggle" class="icn--nav-toggle is-displayed-mobile">
+            <b class="srt">Toggle</b>
+          </span>
           <a href="#">Chatoyant</a>
           <a href="#">Ineffable</a>
           <a href="#">Efficiency</a>
@@ -99,6 +99,12 @@
       </section>
       
         </div>
-    </div><!-- /container -->
+    </div>
+  <!-- /container -->
+  <script>
+    $('#toggle').click(function() {
+      $(this).next('nav').toggleClass("is-collapsed-mobile");
+    });
+  </script>
   </body>
 </html>

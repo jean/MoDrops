@@ -18,6 +18,7 @@
       background-color: darken($sk-blue, 20);      
     }
     .blog-caption {
+      font-family: $font-stack--sans;
       position: relative;
       box-sizing: content-box;
       top: 60%;

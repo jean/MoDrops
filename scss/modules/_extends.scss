@@ -16,3 +16,23 @@
   line-height: 1.2;  
   margin-bottom: .5em;
 }
+
+//Buttons
+%button {
+  padding: 15px 30px;
+  border: 0;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--normal;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover, &:focus {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+

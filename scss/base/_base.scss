@@ -30,12 +30,6 @@ header {
   margin: 0 auto;
   text-align: center;
   background: $header-bg;
-  svg {
-    fill: $white;
-    &:hover {
-      fill: $sk-yellow;
-    }
-  }
 }
 
 
@@ -116,21 +110,17 @@ p {
     font-style: italic;
   }
 
+button {
+  //make a BEM mixin to include here
+  //include ghost styles, solid styles and gradient styles using hue adjust
+}
+
 .site-logo {
   margin: 2em auto;
   @include img-replace("silencekillsdesignlogoOL.svg", 80px, 144px, inline-block);
-}
-
-.icon-toggle {
-  @include p-el(before, 40px, 3px) {
-    background: palette(gray);
-    top: 7px;
+  @include mq(small) {
+    display: none;
   }
-  width: 40px;
-  height: 18px;
-  position: absolute;
-  border-top: solid 3px palette(gray);
-  border-bottom: solid 3px palette(gray);
 }
 
 .btn {

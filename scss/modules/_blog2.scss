@@ -6,13 +6,11 @@
     background-color: $sk-blue;
     overflow: hidden;
     img {
-      position: absolute;  
-      top: 50%;
-      left: 50%;
+      @extend %center-hv;
+      @extend %fill-frame;
       width: 110%;
-      @include translate(-50%, -50%);
       @include opacity(.2);
-      @include transition(all 1s ease);
+      @include transition(all 1s ease);      
     }
     figcaption {
       position: relative;
@@ -62,6 +60,7 @@
       }
       img {
         @include opacity(0.8);
+        @include filter(blur(4px));
         width: 100%;
       }
     }
