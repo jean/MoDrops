@@ -83,7 +83,7 @@ section:after {
 }
 
 /* line 18, ../scss/utilities/_helpers.scss */
-.blog-section figure img {
+.effect-sadie img, .blog-section figure img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,71 +125,27 @@ body:after {
 /* line 13, ../scss/base/_base.scss */
 section {
   display: block;
-  padding: 3em 0;
-  background: #ffffff;
 }
 
-/* line 21, ../scss/base/_base.scss */
+/* line 19, ../scss/base/_base.scss */
 .inner {
   margin-left: 16.66667%;
   margin-right: 16.66667%;
 }
 
-/* line 26, ../scss/base/_base.scss */
-header {
-  box-sizing: border-box;
-  font-weight: 400;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  text-align: center;
-  background: #0888F0;
-}
-
-/* line 36, ../scss/base/_base.scss */
-nav {
-  display: block;
-  background: #0888F0;
-  margin: 1em auto;
+/* line 24, ../scss/base/_base.scss */
+.padded {
   padding: 3em 0;
-  text-align: center;
-}
-/* line 42, ../scss/base/_base.scss */
-nav a {
-  color: #73befa;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
-  margin: .875em 2em;
-  text-decoration: none;
-  outline: none;
-  text-transform: uppercase;
-  font-size: 1.125em;
-}
-/* line 52, ../scss/base/_base.scss */
-nav a span {
-  color: #73befa;
-}
-/* line 55, ../scss/base/_base.scss */
-nav a::before, nav a::after {
-  color: #FAF843;
-}
-/* line 58, ../scss/base/_base.scss */
-nav a:hover, nav a:focus {
-  color: #ffffff;
-}
-/* line 60, ../scss/base/_base.scss */
-nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after {
-  color: #FAF843;
 }
 
-/* line 75, ../scss/base/_base.scss */
+/* line 28, ../scss/base/_base.scss */
 a {
   font-weight: 400;
   text-decoration: none;
   outline: none;
 }
 
-/* line 87, ../scss/base/_base.scss */
+/* line 40, ../scss/base/_base.scss */
 h3 {
   font-weight: 300;
   font-size: em(30px);
@@ -197,7 +153,7 @@ h3 {
   margin-bottom: em(70px, 42px);
 }
 
-/* line 93, ../scss/base/_base.scss */
+/* line 46, ../scss/base/_base.scss */
 h4 {
   font-weight: 300;
   font-size: em(24px);
@@ -205,36 +161,20 @@ h4 {
   margin-bottom: em(70px, 42px);
 }
 
-/* line 100, ../scss/base/_base.scss */
+/* line 53, ../scss/base/_base.scss */
 p {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.65;
 }
 
-/* line 105, ../scss/base/_base.scss */
+/* line 58, ../scss/base/_base.scss */
 .body-copy {
   font-weight: 300;
   font-family: "Droid Serif", Lucida, Georgia, serif;
   color: #435a6b;
   letter-spacing: .03em;
   font-style: italic;
-}
-
-/* line 118, ../scss/base/_base.scss */
-.site-logo {
-  margin: 2em auto;
-  background-image: url("../img/silencekillsdesignlogoOL.svg");
-  background-repeat: no-repeat;
-  width: 80px;
-  height: 144px;
-  display: inline-block;
-}
-@media (min-width: 1px) and (max-width: 768px) {
-  /* line 118, ../scss/base/_base.scss */
-  .site-logo {
-    display: none;
-  }
 }
 
 /* line 48, ../scss/utilities/_mixins.scss */
@@ -276,6 +216,93 @@ h2 {
   font-size: 2.5em;
   line-height: 1.2;
   margin-bottom: .5em;
+}
+
+/* line 1, ../scss/modules/_header.scss */
+header {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  background: #0888F0;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 1, ../scss/modules/_header.scss */
+  header {
+    width: 100%;
+    position: fixed;
+    height: 4em;
+  }
+}
+
+/* line 15, ../scss/modules/_header.scss */
+.site-logo {
+  margin: 2em auto;
+  background-image: url("../img/silencekillsdesignlogoOL.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 144px;
+  display: inline-block;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 15, ../scss/modules/_header.scss */
+  .site-logo {
+    margin: 0;
+    top: -36px;
+    left: -9px;
+    position: relative;
+    -moz-transform: scale(0.3, 0.3);
+    -ms-transform: scale(0.3, 0.3);
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+    float: left;
+  }
+}
+
+/* line 29, ../scss/modules/_header.scss */
+nav {
+  display: block;
+  background: #0888F0;
+  margin: 1em auto;
+  padding: 3em 0;
+  text-align: center;
+}
+/* line 35, ../scss/modules/_header.scss */
+nav a {
+  color: #73befa;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin: .875em 2em;
+  text-decoration: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1.125em;
+}
+/* line 45, ../scss/modules/_header.scss */
+nav a span {
+  color: #73befa;
+}
+/* line 48, ../scss/modules/_header.scss */
+nav a::before, nav a::after {
+  color: #FAF843;
+}
+/* line 51, ../scss/modules/_header.scss */
+nav a:hover, nav a:focus {
+  color: #ffffff;
+}
+/* line 53, ../scss/modules/_header.scss */
+nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after {
+  color: #FAF843;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 29, ../scss/modules/_header.scss */
+  nav {
+    position: fixed;
+    top: 0;
+    height: 11em;
+  }
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
@@ -1071,7 +1098,7 @@ nav a:hover::after, nav a:focus::after {
 
 /* line 3, ../scss/modules/_icons.scss */
 .icon--nav-toggle, .icon--close {
-  line-height: 0;
+  line-height: 1em;
   cursor: pointer;
 }
 
@@ -1196,13 +1223,14 @@ nav a:hover::after, nav a:focus::after {
   transform: scaleY(0.618) translateX(0);
 }
 
-/* line 7, ../scss/modules/_portfolio.scss */
+/* line 8, ../scss/modules/_portfolio.scss */
 .portfolio-grid {
   display: block;
+  background: #05508d;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 300;
 }
-/* line 12, ../scss/modules/_portfolio.scss */
+/* line 14, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure {
   position: relative;
   z-index: 1;
@@ -1210,49 +1238,40 @@ nav a:hover::after, nav a:focus::after {
   width: 33.33333%;
   float: left;
   height: 400px;
-  background: #05508d;
   cursor: pointer;
 }
-/* line 20, ../scss/modules/_portfolio.scss */
+/* line 21, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure img {
   position: relative;
   display: block;
   min-height: 100%;
-  min-width: 33.33333%;
-  opacity: 0.8;
+  min-width: 100%;
 }
 /* line 27, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure figcaption {
-  margin-left: 16.66667%;
-  margin-right: 16.66667%;
-  color: #ffffff;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
+  width: 83.33333%;
   position: absolute;
-  top: 0;
-  left: 0;
   text-transform: uppercase;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 36, ../scss/modules/_portfolio.scss */
+/* line 34, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure figcaption::before, .portfolio-grid figure figcaption::after {
   pointer-events: none;
 }
-/* line 39, ../scss/modules/_portfolio.scss */
+/* line 37, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure figcaption h3 {
   font-size: 2em;
-  color: #ffffff;
 }
-/* line 42, ../scss/modules/_portfolio.scss */
+/* line 39, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure figcaption h3 span {
   font-weight: 800;
   margin-left: -.25em;
 }
-/* line 47, ../scss/modules/_portfolio.scss */
-.portfolio-grid figure figcaption p {
-  color: #ffffff;
-}
-/* line 51, ../scss/modules/_portfolio.scss */
+/* line 45, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure a {
   z-index: 1000;
   text-indent: 200%;
@@ -1265,9 +1284,9 @@ nav a:hover::after, nav a:focus::after {
 /*---------------*/
 /***** Lily *****/
 /*---------------*/
-/* line 68, ../scss/modules/_portfolio.scss */
+/* line 62, ../scss/modules/_portfolio.scss */
 .effect-lily img {
-  max-width: none;
+  max-width: 110%;
   width: calc(100% + 50px);
   -moz-transition: opacity 0.35s, -moz-transform 0.35s;
   -o-transition: opacity 0.35s, -o-transform 0.35s;
@@ -1277,13 +1296,15 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(-40px, 0, 0);
   transform: translate3d(-40px, 0, 0);
 }
-/* line 74, ../scss/modules/_portfolio.scss */
+/* line 68, ../scss/modules/_portfolio.scss */
 .effect-lily figcaption {
   text-align: left;
-  height: 100%;
   color: #ffffff;
+  bottom: 0;
+  left: 0;
+  height: 35%;
 }
-/* line 78, ../scss/modules/_portfolio.scss */
+/* line 74, ../scss/modules/_portfolio.scss */
 .effect-lily figcaption h3, .effect-lily figcaption p {
   -moz-transform: translate3d(0, 40px, 0);
   -webkit-transform: translate3d(0, 40px, 0);
@@ -1294,13 +1315,69 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transition-delay: 0s, 0.05s;
   transition: opacity 0.4s, transform 0.35s ease 0.05s;
 }
-/* line 82, ../scss/modules/_portfolio.scss */
+/* line 78, ../scss/modules/_portfolio.scss */
 .effect-lily figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 87, ../scss/modules/_portfolio.scss */
+/* line 83, ../scss/modules/_portfolio.scss */
 .effect-lily:hover img, .effect-lily:hover h3, .effect-lily:hover p {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 94, ../scss/modules/_portfolio.scss */
+.effect-sadie img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 98, ../scss/modules/_portfolio.scss */
+.effect-sadie figcaption {
+  width: 100%;
+  color: #435a6b;
+  text-align: center;
+  bottom: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-size: cover;
+}
+/* line 105, ../scss/modules/_portfolio.scss */
+.effect-sadie figcaption p {
+  color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20%;
+}
+/* line 112, ../scss/modules/_portfolio.scss */
+.effect-sadie:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZTZmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6f2), color-stop(100%, #0d0d0d));
+  background-image: -moz-linear-gradient(#e6e6f2, #0d0d0d);
+  background-image: -webkit-linear-gradient(#e6e6f2, #0d0d0d);
+  background-image: linear-gradient(#e6e6f2, #0d0d0d);
+}
+/* line 114, ../scss/modules/_portfolio.scss */
+.effect-sadie:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 117, ../scss/modules/_portfolio.scss */
+.effect-sadie:hover figcaption {
+  color: #ffffff;
+  bottom: 5%;
+}
+/* line 120, ../scss/modules/_portfolio.scss */
+.effect-sadie:hover figcaption::before, .effect-sadie:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   -moz-transform: translate3d(0, 0, 0);
@@ -1312,18 +1389,18 @@ nav a:hover::after, nav a:focus::after {
 Media Queries
 */
 @media screen and (max-width: 69.5em) {
-  /* line 99, ../scss/modules/_portfolio.scss */
+  /* line 148, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure {
     width: 50%;
   }
 
-  /* line 103, ../scss/modules/_portfolio.scss */
+  /* line 152, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure figcaption {
     font-size: 90%;
   }
 }
 @media screen and (max-width: 41.5em) {
-  /* line 111, ../scss/modules/_portfolio.scss */
+  /* line 160, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure {
     width: 100%;
   }
@@ -1546,4 +1623,20 @@ Media Queries
   -webkit-filter: blur(4px);
   filter: blur(4px);
   width: 100%;
+}
+
+/* line 53, ../scss/modules/_forms.scss */
+input[type="text"],
+input[type="select"],
+select,
+input[type="email"],
+input[type="password"] {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: #435a6b;
+  line-height: 1.8em;
+  font-size: 1em;
+  display: block;
+  margin: .5em 0;
+  padding: .125em;
+  width: 16.66667%;
 }

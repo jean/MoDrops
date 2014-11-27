@@ -1,0 +1,71 @@
+header {
+  box-sizing: border-box;
+  font-weight: $font-weight--normal;
+  font-family: $font-stack--sans;
+  margin: 0 auto;
+  text-align: center;
+  background: $header-bg;
+  @include mq(small) {
+    width: 100%;
+    position: fixed;
+    height: 4em;
+  }
+}
+
+.site-logo {
+  margin: 2em auto;
+  @include img-replace("silencekillsdesignlogoOL.svg", 80px, 144px, inline-block);
+  @include mq(small) {
+    margin: 0;
+    top: -36px;
+    left: -9px;
+    position: relative;
+    @include scale(.3);
+    float: left;
+  }
+}
+
+
+nav {
+  display: block;
+  background: $nav-bg-color;
+  margin: 1em auto;
+  padding: $less-padding;
+  text-align: $nav-align;  
+  & a {
+    color: $nav-link-color;
+    font-weight: $font-weight--bold;
+    position: relative;
+    display: inline-block;
+    margin: .875em 2em;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;    
+    font-size: 1.125em;
+    & span {
+      color: $nav-link-color;
+    }
+    &::before, &::after {
+      color: $link-styling-color;
+    }
+    &:hover, &:focus {
+      color: $nav-link-selected;
+      &::before, &::after {
+        color: $link-styling-selected;
+      }
+    }
+  }
+  //  @extend %brackets-nav;
+
+  //  @extend %faint-underline-nav;
+  //  @extend %bold-underline-nav
+  //  @extend %bold-underline-navdiet;
+  //// FIX THIS  @extend %wordslide-nav;
+  @extend %lframe-nav;
+  
+  @include mq(small) {
+    position: fixed;
+    top: 0;
+    height: 11em;
+  }
+}

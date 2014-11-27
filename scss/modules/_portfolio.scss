@@ -1,12 +1,14 @@
 $porfolio-background: $sk-blue;
-$figcaption-color: $white;
-$figcaption-color--h: $white;
-$figcaption-color--p: $white;
+$figcaption-color: $copy;
+$figcaption-color--hover: $white;
+$figcaption-color--h: $copy;
+$figcaption-color--p: $copy;
 
 
 .portfolio-grid {
   @include layout(full no-gutters nest);
   display: block;
+  background: darken($porfolio-background, 20);
   font-family: $font-stack--display;
   font-weight: $font-weight--light;
   figure {
@@ -15,22 +17,18 @@ $figcaption-color--p: $white;
     overflow: hidden;
     @include span(4 of 12 no-gutters);
     height: 400px;
-    background: darken($porfolio-background, 20);
     cursor: pointer;
     img {
       position: relative;
       display: block;
       min-height: 100%;
-      min-width: span(4);
-      opacity: 0.8;
+      min-width: 100%;
     }
     figcaption {
-      margin-left: span(2 of 12);
-      margin-right: span(2 of 12);
-      color: $figcaption-color;      
+      margin-left: span(1 of 12);
+      margin-right: span(1 of 12);
+      width: span(10 at 1);   
       position: absolute;
-      top: 0;
-      left: 0;   
       text-transform: uppercase;
       @include backface-visibility(hidden);
       &::before, &::after {
@@ -38,14 +36,10 @@ $figcaption-color--p: $white;
       }
       & h3 {
         font-size: 2em;
-        color: $figcaption-color--h;
         span {
           font-weight: 800;
           margin-left: -.25em;
         }
-      }
-      & p {
-        color: $figcaption-color--p;
       }
     }
     a {
@@ -66,15 +60,17 @@ $figcaption-color--p: $white;
 
 .effect-lily {
   img {
-    max-width: none;
+    max-width: 110%;
     width: calc(100% + 50px);
     @include transition(opacity 0.35s, transform .35s);
     @include translate3d(-40px,0,0);
   }
   figcaption {
     text-align: left;
-    height: 100%;
     color: $white;
+    bottom: 0;
+    left: 0;
+    height: 35%;
     h3, p {
       @include translate3d(0,40px,0);
       @include transition(opacity 0.4s, transform .35s ease .05s);
@@ -90,6 +86,59 @@ $figcaption-color--p: $white;
     }
   }
 }
+
+///*---------------*/
+///***** Sadie *****/
+///*---------------*/
+.effect-sadie {
+  img {
+    @include opacity(0.8);
+    @extend %center-hv;
+  }
+  figcaption {
+    width: 100%;
+    color: $figcaption-color;
+    text-align: center;
+    bottom: 0;
+    @include transition;    
+    background-size: cover;
+    p {
+      color: $figcaption-color--hover;
+      @include transparent;
+      @include transition;
+      margin-top: 20%;
+    }
+  }  
+  &:hover {
+    @include background-image(linear-gradient($sk-light-gray, $black));
+    img {
+      @include opacity(0.4);
+    }
+    figcaption {
+      color: $figcaption-color--hover;
+      bottom: 5%;
+      &::before, & p {
+        @include opaque;
+        @include translate3d(0, 0, 0);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 Media Queries
