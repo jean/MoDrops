@@ -1,45 +1,62 @@
-$porfolio-background: $sk-blue;
-$figcaption-color: $copy;
+$portfolio-background: $sk-blue;
+$figcaption-color: $white;
 $figcaption-color--hover: $white;
-$figcaption-color--h: $copy;
-$figcaption-color--p: $copy;
+$figcaption-color--h: $white;
+$figcaption-color--p: $white;
+
+$default-transition-duration : .35s;
 
 
 .portfolio-grid {
-  @include layout(full no-gutters nest);
-  display: block;
-  background: darken($porfolio-background, 20);
   font-family: $font-stack--display;
   font-weight: $font-weight--light;
   figure {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+    background-color: $portfolio-background;
     @include span(4 of 12 no-gutters);
     height: 400px;
-    cursor: pointer;
+    position: relative;
+    overflow: hidden;    
+    cursor: pointer;    
+    @include transition;
     img {
-      position: relative;
-      display: block;
       min-height: 100%;
       min-width: 100%;
+      max-width: 120%;
+      position: relative;
+      display: block;
+      @include transition;
     }
-    figcaption {
-      margin-left: span(1 of 12);
-      margin-right: span(1 of 12);
-      width: span(10 at 1);   
+    figcaption { 
+      margin-left: span(span 1 of 12);
+      margin-right: span(span 1 of 12);
+      width: span(10 of 12);
+      margin-top: 8%;
+      margin-bottom: 8%;
       position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: $figcaption-color;
       text-transform: uppercase;
       @include backface-visibility(hidden);
       &::before, &::after {
         pointer-events: none;
       }
-      & h3 {
+      h3 {        
         font-size: 2em;
-        span {
-          font-weight: 800;
+        font-weight: 300;
+        @include transition;
+        strong {
+          font-weight: 700;
           margin-left: -.25em;
         }
+      }
+      p {
+        font-weight: 300;
+        line-height: 1.2;
+        @include transition;
+        font-size: 95%;
       }
     }
     a {
@@ -54,11 +71,8 @@ $figcaption-color--p: $copy;
 
 /* Individual effects */
 
-/*---------------*/
-/***** Lily *****/
-/*---------------*/
-
-.effect-lily {
+///***** Lily *****////
+.sassy-lily {
   img {
     max-width: 110%;
     width: calc(100% + 50px);
@@ -87,21 +101,19 @@ $figcaption-color--p: $copy;
   }
 }
 
-///*---------------*/
-///***** Sadie *****/
-///*---------------*/
-.effect-sadie {
+
+///***** Sadie *****////
+.sassy-sadie {
+  @include background-image(linear-gradient($black, $sk-light-gray));
   img {
     @include opacity(0.8);
     @extend %center-hv;
   }
   figcaption {
-    width: 100%;
-    color: $figcaption-color;
+    color: $copy;
     text-align: center;
-    bottom: 0;
+    bottom: -1em;
     @include transition;    
-    background-size: cover;
     p {
       color: $figcaption-color--hover;
       @include transparent;
@@ -125,10 +137,144 @@ $figcaption-color--p: $copy;
   }
 }
 
+///***** Sarah *****////
+.sassy-sarah {
+  img {
+    @include opacity(0.8);
+  }
+  figcaption {
+    @include transition;
+    color: $white;
+    h3 {
+      margin-bottom: .5em;
+      &::after {
+        height: .125em;
+        display: block;
+        left: 0;
+        width: 0%;
+        background-color: #fff;
+        position: absolute;
+        content: '';
+        margin-top: .25em;
+        @include opacity(.5);
+        @include transition;
+      }
+    }
+    p {
+      @include translate(125%, 0);
+      @include transparent;
+      @include transition(all .25s ease-out);
+    }
+  }
+  &:hover {
+    img {
+      @include opacity(0.4);
+    }
+    figcaption {
+      h3 {
+        &::after {
+          width: 100%;
+          @include opaque;
+        }
+      }
+      p {
+        @include translate(0, 0);
+        @include opaque;
+      }
+    }
+  }
+}
 
+///***** Roxy *****////
+.sassy-roxy {
+  background: linear-gradient(45deg,#ff89e9 0,#05abe0 100%);
+  img {
+    width: calc(100% + 60px);
+    @include translate3d(-50px,0,0);
+  }
+  figcaption{
+    h3 {
+      margin-top: 25%;
+      margin-left: 7%;
+    }
+    p {
+      margin-left: 7%;
+      margin-right: 7%;
+      margin-bottom: 5%;
+      @include transparent;
+      @include translate3d(-1em,0,0);
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid #fff;
+      content: '';
+      opacity: 0;
+      @include translate3d(-20px,0,0);
+      @include transition;
+    }
+  }
+  &:hover {
+    img {
+      opacity: .7;
+      @include translate3d(0,0,0);
+    }
+    figcaption {
+      &::before, p {
+        @include opaque;
+        @include translate3d(0,0,0);
+      }    
+    }
+  }
+}
 
-
-
+///***** Chico *****////
+.sassy-chico {
+  img {
+    @include scale(1.125);
+  }
+  figcaption{
+    text-align: center;
+    h3 {
+      margin-top: 20%;
+    }
+    p {
+      margin-left: 22%;
+      margin-right: 22%;
+      margin-bottom: 5%;
+      margin-top: 2em;
+      @include transparent;
+      @include scale(1.25);
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid #fff;
+      content: '';
+      @include transparent;
+      @include transition;
+      @include scale(1.25);
+    }
+  }
+  &:hover {
+    img {
+      @include opacity(.5);
+      @include scale(1);
+    }
+    figcaption {
+      &::before, p {
+        @include opaque;
+        @include scale(1);
+      }    
+    }
+  }
+}
 
 
 
