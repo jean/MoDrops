@@ -51,17 +51,8 @@ h4 {
 }
 
 p {
-  font-family: $font-stack--sans;
-  font-size: $base__font-size;
   line-height: 1.65;
 }
-  .body-copy {
-    font-weight: $font-weight--light;
-    font-family: $font-stack--serif;
-    color: $copy;
-    letter-spacing: .03em;
-    font-style: italic;
-  }
 
 button {
   //make a BEM mixin to include here

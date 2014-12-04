@@ -1,4 +1,4 @@
-$portfolio-background: $sk-blue;
+$portfolio-background: $black;
 $figcaption-color: $white;
 $figcaption-color--hover: $white;
 $figcaption-color--h: $white;
@@ -74,28 +74,31 @@ $default-transition-duration : .35s;
 ///***** Lily *****////
 .sassy-lily {
   img {
-    max-width: 110%;
+    max-width: none;
     width: calc(100% + 50px);
-    @include transition(opacity 0.35s, transform .35s);
-    @include translate3d(-40px,0,0);
+    opacity: .7;
+    @include translate3d(-2.5em,0,0);
   }
   figcaption {
     text-align: left;
-    color: $white;
-    bottom: 0;
+    position: absolute;
+    bottom: 2%;
     left: 0;
-    height: 35%;
-    h3, p {
-      @include translate3d(0,40px,0);
-      @include transition(opacity 0.4s, transform .35s ease .05s);
+    width: 100%;
+    height: 50%;
+    h3 {
+      @include translate3d(0,2.25em,0);
     }
     p {
-      @include transparent;
+      margin-top: .25em;
+      @include translate3d(0,2.25em,0);
+      opacity: 0;
+      @include transition(all .35s ease .15s);
     }
   }
   &:hover {
     img, h3, p {
-      @include opaque;
+      opacity: 1;
       @include translate3d(0,0,0);
     }
   }
@@ -155,7 +158,7 @@ $default-transition-duration : .35s;
         background-color: #fff;
         position: absolute;
         content: '';
-        margin-top: .25em;
+        margin-top: .125em;
         @include opacity(.5);
         @include transition;
       }
@@ -276,8 +279,140 @@ $default-transition-duration : .35s;
   }
 }
 
+///***** Dexter *****////
+$curious-blue: rgba(37,141,200,1);
+$sepia: rgba(104,60,19,1);
 
+.sassy-dexter {
+  @include background-image(linear-gradient($curious-blue, $sepia));
+  h3 {
+    margin-top: 11%;
+    margin-left: 7%;
+  }
+  p {
+    position: absolute;
+    bottom: 2em;
+    margin: 0 7%;
+    opacity: 0;
+    @include translate3d(0,-100px,0);
+  }
+  figcaption::after {
+    position: absolute;
+    bottom: 3em;
+    height: calc(50% - 2em);
+    width: 100%;
+    border: 7px solid $white;
+    content: '';
+    @include transition;
+    @include translate3d(0,-100%,0);
+  }
+  &:hover {
+    img {
+      opacity: 0.4;
+    }
+    p {
+      @include opaque;
+      @include translate3d(0,40%,0);
+    }
+    figcaption::after {
+      @include translate3d(0,30%,0);
+      bottom: 2em;
+    }
+  }
+}
 
+///***** Ruby *****////
+.sassy-ruby {
+  img {
+    opacity: 0.7;
+    @include scale(1.25);
+  }
+  figcaption{
+    text-align: center;
+    h3 {
+      margin-top: 20%;
+      @include translate3d(0, 1.125em, 0);
+    }
+    p {
+      margin-bottom: 5%;
+      margin-top: 2em;
+      padding: 3em;
+      border:1px solid white;
+      @include transparent;
+      @include transform(translate3d(0,1.125em,0) scale(1.1));
+    }
+  }
+  &:hover {
+    img {
+      @include opacity(.5);
+      @include scale(1);
+    }
+    figcaption {
+      h3 {
+        @include translate3d(0, 0, 0);
+      }
+      p {
+        @include opaque;
+        @include transform(translate3d(0,0,0) scale(1));
+      }
+    }
+  }
+}
+
+///***** Ming *****////
+.sassy-ming {
+  img {
+    @include scale(1.05);
+    opacity: .9;
+  }
+  figcaption{
+    text-align: center;
+    h3 {
+      margin-top: 20%;
+      @include scale(1);
+    }
+    p {
+      margin-left: 22%;
+      margin-right: 22%;
+      margin-bottom: 5%;
+      margin-top: 2em;
+      @include transparent;
+      @include scale(1.5);
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #fff;
+      content: '';
+      @include transparent;
+      @include transition;
+      @include scale3d(1.4,1.4,1);
+//      @include single-box-shadow(0, 0, 0, 5em, $haze);      
+    }
+  }
+  &:hover {
+    background-color: $sk-light-gray;
+    img {
+      @include opacity(.4);
+      @include scale(1);
+    }
+    figcaption {
+      h3 {
+        @include scale(.9);
+      }
+      &::before, p {
+        @include opaque;
+        @include scale(1);        
+      }
+      &::before {
+        background-color: rgba($black, 0.8);
+      }
+    }
+  }
+}
 
 
 
@@ -300,11 +435,10 @@ Media Queries
   }
 }
 
-
 @media screen and (max-width: 41.5em) {
-
   .portfolio-grid figure {
     width: 100%;
+    height: 350px;
   }
 }
 
