@@ -1,34 +1,83 @@
-// Icons
 
+
+@include font-face("SilenceKillsDesign-Icons", font-files("SilenceKillsDesign-Icons.eot", "SilenceKillsDesign-Icons.woff", "SilenceKillsDesign-Icons.ttf",  "SilenceKillsDesign-Icons.svg"));
+
+$icon-names: 
+  (SKD '/e000') 
+  (home '/e001')
+  (quill '/e002')
+  (droplet '/e003')
+  (image '/e004')
+  (camera '/e004')
+  (music '/e006')
+  (headphones '/e007')
+  (play '/e009')
+  ;
+
+%ico-font-base {
+  font-family: 'SilenceKillsDesign-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 %icn--ui {
   line-height: 1em;
   cursor: pointer;
 }
 
-// UI
-
-.icon {
-
-  // Nav Toggle
-  @include m(nav-toggle) {
-    @extend %icn--ui;
-    width: 25px;
-    height: 17px;
-    border-top: solid 3px palette(grey);
-    border-bottom: solid 3px palette(grey);
-    position: relative;
-    @include p-el(before, 25px, 3px) {
-      background: palette(grey, light);
-      top: 4px;
-    }
-  }
-
-  // Close
-  @include m(close) {
-    @extend %icn--ui;
-    @include img-replace("icn-close.svg", 20px, 20px); 
-    position: absolute;
-    right: 4%;
-    top: 4%;
+@each $name, $pua in $icon-names {
+  .icon-#{$name}:after {
+    @extend %ico-font-base;
+    content: $pua;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// UI
+
+//.icon {
+//
+//  // Nav Toggle
+//  @include m(nav-toggle) {
+//    @extend %icn--ui;
+//    width: 25px;
+//    height: 17px;
+//    border-top: solid 3px palette(grey);
+//    border-bottom: solid 3px palette(grey);
+//    position: relative;
+//    @include p-el(before, 25px, 3px) {
+//      background: palette(grey, light);
+//      top: 4px;
+//    }
+//  }
+//
+//  // Close
+//  @include m(close) {
+//    @extend %icn--ui;
+//    @include img-replace("icn-close.svg", 20px, 20px); 
+//    position: absolute;
+//    right: 4%;
+//    top: 4%;
+//  }
+//}
+
+
