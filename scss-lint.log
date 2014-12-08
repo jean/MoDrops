@@ -25,20 +25,20 @@
       "reason": "Properties should be ordered background-color, cursor, height, overflow, position"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 22,
-      "column": 7,
-      "length": 16,
-      "severity": "warning",
-      "reason": "Properties should be ordered display, max-width, min-height, min-width, position"
-    },
-    {
       "linter": "DeclarationOrder",
       "line": 22,
       "column": 7,
       "length": 16,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 22,
+      "column": 7,
+      "length": 16,
+      "severity": "warning",
+      "reason": "Properties should be ordered display, max-width, min-height, min-width, position"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -49,20 +49,20 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 30,
-      "column": 7,
-      "length": 31,
-      "severity": "warning",
-      "reason": "Properties should be ordered bottom, color, left, margin-bottom, margin-left, margin-right, margin-top, position, right, text-transform, top, width"
-    },
-    {
       "linter": "DeclarationOrder",
       "line": 30,
       "column": 7,
       "length": 31,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 30,
+      "column": 7,
+      "length": 31,
+      "severity": "warning",
+      "reason": "Properties should be ordered bottom, color, left, margin-bottom, margin-left, margin-right, margin-top, position, right, text-transform, top, width"
     },
     {
       "linter": "SingleLinePerSelector",
@@ -417,6 +417,14 @@
       "reason": "Properties should be ordered bottom, color"
     },
     {
+      "linter": "SingleLinePerSelector",
+      "line": 135,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
       "linter": "EmptyLineBetweenBlocks",
       "line": 135,
       "column": 1,
@@ -431,14 +439,6 @@
       "length": 1,
       "severity": "warning",
       "reason": "Unnecessary parent selector (&)"
-    },
-    {
-      "linter": "SingleLinePerSelector",
-      "line": 135,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Each selector in a comma sequence should be on its own line"
     },
     {
       "linter": "NestingDepth",
@@ -689,20 +689,20 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "DeclarationOrder",
-      "line": 211,
-      "column": 7,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
       "linter": "PropertySortOrder",
       "line": 211,
       "column": 7,
       "length": 18,
       "severity": "warning",
       "reason": "Properties should be ordered border, bottom, content, left, opacity, position, right, top"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 211,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
       "linter": "SpaceAfterComma",
@@ -825,20 +825,20 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 248,
-      "column": 7,
-      "length": 16,
-      "severity": "warning",
-      "reason": "Properties should be ordered margin-bottom, margin-left, margin-right, margin-top"
-    },
-    {
       "linter": "DeclarationOrder",
       "line": 248,
       "column": 7,
       "length": 16,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 248,
+      "column": 7,
+      "length": 16,
+      "severity": "warning",
+      "reason": "Properties should be ordered margin-bottom, margin-left, margin-right, margin-top"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -849,20 +849,20 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 256,
-      "column": 7,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Properties should be ordered border, bottom, content, left, position, right, top"
-    },
-    {
       "linter": "DeclarationOrder",
       "line": 256,
       "column": 7,
       "length": 18,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 256,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Properties should be ordered border, bottom, content, left, position, right, top"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -1153,20 +1153,20 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "DeclarationOrder",
-      "line": 337,
-      "column": 7,
-      "length": 17,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
       "linter": "PropertySortOrder",
       "line": 337,
       "column": 7,
       "length": 17,
       "severity": "warning",
       "reason": "Properties should be ordered border, margin-bottom, margin-top, padding"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 337,
+      "column": 7,
+      "length": 17,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
       "linter": "SpaceAfterPropertyColon",
@@ -1297,20 +1297,20 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 375,
-      "column": 7,
-      "length": 16,
-      "severity": "warning",
-      "reason": "Properties should be ordered margin-bottom, margin-left, margin-right, margin-top"
-    },
-    {
       "linter": "DeclarationOrder",
       "line": 375,
       "column": 7,
       "length": 16,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 375,
+      "column": 7,
+      "length": 16,
+      "severity": "warning",
+      "reason": "Properties should be ordered margin-bottom, margin-left, margin-right, margin-top"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -1433,184 +1433,8 @@
       "reason": "`0.8` should be written without a leading zero as `.8`"
     },
     {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 422,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SpaceBeforeBrace",
-      "line": 423,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Opening curly brace `{` should be preceded by one space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 425,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be preceded by an empty line"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 426,
-      "column": 24,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "LeadingZero",
-      "line": 426,
-      "column": 24,
-      "length": 3,
-      "severity": "warning",
-      "reason": "`0.8` should be written without a leading zero as `.8`"
-    },
-    {
-      "linter": "LeadingZero",
-      "line": 426,
-      "column": 28,
-      "length": 3,
-      "severity": "warning",
-      "reason": "`0.8` should be written without a leading zero as `.8`"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 426,
-      "column": 28,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 429,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "PropertySortOrder",
-      "line": 431,
-      "column": 7,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Properties should be ordered border, bottom, font-size, left, margin-left, opacity, padding, position, right, text-transform"
-    },
-    {
-      "linter": "DeclarationOrder",
-      "line": 431,
-      "column": 7,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
-      "linter": "LeadingZero",
-      "line": 442,
-      "column": 24,
-      "length": 3,
-      "severity": "warning",
-      "reason": "`0.8` should be written without a leading zero as `.8`"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 442,
-      "column": 24,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 442,
-      "column": 28,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "LeadingZero",
-      "line": 442,
-      "column": 28,
-      "length": 3,
-      "severity": "warning",
-      "reason": "`0.8` should be written without a leading zero as `.8`"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 446,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 450,
-      "column": 24,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 450,
-      "column": 26,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 451,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SingleLinePerSelector",
-      "line": 453,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Each selector in a comma sequence should be on its own line"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 453,
-      "column": 7,
-      "length": 6,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 455,
-      "column": 26,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 455,
-      "column": 28,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
       "linter": "Comment",
-      "line": 467,
+      "line": 424,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1618,7 +1442,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 483,
+      "line": 440,
       "column": 5,
       "length": 11,
       "severity": "warning",
