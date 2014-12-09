@@ -4,16 +4,18 @@
 }
 
 body {
-  @include container;
+  @include container();
   font-size: $base__font-size;
   font-family: $font-stack--sans;
   color: $copy;
 }
 
-section {
-  @include layout(full nest);
+section {  
   @extend %clearfix;
   display: block;
+  .full {
+    @include layout(full nest);
+  }
 }
 
 .inner {

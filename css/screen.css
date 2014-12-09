@@ -68,13 +68,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 2, ../scss/utilities/_helpers.scss */
-.icon--nav-toggle:before {
-  display: block;
-  content: '';
-  position: absolute;
-}
-
 /* line 10, ../scss/utilities/_helpers.scss */
 section:after {
   content: "";
@@ -127,25 +120,25 @@ section {
   display: block;
 }
 
-/* line 19, ../scss/base/_base.scss */
+/* line 21, ../scss/base/_base.scss */
 .inner {
   margin-left: 16.66667%;
   margin-right: 16.66667%;
 }
 
-/* line 24, ../scss/base/_base.scss */
+/* line 26, ../scss/base/_base.scss */
 .padded {
   padding: 3em 0;
 }
 
-/* line 28, ../scss/base/_base.scss */
+/* line 30, ../scss/base/_base.scss */
 a {
   font-weight: 400;
   text-decoration: none;
   outline: none;
 }
 
-/* line 40, ../scss/base/_base.scss */
+/* line 42, ../scss/base/_base.scss */
 h3 {
   font-weight: 300;
   font-size: em(30px);
@@ -153,7 +146,7 @@ h3 {
   margin-bottom: em(70px, 42px);
 }
 
-/* line 46, ../scss/base/_base.scss */
+/* line 48, ../scss/base/_base.scss */
 h4 {
   font-weight: 300;
   font-size: em(24px);
@@ -161,7 +154,7 @@ h4 {
   margin-bottom: em(70px, 42px);
 }
 
-/* line 53, ../scss/base/_base.scss */
+/* line 55, ../scss/base/_base.scss */
 p {
   line-height: 1.65;
 }
@@ -218,6 +211,539 @@ h2 {
 .body-copy--wide {
   line-height: 2;
   word-spacing: .125em;
+}
+
+@font-face {
+  font-family: "SilenceKillsDesign-Icons";
+  src: url('../fonts/icons/SilenceKillsDesign-Icons.eot?1417726236') format('embedded-opentype'), url('../fonts/icons/SilenceKillsDesign-Icons.svg?1417726236') format('svg'), url('../fonts/icons/SilenceKillsDesign-Icons.ttf?1417726236') format('truetype'), url('../fonts/icons/SilenceKillsDesign-Icons.woff?1417726236') format('woff');
+}
+/* line 3, ../scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'SilenceKillsDesign-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 17, ../scss/modules/_icons.scss */
+.icon-SKD:before {
+  content: "\e000";
+}
+
+/* line 20, ../scss/modules/_icons.scss */
+.icon-home:before {
+  content: "\e001";
+}
+
+/* line 23, ../scss/modules/_icons.scss */
+.icon-quill:before {
+  content: "\e002";
+}
+
+/* line 26, ../scss/modules/_icons.scss */
+.icon-droplet:before {
+  content: "\e003";
+}
+
+/* line 29, ../scss/modules/_icons.scss */
+.icon-image:before {
+  content: "\e004";
+}
+
+/* line 32, ../scss/modules/_icons.scss */
+.icon-camera:before {
+  content: "\e005";
+}
+
+/* line 35, ../scss/modules/_icons.scss */
+.icon-music:before {
+  content: "\e006";
+}
+
+/* line 38, ../scss/modules/_icons.scss */
+.icon-headphones:before {
+  content: "\e007";
+}
+
+/* line 41, ../scss/modules/_icons.scss */
+.icon-play:before {
+  content: "\e008";
+}
+
+/* line 44, ../scss/modules/_icons.scss */
+.icon-pacman:before {
+  content: "\e009";
+}
+
+/* line 47, ../scss/modules/_icons.scss */
+.icon-bullhorn:before {
+  content: "\e00a";
+}
+
+/* line 50, ../scss/modules/_icons.scss */
+.icon-file:before {
+  content: "\e00b";
+}
+
+/* line 53, ../scss/modules/_icons.scss */
+.icon-copy:before {
+  content: "\e00c";
+}
+
+/* line 56, ../scss/modules/_icons.scss */
+.icon-copy2:before {
+  content: "\e00d";
+}
+
+/* line 59, ../scss/modules/_icons.scss */
+.icon-folder-open:before {
+  content: "\e00e";
+}
+
+/* line 62, ../scss/modules/_icons.scss */
+.icon-barcode:before {
+  content: "\e00f";
+}
+
+/* line 65, ../scss/modules/_icons.scss */
+.icon-cart:before {
+  content: "\e010";
+}
+
+/* line 68, ../scss/modules/_icons.scss */
+.icon-phone:before {
+  content: "\e011";
+}
+
+/* line 71, ../scss/modules/_icons.scss */
+.icon-alarm:before {
+  content: "\e012";
+}
+
+/* line 74, ../scss/modules/_icons.scss */
+.icon-calendar:before {
+  content: "\e013";
+}
+
+/* line 77, ../scss/modules/_icons.scss */
+.icon-screen:before {
+  content: "\e014";
+}
+
+/* line 80, ../scss/modules/_icons.scss */
+.icon-mobile:before {
+  content: "\e015";
+}
+
+/* line 83, ../scss/modules/_icons.scss */
+.icon-tablet:before {
+  content: "\e016";
+}
+
+/* line 86, ../scss/modules/_icons.scss */
+.icon-tv:before {
+  content: "\e017";
+}
+
+/* line 89, ../scss/modules/_icons.scss */
+.icon-box-add:before {
+  content: "\e018";
+}
+
+/* line 92, ../scss/modules/_icons.scss */
+.icon-box-remove:before {
+  content: "\e019";
+}
+
+/* line 95, ../scss/modules/_icons.scss */
+.icon-bubbles:before {
+  content: "\e01a";
+}
+
+/* line 98, ../scss/modules/_icons.scss */
+.icon-bubble:before {
+  content: "\e01b";
+}
+
+/* line 101, ../scss/modules/_icons.scss */
+.icon-quotes-left:before {
+  content: "\e01c";
+}
+
+/* line 104, ../scss/modules/_icons.scss */
+.icon-trophy:before {
+  content: "\e01d";
+}
+
+/* line 107, ../scss/modules/_icons.scss */
+.icon-mug:before {
+  content: "\e01e";
+}
+
+/* line 110, ../scss/modules/_icons.scss */
+.icon-rocket:before {
+  content: "\e01f";
+}
+
+/* line 113, ../scss/modules/_icons.scss */
+.icon-dashboard:before {
+  content: "\e020";
+}
+
+/* line 116, ../scss/modules/_icons.scss */
+.icon-fire:before {
+  content: "\e021";
+}
+
+/* line 119, ../scss/modules/_icons.scss */
+.icon-lightning:before {
+  content: "\e022";
+}
+
+/* line 122, ../scss/modules/_icons.scss */
+.icon-switch:before {
+  content: "\e023";
+}
+
+/* line 125, ../scss/modules/_icons.scss */
+.icon-earth:before {
+  content: "\e024";
+}
+
+/* line 128, ../scss/modules/_icons.scss */
+.icon-link:before {
+  content: "\e025";
+}
+
+/* line 131, ../scss/modules/_icons.scss */
+.icon-flag:before {
+  content: "\e026";
+}
+
+/* line 134, ../scss/modules/_icons.scss */
+.icon-eye:before {
+  content: "\e027";
+}
+
+/* line 137, ../scss/modules/_icons.scss */
+.icon-eye-blocked:before {
+  content: "\e028";
+}
+
+/* line 140, ../scss/modules/_icons.scss */
+.icon-bookmark:before {
+  content: "\e029";
+}
+
+/* line 143, ../scss/modules/_icons.scss */
+.icon-star:before {
+  content: "\e02a";
+}
+
+/* line 146, ../scss/modules/_icons.scss */
+.icon-star2:before {
+  content: "\e02b";
+}
+
+/* line 149, ../scss/modules/_icons.scss */
+.icon-star3:before {
+  content: "\e02c";
+}
+
+/* line 152, ../scss/modules/_icons.scss */
+.icon-heart:before {
+  content: "\e02d";
+}
+
+/* line 155, ../scss/modules/_icons.scss */
+.icon-heart2:before {
+  content: "\e02e";
+}
+
+/* line 158, ../scss/modules/_icons.scss */
+.icon-heart-broken:before {
+  content: "\e02f";
+}
+
+/* line 161, ../scss/modules/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\e030";
+}
+
+/* line 164, ../scss/modules/_icons.scss */
+.icon-thumbs-up2:before {
+  content: "\e031";
+}
+
+/* line 167, ../scss/modules/_icons.scss */
+.icon-smiley:before {
+  content: "\e032";
+}
+
+/* line 170, ../scss/modules/_icons.scss */
+.icon-sad:before {
+  content: "\e033";
+}
+
+/* line 173, ../scss/modules/_icons.scss */
+.icon-grin:before {
+  content: "\e034";
+}
+
+/* line 176, ../scss/modules/_icons.scss */
+.icon-cancel-circle:before {
+  content: "\e035";
+}
+
+/* line 179, ../scss/modules/_icons.scss */
+.icon-checkmark-circle:before {
+  content: "\e036";
+}
+
+/* line 182, ../scss/modules/_icons.scss */
+.icon-close:before {
+  content: "\e037";
+}
+
+/* line 185, ../scss/modules/_icons.scss */
+.icon-checkmark:before {
+  content: "\e038";
+}
+
+/* line 188, ../scss/modules/_icons.scss */
+.icon-play2:before {
+  content: "\e039";
+}
+
+/* line 191, ../scss/modules/_icons.scss */
+.icon-pause:before {
+  content: "\e03a";
+}
+
+/* line 194, ../scss/modules/_icons.scss */
+.icon-stop:before {
+  content: "\e03b";
+}
+
+/* line 197, ../scss/modules/_icons.scss */
+.icon-backward:before {
+  content: "\e03c";
+}
+
+/* line 200, ../scss/modules/_icons.scss */
+.icon-forward:before {
+  content: "\e03d";
+}
+
+/* line 203, ../scss/modules/_icons.scss */
+.icon-previous:before {
+  content: "\e03e";
+}
+
+/* line 206, ../scss/modules/_icons.scss */
+.icon-next:before {
+  content: "\e03f";
+}
+
+/* line 209, ../scss/modules/_icons.scss */
+.icon-volume-high:before {
+  content: "\e040";
+}
+
+/* line 212, ../scss/modules/_icons.scss */
+.icon-volume-medium:before {
+  content: "\e041";
+}
+
+/* line 215, ../scss/modules/_icons.scss */
+.icon-volume-low:before {
+  content: "\e042";
+}
+
+/* line 218, ../scss/modules/_icons.scss */
+.icon-volume-mute:before {
+  content: "\e043";
+}
+
+/* line 221, ../scss/modules/_icons.scss */
+.icon-volume-mute2:before {
+  content: "\e044";
+}
+
+/* line 224, ../scss/modules/_icons.scss */
+.icon-volume-increase:before {
+  content: "\e045";
+}
+
+/* line 227, ../scss/modules/_icons.scss */
+.icon-volume-decrease:before {
+  content: "\e046";
+}
+
+/* line 230, ../scss/modules/_icons.scss */
+.icon-loop:before {
+  content: "\e047";
+}
+
+/* line 233, ../scss/modules/_icons.scss */
+.icon-shuffle:before {
+  content: "\e048";
+}
+
+/* line 236, ../scss/modules/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e049";
+}
+
+/* line 239, ../scss/modules/_icons.scss */
+.icon-checkbox-unchecked:before {
+  content: "\e04a";
+}
+
+/* line 242, ../scss/modules/_icons.scss */
+.icon-checkbox-partial:before {
+  content: "\e04b";
+}
+
+/* line 245, ../scss/modules/_icons.scss */
+.icon-radio-checked:before {
+  content: "\e04c";
+}
+
+/* line 248, ../scss/modules/_icons.scss */
+.icon-radio-unchecked:before {
+  content: "\e04d";
+}
+
+/* line 251, ../scss/modules/_icons.scss */
+.icon-google:before {
+  content: "\e04e";
+}
+
+/* line 254, ../scss/modules/_icons.scss */
+.icon-googleplus:before {
+  content: "\e04f";
+}
+
+/* line 257, ../scss/modules/_icons.scss */
+.icon-google-drive:before {
+  content: "\e050";
+}
+
+/* line 260, ../scss/modules/_icons.scss */
+.icon-facebook:before {
+  content: "\e051";
+}
+
+/* line 263, ../scss/modules/_icons.scss */
+.icon-instagram:before {
+  content: "\e052";
+}
+
+/* line 266, ../scss/modules/_icons.scss */
+.icon-twitter:before {
+  content: "\e053";
+}
+
+/* line 269, ../scss/modules/_icons.scss */
+.icon-feed:before {
+  content: "\e054";
+}
+
+/* line 272, ../scss/modules/_icons.scss */
+.icon-youtube:before {
+  content: "\e055";
+}
+
+/* line 275, ../scss/modules/_icons.scss */
+.icon-vimeo:before {
+  content: "\e056";
+}
+
+/* line 278, ../scss/modules/_icons.scss */
+.icon-flickr:before {
+  content: "\e057";
+}
+
+/* line 281, ../scss/modules/_icons.scss */
+.icon-dribbble:before {
+  content: "\e058";
+}
+
+/* line 284, ../scss/modules/_icons.scss */
+.icon-github:before {
+  content: "\e059";
+}
+
+/* line 287, ../scss/modules/_icons.scss */
+.icon-wordpress:before {
+  content: "\e05a";
+}
+
+/* line 290, ../scss/modules/_icons.scss */
+.icon-tumblr:before {
+  content: "\e05b";
+}
+
+/* line 293, ../scss/modules/_icons.scss */
+.icon-apple:before {
+  content: "\e05c";
+}
+
+/* line 296, ../scss/modules/_icons.scss */
+.icon-android:before {
+  content: "\e05d";
+}
+
+/* line 299, ../scss/modules/_icons.scss */
+.icon-windows8:before {
+  content: "\e05e";
+}
+
+/* line 302, ../scss/modules/_icons.scss */
+.icon-linkedin:before {
+  content: "\e05f";
+}
+
+/* line 305, ../scss/modules/_icons.scss */
+.icon-paypal:before {
+  content: "\e060";
+}
+
+/* line 308, ../scss/modules/_icons.scss */
+.icon-chrome:before {
+  content: "\e061";
+}
+
+/* line 311, ../scss/modules/_icons.scss */
+.icon-firefox:before {
+  content: "\e062";
+}
+
+/* line 314, ../scss/modules/_icons.scss */
+.icon-IE:before {
+  content: "\e063";
+}
+
+/* line 317, ../scss/modules/_icons.scss */
+.icon-bulb:before {
+  content: "\e064";
+}
+
+/* line 320, ../scss/modules/_icons.scss */
+.icon-pen:before {
+  content: "\e065";
+}
+
+/* line 323, ../scss/modules/_icons.scss */
+.icon-diamond:before {
+  content: "\e066";
 }
 
 /* line 1, ../scss/modules/_header.scss */
@@ -372,40 +898,6 @@ background-color: lighten($kabluey, 20);
 }
 }
 */
-/* line 168, ../scss/modules/_nav.scss */
-nav a {
-  margin: 0 10px;
-  padding: 10px 20px;
-}
-/* line 171, ../scss/modules/_nav.scss */
-nav a::before, nav a::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #FAF843;
-  content: '';
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-/* line 181, ../scss/modules/_nav.scss */
-nav a::after {
-  width: 2px;
-}
-/* line 185, ../scss/modules/_nav.scss */
-nav a:hover::before, nav a:focus::before {
-  top: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-/* line 189, ../scss/modules/_nav.scss */
-nav a:hover::after, nav a:focus::after {
-  height: 100%;
-}
-
 /* line 198, ../scss/modules/_nav.scss */
 .sandwich-slide-nav a::before, .sandwich-slide-nav a::after {
   position: absolute;
@@ -1041,7 +1533,7 @@ nav a:hover::after, nav a:focus::after {
 }
 
 /* line 715, ../scss/modules/_nav.scss */
-.sandwich-nav a::before, .sandwich-nav a::after {
+nav a::before, nav a::after {
   position: absolute;
   left: 0;
   width: 100%;
@@ -1060,9 +1552,9 @@ nav a:hover::after, nav a:focus::after {
 }
 
 /* line 727, ../scss/modules/_nav.scss */
-.sandwich-nav a {
+nav a {
   padding: 10px;
-  color: #107360;
+  color: #066cbf;
   font-weight: 700;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -1070,7 +1562,7 @@ nav a:hover::after, nav a:focus::after {
   transition: color 0.5s;
 }
 /* line 732, ../scss/modules/_nav.scss */
-.sandwich-nav a::before {
+nav a::before {
   top: 0;
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
@@ -1078,7 +1570,7 @@ nav a:hover::after, nav a:focus::after {
   transform: translateY(-10px);
 }
 /* line 737, ../scss/modules/_nav.scss */
-.sandwich-nav a::after {
+nav a::after {
   bottom: 0;
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
@@ -1086,11 +1578,11 @@ nav a:hover::after, nav a:focus::after {
   transform: translateY(10px);
 }
 /* line 742, ../scss/modules/_nav.scss */
-.sandwich-nav a:hover, .sandwich-nav a:focus {
+nav a:hover, nav a:focus {
   color: #ffffff;
 }
 /* line 744, ../scss/modules/_nav.scss */
-.sandwich-nav a:hover::before, .sandwich-nav a:hover::after, .sandwich-nav a:focus::before, .sandwich-nav a:focus::after {
+nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after {
   opacity: 1;
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -1177,15 +1669,13 @@ nav a:hover::after, nav a:focus::after {
 }
 /* line 62, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
 }
 
 /* Individual effects */
-/* line 76, ../scss/modules/_portfolio.scss */
+/* line 77, ../scss/modules/_portfolio.scss */
 .sassy-lily img {
   max-width: none;
   width: calc(100% + 50px);
@@ -1194,7 +1684,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(-2.5em, 0, 0);
   transform: translate3d(-2.5em, 0, 0);
 }
-/* line 82, ../scss/modules/_portfolio.scss */
+/* line 83, ../scss/modules/_portfolio.scss */
 .sassy-lily figcaption {
   text-align: left;
   position: absolute;
@@ -1203,13 +1693,13 @@ nav a:hover::after, nav a:focus::after {
   width: 100%;
   height: 50%;
 }
-/* line 89, ../scss/modules/_portfolio.scss */
+/* line 90, ../scss/modules/_portfolio.scss */
 .sassy-lily figcaption h3 {
   -moz-transform: translate3d(0, 2.25em, 0);
   -webkit-transform: translate3d(0, 2.25em, 0);
   transform: translate3d(0, 2.25em, 0);
 }
-/* line 92, ../scss/modules/_portfolio.scss */
+/* line 93, ../scss/modules/_portfolio.scss */
 .sassy-lily figcaption p {
   margin-top: .25em;
   -moz-transform: translate3d(0, 2.25em, 0);
@@ -1222,7 +1712,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transition-delay: 0.15s;
   transition: all 0.35s ease 0.15s;
 }
-/* line 100, ../scss/modules/_portfolio.scss */
+/* line 101, ../scss/modules/_portfolio.scss */
 .sassy-lily:hover img, .sassy-lily:hover h3, .sassy-lily:hover p {
   opacity: 1;
   -moz-transform: translate3d(0, 0, 0);
@@ -1230,7 +1720,7 @@ nav a:hover::after, nav a:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 109, ../scss/modules/_portfolio.scss */
+/* line 110, ../scss/modules/_portfolio.scss */
 .sassy-sadie {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U2ZTZmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -1239,12 +1729,12 @@ nav a:hover::after, nav a:focus::after {
   background-image: -webkit-linear-gradient(#0d0d0d, #e6e6f2);
   background-image: linear-gradient(#0d0d0d, #e6e6f2);
 }
-/* line 111, ../scss/modules/_portfolio.scss */
+/* line 112, ../scss/modules/_portfolio.scss */
 .sassy-sadie img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 115, ../scss/modules/_portfolio.scss */
+/* line 116, ../scss/modules/_portfolio.scss */
 .sassy-sadie figcaption {
   color: #435a6b;
   text-align: center;
@@ -1254,7 +1744,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 120, ../scss/modules/_portfolio.scss */
+/* line 121, ../scss/modules/_portfolio.scss */
 .sassy-sadie figcaption p {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1265,7 +1755,7 @@ nav a:hover::after, nav a:focus::after {
   transition: all 0.35s ease-in-out;
   margin-top: 20%;
 }
-/* line 127, ../scss/modules/_portfolio.scss */
+/* line 128, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZTZmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -1274,17 +1764,17 @@ nav a:hover::after, nav a:focus::after {
   background-image: -webkit-linear-gradient(#e6e6f2, #0d0d0d);
   background-image: linear-gradient(#e6e6f2, #0d0d0d);
 }
-/* line 129, ../scss/modules/_portfolio.scss */
+/* line 130, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 132, ../scss/modules/_portfolio.scss */
+/* line 133, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover figcaption {
   color: #ffffff;
   bottom: 5%;
 }
-/* line 135, ../scss/modules/_portfolio.scss */
+/* line 136, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover figcaption::before, .sassy-sadie:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1293,12 +1783,12 @@ nav a:hover::after, nav a:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 145, ../scss/modules/_portfolio.scss */
+/* line 146, ../scss/modules/_portfolio.scss */
 .sassy-sarah img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 148, ../scss/modules/_portfolio.scss */
+/* line 149, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption {
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -1306,11 +1796,11 @@ nav a:hover::after, nav a:focus::after {
   transition: all 0.35s ease-in-out;
   color: #ffffff;
 }
-/* line 151, ../scss/modules/_portfolio.scss */
+/* line 152, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption h3 {
   margin-bottom: .5em;
 }
-/* line 153, ../scss/modules/_portfolio.scss */
+/* line 154, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption h3::after {
   height: .125em;
   display: block;
@@ -1327,7 +1817,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 166, ../scss/modules/_portfolio.scss */
+/* line 167, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption p {
   -moz-transform: translate(125%, 0);
   -ms-transform: translate(125%, 0);
@@ -1340,18 +1830,18 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 173, ../scss/modules/_portfolio.scss */
+/* line 174, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 178, ../scss/modules/_portfolio.scss */
+/* line 179, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover figcaption h3::after {
   width: 100%;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 183, ../scss/modules/_portfolio.scss */
+/* line 184, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover figcaption p {
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -1361,23 +1851,23 @@ nav a:hover::after, nav a:focus::after {
   opacity: 1;
 }
 
-/* line 192, ../scss/modules/_portfolio.scss */
+/* line 193, ../scss/modules/_portfolio.scss */
 .sassy-roxy {
   background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
 }
-/* line 194, ../scss/modules/_portfolio.scss */
+/* line 195, ../scss/modules/_portfolio.scss */
 .sassy-roxy img {
   width: calc(100% + 60px);
   -moz-transform: translate3d(-50px, 0, 0);
   -webkit-transform: translate3d(-50px, 0, 0);
   transform: translate3d(-50px, 0, 0);
 }
-/* line 199, ../scss/modules/_portfolio.scss */
+/* line 200, ../scss/modules/_portfolio.scss */
 .sassy-roxy figcaption h3 {
   margin-top: 25%;
   margin-left: 7%;
 }
-/* line 203, ../scss/modules/_portfolio.scss */
+/* line 204, ../scss/modules/_portfolio.scss */
 .sassy-roxy figcaption p {
   margin-left: 7%;
   margin-right: 7%;
@@ -1388,7 +1878,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(-1em, 0, 0);
   transform: translate3d(-1em, 0, 0);
 }
-/* line 210, ../scss/modules/_portfolio.scss */
+/* line 211, ../scss/modules/_portfolio.scss */
 .sassy-roxy figcaption::before {
   position: absolute;
   top: 0;
@@ -1406,14 +1896,14 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 224, ../scss/modules/_portfolio.scss */
+/* line 225, ../scss/modules/_portfolio.scss */
 .sassy-roxy:hover img {
   opacity: .7;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 229, ../scss/modules/_portfolio.scss */
+/* line 230, ../scss/modules/_portfolio.scss */
 .sassy-roxy:hover figcaption::before, .sassy-roxy:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1422,22 +1912,22 @@ nav a:hover::after, nav a:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 239, ../scss/modules/_portfolio.scss */
+/* line 240, ../scss/modules/_portfolio.scss */
 .sassy-chico img {
   -moz-transform: scale(1.125, 1.125);
   -ms-transform: scale(1.125, 1.125);
   -webkit-transform: scale(1.125, 1.125);
   transform: scale(1.125, 1.125);
 }
-/* line 242, ../scss/modules/_portfolio.scss */
+/* line 243, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption {
   text-align: center;
 }
-/* line 244, ../scss/modules/_portfolio.scss */
+/* line 245, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption h3 {
   margin-top: 20%;
 }
-/* line 247, ../scss/modules/_portfolio.scss */
+/* line 248, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption p {
   margin-left: 22%;
   margin-right: 22%;
@@ -1450,7 +1940,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 255, ../scss/modules/_portfolio.scss */
+/* line 256, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption::before {
   position: absolute;
   top: 0;
@@ -1470,7 +1960,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 269, ../scss/modules/_portfolio.scss */
+/* line 270, ../scss/modules/_portfolio.scss */
 .sassy-chico:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -1479,7 +1969,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 274, ../scss/modules/_portfolio.scss */
+/* line 275, ../scss/modules/_portfolio.scss */
 .sassy-chico:hover figcaption::before, .sassy-chico:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1489,7 +1979,7 @@ nav a:hover::after, nav a:focus::after {
   transform: scale(1, 1);
 }
 
-/* line 286, ../scss/modules/_portfolio.scss */
+/* line 287, ../scss/modules/_portfolio.scss */
 .sassy-dexter {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI1OGRjOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY4M2MxMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -1498,12 +1988,12 @@ nav a:hover::after, nav a:focus::after {
   background-image: -webkit-linear-gradient(#258dc8, #683c13);
   background-image: linear-gradient(#258dc8, #683c13);
 }
-/* line 288, ../scss/modules/_portfolio.scss */
+/* line 289, ../scss/modules/_portfolio.scss */
 .sassy-dexter h3 {
   margin-top: 11%;
   margin-left: 7%;
 }
-/* line 292, ../scss/modules/_portfolio.scss */
+/* line 293, ../scss/modules/_portfolio.scss */
 .sassy-dexter p {
   position: absolute;
   bottom: 2em;
@@ -1513,7 +2003,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(0, -100px, 0);
   transform: translate3d(0, -100px, 0);
 }
-/* line 299, ../scss/modules/_portfolio.scss */
+/* line 300, ../scss/modules/_portfolio.scss */
 .sassy-dexter figcaption::after {
   position: absolute;
   bottom: 3em;
@@ -1529,11 +2019,11 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
-/* line 310, ../scss/modules/_portfolio.scss */
+/* line 311, ../scss/modules/_portfolio.scss */
 .sassy-dexter:hover img {
   opacity: 0.4;
 }
-/* line 313, ../scss/modules/_portfolio.scss */
+/* line 314, ../scss/modules/_portfolio.scss */
 .sassy-dexter:hover p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1541,7 +2031,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(0, 40%, 0);
   transform: translate3d(0, 40%, 0);
 }
-/* line 317, ../scss/modules/_portfolio.scss */
+/* line 318, ../scss/modules/_portfolio.scss */
 .sassy-dexter:hover figcaption::after {
   -moz-transform: translate3d(0, 30%, 0);
   -webkit-transform: translate3d(0, 30%, 0);
@@ -1549,7 +2039,7 @@ nav a:hover::after, nav a:focus::after {
   bottom: 2em;
 }
 
-/* line 326, ../scss/modules/_portfolio.scss */
+/* line 327, ../scss/modules/_portfolio.scss */
 .sassy-ruby img {
   opacity: 0.7;
   -moz-transform: scale(1.25, 1.25);
@@ -1557,18 +2047,18 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 330, ../scss/modules/_portfolio.scss */
+/* line 331, ../scss/modules/_portfolio.scss */
 .sassy-ruby figcaption {
   text-align: center;
 }
-/* line 332, ../scss/modules/_portfolio.scss */
+/* line 333, ../scss/modules/_portfolio.scss */
 .sassy-ruby figcaption h3 {
   margin-top: 20%;
   -moz-transform: translate3d(0, 1.125em, 0);
   -webkit-transform: translate3d(0, 1.125em, 0);
   transform: translate3d(0, 1.125em, 0);
 }
-/* line 336, ../scss/modules/_portfolio.scss */
+/* line 337, ../scss/modules/_portfolio.scss */
 .sassy-ruby figcaption p {
   margin-bottom: 5%;
   margin-top: 2em;
@@ -1581,7 +2071,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: translate3d(0, 1.125em, 0) scale(1.1);
   transform: translate3d(0, 1.125em, 0) scale(1.1);
 }
-/* line 346, ../scss/modules/_portfolio.scss */
+/* line 347, ../scss/modules/_portfolio.scss */
 .sassy-ruby:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -1590,13 +2080,13 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 351, ../scss/modules/_portfolio.scss */
+/* line 352, ../scss/modules/_portfolio.scss */
 .sassy-ruby:hover figcaption h3 {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 354, ../scss/modules/_portfolio.scss */
+/* line 355, ../scss/modules/_portfolio.scss */
 .sassy-ruby:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1606,7 +2096,7 @@ nav a:hover::after, nav a:focus::after {
   transform: translate3d(0, 0, 0) scale(1);
 }
 
-/* line 364, ../scss/modules/_portfolio.scss */
+/* line 365, ../scss/modules/_portfolio.scss */
 .sassy-ming img {
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
@@ -1614,11 +2104,11 @@ nav a:hover::after, nav a:focus::after {
   transform: scale(1.05, 1.05);
   opacity: .9;
 }
-/* line 368, ../scss/modules/_portfolio.scss */
+/* line 369, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption {
   text-align: center;
 }
-/* line 370, ../scss/modules/_portfolio.scss */
+/* line 371, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption h3 {
   margin-top: 20%;
   -moz-transform: scale(1, 1);
@@ -1626,7 +2116,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 374, ../scss/modules/_portfolio.scss */
+/* line 375, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption p {
   margin-left: 22%;
   margin-right: 22%;
@@ -1639,7 +2129,7 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1.5, 1.5);
   transform: scale(1.5, 1.5);
 }
-/* line 382, ../scss/modules/_portfolio.scss */
+/* line 383, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption::before {
   position: absolute;
   top: 0;
@@ -1658,11 +2148,11 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale3d(1.4, 1.4, 1);
   transform: scale3d(1.4, 1.4, 1);
 }
-/* line 396, ../scss/modules/_portfolio.scss */
+/* line 397, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover {
   background-color: #e6e6f2;
 }
-/* line 398, ../scss/modules/_portfolio.scss */
+/* line 399, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
@@ -1671,14 +2161,14 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 403, ../scss/modules/_portfolio.scss */
+/* line 404, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover figcaption h3 {
   -moz-transform: scale(0.9, 0.9);
   -ms-transform: scale(0.9, 0.9);
   -webkit-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9);
 }
-/* line 406, ../scss/modules/_portfolio.scss */
+/* line 407, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover figcaption::before, .sassy-ming:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1687,65 +2177,107 @@ nav a:hover::after, nav a:focus::after {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 410, ../scss/modules/_portfolio.scss */
+/* line 411, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover figcaption::before {
   background-color: rgba(13, 13, 13, 0.8);
+}
+
+/* line 419, ../scss/modules/_portfolio.scss */
+.sassy-kira {
+  background: #ffffff;
+}
+/* line 421, ../scss/modules/_portfolio.scss */
+.sassy-kira figcaption {
+  z-index: 1;
+}
+/* line 423, ../scss/modules/_portfolio.scss */
+.sassy-kira figcaption ul {
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  border-top: 0.125em solid #ffffff;
+  margin-top: 0;
+  width: 100%;
+  background: #ffffff;
+  height: .125em;
+  list-style: none;
+}
+/* line 431, ../scss/modules/_portfolio.scss */
+.sassy-kira figcaption ul li {
+  font: 1.25em serif;
+  display: inline-block;
+  margin: -1em;
+  -moz-transition: all 0.35s ease 0.3s;
+  -o-transition: all 0.35s ease 0.3s;
+  -webkit-transition: all 0.35s ease;
+  -webkit-transition-delay: 0.3s;
+  transition: all 0.35s ease 0.3s;
+}
+/* line 436, ../scss/modules/_portfolio.scss */
+.sassy-kira figcaption ul li a {
+  font: 1em serif;
+  text-shadow: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.35s ease 0.3s;
+  -o-transition: all 0.35s ease 0.3s;
+  -webkit-transition: all 0.35s ease;
+  -webkit-transition-delay: 0.3s;
+  transition: all 0.35s ease 0.3s;
+}
+/* line 446, ../scss/modules/_portfolio.scss */
+.sassy-kira:hover img {
+  opacity: 0.5;
+}
+/* line 449, ../scss/modules/_portfolio.scss */
+.sassy-kira:hover p {
+  opacity: 1;
+}
+/* line 452, ../scss/modules/_portfolio.scss */
+.sassy-kira:hover p::before {
+  height: 4em;
+  top: 25%;
+  opacity: 0.7;
+}
+/* line 460, ../scss/modules/_portfolio.scss */
+.sassy-kira:hover ul {
+  border-top: 0.25em solid #ffffff;
+  margin-top: 3em;
+  height: 4em;
+}
+/* line 464, ../scss/modules/_portfolio.scss */
+.sassy-kira:hover ul li {
+  margin: 1em;
+}
+/* line 466, ../scss/modules/_portfolio.scss */
+.sassy-kira:hover ul li a {
+  color: #0888F0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
 }
 
 /*
 Media Queries
 */
 @media screen and (max-width: 69.5em) {
-  /* line 429, ../scss/modules/_portfolio.scss */
+  /* line 485, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure {
     width: 50%;
   }
 
-  /* line 433, ../scss/modules/_portfolio.scss */
+  /* line 489, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure figcaption {
     font-size: 90%;
   }
 }
 @media screen and (max-width: 41.5em) {
-  /* line 439, ../scss/modules/_portfolio.scss */
+  /* line 495, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure {
     width: 100%;
     height: 350px;
   }
 }
-/* line 3, ../scss/modules/_icons.scss */
-.icon--nav-toggle, .icon--close {
-  line-height: 1em;
-  cursor: pointer;
-}
-
-/* line 25, ../scss/utilities/_mixins.scss */
-.icon--nav-toggle {
-  width: 25px;
-  height: 17px;
-  border-top: solid 3px #748387;
-  border-bottom: solid 3px #748387;
-  position: relative;
-}
-/* line 4, ../scss/utilities/_mixins.scss */
-.icon--nav-toggle:before {
-  width: 25px;
-  height: 3px;
-  background: #95a0a4;
-  top: 4px;
-}
-/* line 25, ../scss/utilities/_mixins.scss */
-.icon--close {
-  background-image: url("../img/icn-close.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  display: block;
-  position: absolute;
-  right: 4%;
-  top: 4%;
-}
-
 /* line 8, ../scss/modules/_inline-links.scss */
 .big-copy {
   -moz-backface-visibility: hidden;
@@ -1889,7 +2421,7 @@ Media Queries
 }
 /* line 34, ../scss/modules/_blog.scss */
 .blog-section .blog-item .blog-caption p {
-  display: block;
+  display: inline-block;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -moz-transform: translateY(40%);
@@ -2074,4 +2606,55 @@ input[type="password"] {
   margin: .5em 0;
   padding: .125em;
   width: 16.66667%;
+}
+
+/* line 13, ../scss/modules/_tables.scss */
+table tr {
+  box-shadow: inset 0 -1px 0 #fff;
+}
+/* line 15, ../scss/modules/_tables.scss */
+table tr:nth-child(even) {
+  background: rgba(8, 136, 240, 0.05);
+}
+/* line 34, ../scss/modules/_tables.scss */
+table {
+  border-collapse: separate;
+  box-shadow: inset 0 1px 0 #fff;
+  line-height: 24px;
+  margin-left: 0;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 44, ../scss/modules/_tables.scss */
+thead {
+  background-color: #0888F0;
+  color: #ffffff;
+}
+
+/* line 49, ../scss/modules/_tables.scss */
+th {
+  padding: .875em 1em;
+  font-size: 1.125em;
+}
+
+/* line 54, ../scss/modules/_tables.scss */
+td {
+  padding: .625em 1em;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/* line 60, ../scss/modules/_tables.scss */
+tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+/* line 64, ../scss/modules/_tables.scss */
+tbody:hover tr:hover td {
+  color: #6357d0;
+  text-shadow: none;
+  cursor: pointer;
 }

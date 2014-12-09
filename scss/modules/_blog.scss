@@ -32,7 +32,7 @@
         display: block;        
       }
       p {
-        display: block;
+        display: inline-block;
         @include transparent;
         @include translateY(40%);
         @include transition(all .7s ease-in-out .3s);

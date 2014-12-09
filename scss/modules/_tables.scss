@@ -1,0 +1,69 @@
+$table-header-bg: $sk-blue;
+$table-text: $copy;
+$table-text--hover: $sk-purple;
+
+
+//extend for atlernating rows
+
+$row-even-bg: $sk-dark-gray;
+$row-odd-bg: $sk-light-gray;
+
+%alternate-rows {
+  @include m(basic) {
+    tr {
+      box-shadow: inset 0 -1px 0 #fff;
+      &:nth-child(even) {
+        background: rgba($table-header-bg, 0.05);	
+      }
+    }
+  }
+  @include m(two-tone) {
+    tr {
+      background: $row-even-bg;
+      box-shadow: inset 0 -1px 0 #fff;
+      &:nth-child(even) {
+        background: $sk-light-gray;	
+      }
+    }
+  }
+}
+
+
+
+//table base styling
+table {
+  border-collapse: separate;
+  box-shadow: inset 0 1px 0 #fff;
+  line-height: $base__line-height;
+  margin-left: 0;
+  text-align: left;
+  width: 100%;
+  @extend %alternate-rows--basic;
+}	
+
+thead {
+  background-color: $table-header-bg;
+  color: $white;
+}
+
+th {  
+  padding: .875em 1em;
+  font-size: 1.125em;
+}
+
+td {
+  padding: .625em 1em;
+  @include transition;
+}
+
+tbody:hover {
+  td {
+    color: transparent;
+    text-shadow: 0 0 1px $shadow;
+  }
+  tr:hover td {
+    color: $table-text--hover;
+    text-shadow: none;
+    cursor: pointer;
+  }
+}

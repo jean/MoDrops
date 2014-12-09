@@ -724,9 +724,9 @@ background-color: lighten($kabluey, 20);
   @include translateY(-10px);
 }
 
-.sandwich-nav a {
+%sandwich-nav a {
   padding: 10px;
-  color: darken($jade, 10);
+  color: darken($header-bg, 10);
   font-weight: 700;
   @include transition(color 0.5s);
   &::before {

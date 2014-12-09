@@ -61,7 +61,8 @@ nav {
   //  @extend %bold-underline-nav
   //  @extend %bold-underline-navdiet;
   //// FIX THIS  @extend %wordslide-nav;
-  @extend %lframe-nav;
+//  @extend %lframe-nav;
+  @extend %sandwich-nav;
   
   @include mq(small) {
     position: fixed;
