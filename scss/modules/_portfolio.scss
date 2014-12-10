@@ -3,6 +3,7 @@ $figcaption-color: $white;
 $figcaption-color--hover: $white;
 $figcaption-color--h: $white;
 $figcaption-color--p: $white;
+$figcaption-color--icon: $copy;
 
 $default-transition-duration : .35s;
 
@@ -61,11 +62,11 @@ $default-transition-duration : .35s;
     }
     & a {
       @include squish-text;
-//      z-index: 1000;
-//      text-indent: 200%;
-//      white-space: nowrap;
-//      font-size: 0;
-//      opacity: 0;
+      //      z-index: 1000;
+      //      text-indent: 200%;
+      //      white-space: nowrap;
+      //      font-size: 0;
+      //      opacity: 0;
     }
   }
 }
@@ -415,29 +416,26 @@ $sepia: rgba(104,60,19,1);
   }
 }
 
-///***** Kira *****////
-.sassy-kira {
-  background: $white;
-  figcaption {
-    z-index: 1;    
-    ul {
-      @include transition;
-      border-top: .125em solid $white;
-      margin-top: 0;
-      width: 100%;
-      background: $white;
-      height: .125em;
-      list-style: none;
-      li {
-        font: 1.25em serif;        
-        display: inline-block;
-        margin: -1em;
-        @include transition(all .35s ease .3s);
-        a {
-          font: 1em serif;
-          text-shadow: none;
-          @include transparent;
-          @include transition(all .35s ease .3s);
+///***** Kiri *****////
+.sassy-kiri {
+  background-color: $white;  
+  ul {
+    @include transition;
+    width: 100%;
+    background: rgba($white, 1);
+    height: .25em;
+    list-style: none;
+    li {  
+      display: inline-block;
+      margin-left: 0;
+      margin-top: 1.5em;
+      @include transition(all .35s ease .3s);        
+      a {          
+        @include transparent;
+        @include transition(all .35s ease-out .2s);
+        &:hover {
+          @include opacity(.7);
+          @include transition(opacity .1s ease-in);
         }
       }
     }
@@ -445,342 +443,422 @@ $sepia: rgba(104,60,19,1);
   &:hover {
     img {
       opacity: 0.5;
-    }
-    p {
-      opacity: 1;
-      //      @include translate3d(0,0,0);
-      &::before {
-        height: 4em;
-        top: 25%;
-        opacity: 0.7;
-        //      @include scale3d(1,1,1);
-      }      
-    }
-    
+    }    
     ul {
-      border-top: .25em solid $white;
+      background: rgba($white, 0.8);
       margin-top: 3em;
       height: 4em;
       li {
-        margin: 1em;
+        margin: 1.25em .75em;
         a {
+          font: 1.5em serif;
           color: $sk-blue;
           @include opaque;
         }
       }
     }
-    
+
+  }
+}
+
+
+///***** Kira *****////
+.sassy-kira {
+  background: $white;
+  ul {
+    @include transition;
+    width: 100%;
+    background: rgba($white, 1);
+    height: .25em;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 1.25em .75em;
+      @include transition(all .35s ease .3s);        
+      a {
+        font: 1.5em serif;
+        color: $figcaption-color--icon;
+        @include transparent;
+        @include transition(all .35s ease-out .1s);
+        &:hover {
+          color: darken($figcaption-color--icon, 20);
+          @include opacity(.8);
+          @include transition(all .1s ease-in);
+        }
+      }
+    }
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+    }    
+    ul {
+      background: rgba($white, 0.8);
+      margin-top: 3em;
+      height: 4em;
+      a {     
+        @include opaque;
+      }
+    }
+  }
+}
+
+///***** Kora *****////
+.sassy-kora {
+  background: $white;
+  ul {
+    @include transition;
+    width: 100%;
+    background: rgba($white, 1);
+    height: .25em;
+    list-style: none;
+    @include rotateX(-360deg);
+    li {
+      display: inline-block;
+      margin: 1.25em .75em;
+      @include transform-origin(0 0);
+      @include rotateX(270deg);
+      @include transition(all .35s ease 0);
+      a {
+        font: 1.5em serif;
+        color: $figcaption-color--icon;
+        @include transparent;        
+        @include transition(all .35s ease-out);
+        &:hover {
+          color: darken($figcaption-color--icon, 20);
+          @include rotateX(360deg);
+          @include opacity(.8);
+          @include transition(all .2s ease-in);
+        }
+      }
+    }
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+    }    
+    ul {
+      @include rotateX(0deg);
+      background: rgba($white, 0.8);
+      margin-top: 3em;
+      height: 4em;  
+      li {
+        @include rotateX(0deg);
+        @include transition(all .35s ease .3s);
+      }
+      a {        
+        @include opaque;
+      }
+    }
   }
 }
 
 
 
+/*
+Media Queries
+*/
 
-
-  /*
-  Media Queries
-  */
-
-  @media screen and (max-width: 69.5em) {
-    .portfolio-grid figure {
-      width: 50%;
-    }
-
-    .portfolio-grid figure figcaption {
-      font-size: 90%;
-    }
+@media screen and (max-width: 69.5em) {
+  .portfolio-grid figure {
+    width: 50%;
   }
 
-  @media screen and (max-width: 41.5em) {
-    .portfolio-grid figure {
-      width: 100%;
-      height: 350px;
-    }
+  .portfolio-grid figure figcaption {
+    font-size: 90%;
   }
+}
+
+@media screen and (max-width: 41.5em) {
+  .portfolio-grid figure {
+    width: 100%;
+    height: 350px;
+  }
+}
 
 
-  //////////////CODE FROM DESKTOP
+//////////////CODE FROM DESKTOP
 
-  //$porfolio-background: $sk-blue;
-  //$figcaption-color: $white;
-  //$figcaption-color--h: $white;
-  //$figcaption-color--p: $white;
-  //
-  //
-  //.portfolio-grid {
-  //  @include layout(full no-gutter)
-  //    figure {
-  //      position: relative;
-  //      z-index: 1;
-  //      overflow: hidden;
-  //      @include span(4 of 12 no-gutter);
-  //      height: 400px;
-  //      background: darken($porfolio-background, 20);
-  //      cursor: pointer;
-  //      img {
-  //        position: relative;
-  //        display: block;
-  //        min-height: 100%;
-  //        min-width: 100%;
-  //        opacity: 0.8;
-  //      }
-  //      figcaption {
-  //        @include font-smoothing(on);
-  //        font-weight: 300;
-  //        font-size: 1em;
-  //        position: absolute;
-  //        color: $figcaption-color;
-  //        text-transform: uppercase;
-  //        width: 100%;
-  //        @include backface-visibility(hidden);
-  //        &::before, &::after {
-  //          pointer-events: none;
-  //        }
-  //        h3 {
-  //          text-transform: uppercase;
-  //          font-size: 2.25em;
-  //          color: $figcaption-color--h;
-  //          span {
-  //            font-weight: 800;
-  //            margin-left: -.225em;
-  //          }
-  //        }
-  //        p {
-  //          color: $figcaption-color--p;
-  //        }
-  //      }
-  //      a {
-  //        position: absolute;
-  //        top: 0;
-  //        left: 0;
-  //        z-index: 1000;
-  //        text-indent: 200%;
-  //        white-space: nowrap;
-  //        font-size: 0;
-  //        @include transparent;
-  //      }
-  //    }
-  //}
-  //
-  ///* Individual effects */
-  //
-  ///*---------------*/
-  ///***** Lily *****/
-  ///*---------------*/
-  //
-  //.effect-lily {
-  //  img {
-  //    max-width: none;
-  //    width: calc(100% + 50px);
-  //    @include transition(opacity 0.35s, transform .35s);
-  //    @include translate3d(-40px,0,0);
-  //  }
-  //  figcaption {
-  //    text-align: left;
-  //    padding: 2em;
-  //    width: 100%;
-  //    height: 50%;
-  //    color: $white;
-  //    h3, p {
-  //      @include translate3d(0,40px,0);
-  //      @include transition(opacity 0.4s, transform .35s ease .05s);
-  //    }
-  //    p {
-  //      @include transparent;
-  //    }
-  //  }
-  //  &:hover {
-  //    img, h3, p {
-  //      @include opaque;
-  //      @include translate3d(0,0,0);
-  //    }
-  //  }
-  //}
-  //
-  ///*---------------*/
-  ///***** Sadie *****/
-  ///*---------------*/
-  //
-  //.effect-sadie {
-  //  figcaption{
-  //    h3 {
-  //      display: block;
-  //      z-index: 10000;
-  //      top: 50%;
-  //      color: $white;
-  //      @include translate3d(0,40px,0);
-  //      @include transition(opacity 0.4s, transform .35s ease .05s);
-  //    }
-  //    p {
-  //      @inclue transparent;
-  //      @include translate3d(0,40px,0);
-  //      @include transition(opacity 0.4s, transform .35s ease .05s);
-  //    }
-  //    &:hover {
-  //      img, h3, p {
-  //        @include opaque;
-  //        @include translate3d(0,0,0);
-  //      }
-  //    }
-  //  }
-  //}
-  //
-  ///*
-  //Media Queries
-  //*/
-  //
-  //@media screen and (max-width: 69.5em) {
-  //  .portfolio-grid figure {
-  //    width: 50%;
-  //  }
-  //
-  //  .portfolio-grid figure figcaption {
-  //    font-size: 90%;
-  //  }
-  //}
-  //
-  //
-  //@media screen and (max-width: 41.5em) {
-  //
-  //  .portfolio-grid figure {
-  //    width: 100%;
-  //  }
-  //}
-
-
+//$porfolio-background: $sk-blue;
+//$figcaption-color: $white;
+//$figcaption-color--h: $white;
+//$figcaption-color--p: $white;
+//
+//
+//.portfolio-grid {
+//  @include layout(full no-gutter)
+//    figure {
+//      position: relative;
+//      z-index: 1;
+//      overflow: hidden;
+//      @include span(4 of 12 no-gutter);
+//      height: 400px;
+//      background: darken($porfolio-background, 20);
+//      cursor: pointer;
+//      img {
+//        position: relative;
+//        display: block;
+//        min-height: 100%;
+//        min-width: 100%;
+//        opacity: 0.8;
+//      }
+//      figcaption {
+//        @include font-smoothing(on);
+//        font-weight: 300;
+//        font-size: 1em;
+//        position: absolute;
+//        color: $figcaption-color;
+//        text-transform: uppercase;
+//        width: 100%;
+//        @include backface-visibility(hidden);
+//        &::before, &::after {
+//          pointer-events: none;
+//        }
+//        h3 {
+//          text-transform: uppercase;
+//          font-size: 2.25em;
+//          color: $figcaption-color--h;
+//          span {
+//            font-weight: 800;
+//            margin-left: -.225em;
+//          }
+//        }
+//        p {
+//          color: $figcaption-color--p;
+//        }
+//      }
+//      a {
+//        position: absolute;
+//        top: 0;
+//        left: 0;
+//        z-index: 1000;
+//        text-indent: 200%;
+//        white-space: nowrap;
+//        font-size: 0;
+//        @include transparent;
+//      }
+//    }
+//}
+//
+///* Individual effects */
+//
+///*---------------*/
+///***** Lily *****/
+///*---------------*/
+//
+//.effect-lily {
+//  img {
+//    max-width: none;
+//    width: calc(100% + 50px);
+//    @include transition(opacity 0.35s, transform .35s);
+//    @include translate3d(-40px,0,0);
+//  }
+//  figcaption {
+//    text-align: left;
+//    padding: 2em;
+//    width: 100%;
+//    height: 50%;
+//    color: $white;
+//    h3, p {
+//      @include translate3d(0,40px,0);
+//      @include transition(opacity 0.4s, transform .35s ease .05s);
+//    }
+//    p {
+//      @include transparent;
+//    }
+//  }
+//  &:hover {
+//    img, h3, p {
+//      @include opaque;
+//      @include translate3d(0,0,0);
+//    }
+//  }
+//}
+//
+///*---------------*/
+///***** Sadie *****/
+///*---------------*/
+//
+//.effect-sadie {
+//  figcaption{
+//    h3 {
+//      display: block;
+//      z-index: 10000;
+//      top: 50%;
+//      color: $white;
+//      @include translate3d(0,40px,0);
+//      @include transition(opacity 0.4s, transform .35s ease .05s);
+//    }
+//    p {
+//      @inclue transparent;
+//      @include translate3d(0,40px,0);
+//      @include transition(opacity 0.4s, transform .35s ease .05s);
+//    }
+//    &:hover {
+//      img, h3, p {
+//        @include opaque;
+//        @include translate3d(0,0,0);
+//      }
+//    }
+//  }
+//}
+//
+///*
+//Media Queries
+//*/
+//
+//@media screen and (max-width: 69.5em) {
+//  .portfolio-grid figure {
+//    width: 50%;
+//  }
+//
+//  .portfolio-grid figure figcaption {
+//    font-size: 90%;
+//  }
+//}
+//
+//
+//@media screen and (max-width: 41.5em) {
+//
+//  .portfolio-grid figure {
+//    width: 100%;
+//  }
+//}
 
 
 
 
-  //
-  //$porfolio-background: $sk-blue;
-  //$figcaption-color: $white;
-  //$figcaption-color--h: $white;
-  //$figcaption-color--p: $white;
-  //
-  //
-  //.portfolio-grid {
-  //  @include layout(full no-gutters nest);
-  //  figure {
-  //    position: relative;
-  //    z-index: 1;
-  //    overflow: hidden;
-  //    @include span(1 of 3 no-gutters);
-  //    height: 400px;
-  //    background: darken($porfolio-background, 20);
-  //    cursor: pointer;
-  //    img {
-  //      position: relative;
-  //      display: block;
-  //      min-height: 100%;
-  //      opacity: 0.8;
-  //    }
-  //    figcaption {
-  //      @include font-smoothing(on);
-  //      font-weight: 300;
-  //      font-size: 1em;
-  //      position: absolute;
-  //      top: 0;
-  //      left: 0;
-  //      width: 100%;
-  //      height: 100%;
-  //      padding: 5%;
-  //      color: $figcaption-color;
-  //      text-transform: uppercase;
-  //      @include backface-visibility(hidden);
-  //      &::before, &::after {
-  //        pointer-events: none;
-  //      }
-  //      h3 {
-  //        font-size: 2em;
-  //        color: $figcaption-color--h;
-  //        span {
-  //          font-weight: 800;
-  //          margin-left: -.185em;
-  //        }
-  //      }
-  //      p {
-  //        color: $figcaption-color--p;
-  //      }
-  //    }
-  //    a {
-  //      z-index: 1000;
-  //      text-indent: 200%;
-  //      white-space: nowrap;
-  //      font-size: 0;
-  //      opacity: 0;
-  //    }
-  //  }
-  //}
-  //
-  ///* Individual effects */
-  //
-  ///*---------------*/
-  ///***** Lily *****/
-  ///*---------------*/
-  //
-  //.effect-lily {
-  //    img {
-  //      max-width: none;
-  //      width: calc(100% + 50px);
-  //      @include transition(opacity 0.35s, transform .35s);
-  //      @include translate3d(-40px,0,0);
-  //    }
-  //    figcaption {
-  //      text-align: left;
-  //      position: absolute;
-  //      padding: 2em;
-  //      width: 100%;
-  //      height: 50%;
-  //      color: $white;
-  //      h3, p {
-  //        @include translate3d(0,40px,0);
-  //        @include transition(opacity 0.4s, transform .35s ease .05s);
-  //      }
-  //      p {
-  //        @include transparent;
-  //      }
-  //    }
-  //    &:hover {
-  //      img, h3, p {
-  //        @include opaque;
-  //        @include translate3d(0,0,0);
-  //      }
-  //    }
-  //  }
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  ///*
-  //Media Queries
-  //*/
-  //
-  //@media screen and (max-width: 69.5em) {
-  //  .portfolio-grid figure {
-  //    width: 50%;
-  //  }
-  //
-  //  .portfolio-grid figure figcaption {
-  //    font-size: 90%;
-  //  }
-  //}
-  //
-  //
-  //@media screen and (max-width: 41.5em) {
-  //
-  //  .portfolio-grid figure {
-  //    width: 100%;
-  //  }
-  //}
+
+
+//
+//$porfolio-background: $sk-blue;
+//$figcaption-color: $white;
+//$figcaption-color--h: $white;
+//$figcaption-color--p: $white;
+//
+//
+//.portfolio-grid {
+//  @include layout(full no-gutters nest);
+//  figure {
+//    position: relative;
+//    z-index: 1;
+//    overflow: hidden;
+//    @include span(1 of 3 no-gutters);
+//    height: 400px;
+//    background: darken($porfolio-background, 20);
+//    cursor: pointer;
+//    img {
+//      position: relative;
+//      display: block;
+//      min-height: 100%;
+//      opacity: 0.8;
+//    }
+//    figcaption {
+//      @include font-smoothing(on);
+//      font-weight: 300;
+//      font-size: 1em;
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      width: 100%;
+//      height: 100%;
+//      padding: 5%;
+//      color: $figcaption-color;
+//      text-transform: uppercase;
+//      @include backface-visibility(hidden);
+//      &::before, &::after {
+//        pointer-events: none;
+//      }
+//      h3 {
+//        font-size: 2em;
+//        color: $figcaption-color--h;
+//        span {
+//          font-weight: 800;
+//          margin-left: -.185em;
+//        }
+//      }
+//      p {
+//        color: $figcaption-color--p;
+//      }
+//    }
+//    a {
+//      z-index: 1000;
+//      text-indent: 200%;
+//      white-space: nowrap;
+//      font-size: 0;
+//      opacity: 0;
+//    }
+//  }
+//}
+//
+///* Individual effects */
+//
+///*---------------*/
+///***** Lily *****/
+///*---------------*/
+//
+//.effect-lily {
+//    img {
+//      max-width: none;
+//      width: calc(100% + 50px);
+//      @include transition(opacity 0.35s, transform .35s);
+//      @include translate3d(-40px,0,0);
+//    }
+//    figcaption {
+//      text-align: left;
+//      position: absolute;
+//      padding: 2em;
+//      width: 100%;
+//      height: 50%;
+//      color: $white;
+//      h3, p {
+//        @include translate3d(0,40px,0);
+//        @include transition(opacity 0.4s, transform .35s ease .05s);
+//      }
+//      p {
+//        @include transparent;
+//      }
+//    }
+//    &:hover {
+//      img, h3, p {
+//        @include opaque;
+//        @include translate3d(0,0,0);
+//      }
+//    }
+//  }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+///*
+//Media Queries
+//*/
+//
+//@media screen and (max-width: 69.5em) {
+//  .portfolio-grid figure {
+//    width: 50%;
+//  }
+//
+//  .portfolio-grid figure figcaption {
+//    font-size: 90%;
+//  }
+//}
+//
+//
+//@media screen and (max-width: 41.5em) {
+//
+//  .portfolio-grid figure {
+//    width: 100%;
+//  }
+//}
