@@ -3,6 +3,10 @@
   @include squish-text;
 }
 
+* {
+  @include box-sizing(border-box);
+}
+
 body {
   @include container();
   font-size: $base__font-size;
