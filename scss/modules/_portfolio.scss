@@ -19,6 +19,9 @@ $default-transition-duration : .35s;
     overflow: hidden;    
     cursor: pointer;    
     @include transition;
+    &:last-child {
+      width: 100%
+    }
     img {
       min-height: 100%;
       min-width: 100%;
@@ -71,7 +74,7 @@ $default-transition-duration : .35s;
 
 ///***** Lily *****////
 .sassy-lily {
-  img {
+  img {    
     width: calc(100% + 3em);
     opacity: .7;
     @include translate3d(-2.5em,0,0);
@@ -82,7 +85,7 @@ $default-transition-duration : .35s;
     left: 0;   
   }
   h3 {
-    @include translate3d(0,1em,0);
+    @include translate3d(0,.5em,0);
   }
   p {
     margin-top: .25em;
@@ -96,16 +99,15 @@ $default-transition-duration : .35s;
     }
     h3, p {
       opacity: 1;
-      @include translate3d(0,0,0);
+      @include translate3d(0,-.5em,0);
     }
   }
 }
 
-
 ///***** Sadie *****////
 .sassy-sadie {
   @include background-image(linear-gradient($black, $sk-light-gray));
-  img {
+  img {    
     @include opacity(0.8);
     @extend %center-hv;
   }
@@ -132,6 +134,255 @@ $default-transition-duration : .35s;
         @include opaque;
         @include translate3d(0, 0, 0);
       }
+    }
+  }
+}
+
+///***** Honey *****////
+.sassy-honey {  
+  img {
+    @extend %abs-center;
+    @include opacity(0.9);
+  }
+  &::before {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .625em;
+    background: $white;
+    content: '';
+    @include translate3d(0, 1.125em, 0);
+    @include transition;
+  }
+  figcaption {
+    left: 0;
+    bottom: 0;
+    @include transition;    
+  }
+  h3 {
+    position: absolute;
+    bottom: .5em;
+    i {
+      position: relative;
+      bottom: 1em;
+      margin-left: -.25em;
+      @include transition;
+      @include transparent;
+    }
+  }  
+  &:hover {
+    img {
+      @include opacity(0.4);
+    }
+    &::before {
+      @include translate3d(0,0, 0);
+    }
+    figcaption {
+      @include opaque;
+      bottom: -1em;
+    }
+    h3, i {
+      bottom: 0;
+      @include opaque;
+    }
+  }
+}
+
+///***** Layla *****////
+.sassy-layla {
+  img {
+    position: absolute;
+    min-height: 120%;
+    bottom: 1em;
+    @include translateY(1em);
+  }
+  figcaption {
+    padding: 2.5em;
+    @extend %abs-center;
+    text-align: center;
+    &:before, &:after {
+      content: '';      
+      position: absolute;
+      @include transition;
+    }
+    &:before {
+      top: 2em;
+      right: 0;
+      bottom: 2em;
+      left: 0;
+      @include scale(0,1);
+      border-top: 1px solid $white;
+      border-bottom: 1px solid #fff;      
+      @include transform-origin(0, 100%);
+    }
+    &:after {
+      top: 0;
+      right: 2em;
+      bottom: 0;
+      left: 2em;
+      border-right: 1px solid #fff;
+      border-left: 1px solid #fff;
+      @include scale(1,0);
+      @include transform-origin(100%, 0);
+    }
+  }
+  h3 {
+    margin-top: 15%;
+    @include translateY(-.75em);
+  }
+  p {
+    margin: .5em 2em;
+    @include translateY(.5em);
+    @include transparent;
+  }
+  &:hover {
+    img {
+      @include translateY(0);
+      @include opacity(.7);
+    }
+    figcaption {
+      &::before, &::after {
+        @include scale(1);
+        @include opaque;
+      }
+    }
+    h3, p {
+      @include opaque;
+      @include translateY(0);
+    }
+  }
+}
+
+
+
+///***** Zoe *****////
+
+///***** Oscar *****////
+
+///***** Marley *****////
+
+///***** Ruby *****////
+.sassy-ruby {
+  img {
+    opacity: 0.7;
+    @include scale(1.25);
+  }
+  figcaption{
+    text-align: center;
+    @extend %abs-center;
+  }
+  h3 {
+    margin-top: 15%;
+    @include translate3d(0, 1.125em, 0);
+  }
+  p {
+    position: absolute;
+    bottom: 0;
+    margin-top: 1.5em;
+    padding: 3em 2em;
+    border:1px solid white;
+    @include transparent;
+    @include transform(translate3d(0,1.125em,0) scale(1.1));
+  }
+  &:hover {
+    img {
+      @include opacity(.5);
+      @include scale(1);
+    }
+    h3 {
+      @include translate3d(0, 0, 0);
+    }
+    p {
+      @include opaque;
+      @include transform(translate3d(0,0,0) scale(1));
+    }
+  }
+}
+
+///***** Roxy *****////
+.sassy-roxy {
+  background: linear-gradient(45deg,$sk-pink,$sk-blue);
+  img {
+    width: calc(100% + 60px);
+    @include translate3d(-50px,0,0);
+  }
+  figcaption{
+    @extend %abs-center;
+    h3 {
+      margin: 25% 7% .5em;
+    }
+    p {
+      margin-left: 7%;
+      margin-right: 7%;
+      @include transparent;
+      @include translate3d(-1em,0,0);
+    }
+    &::before {
+      @extend %abs-center;
+      border: 1px solid #fff;
+      content: '';
+      opacity: 0;
+      @include translate3d(-1.5em,0,0);
+      @include transition;
+    }
+  }
+  &:hover {
+    img {
+      opacity: .7;
+      @include translate3d(0,0,0);
+    }
+    figcaption {
+      &::before, p {
+        @include opaque;
+        @include translate3d(0,0,0);
+      }    
+    }
+  }
+}
+
+///***** Bubba *****////
+
+///***** Romeo *****////
+
+///***** Dexter *****////
+$curious-blue: rgba(37,141,200,1);
+$sepia: rgba(104,60,19,1);
+
+.sassy-dexter {
+  @include background-image(linear-gradient($curious-blue, $sepia));
+  figcaption {
+    @extend %abs-center;
+    &::after {
+      position: absolute;
+      right: -1em;
+      top: -1em;
+      left: -1em;
+      height: 50%;
+      border: 7px solid $white;
+      content: '';
+      @include transition;
+    }
+  }
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    @include translate3d(0,-100px,0);
+  }
+  &:hover {
+    img {
+      opacity: 0.4;
+    }
+    p {
+      @include opaque;
+      @include translate3d(0,0,0);
+    }
+    figcaption::after {
+      top: 50%;
+      bottom: -1em;
     }
   }
 }
@@ -184,104 +435,6 @@ $default-transition-duration : .35s;
   }
 }
 
-///***** Honey *****////
-.sassy-honey {  
-  img {
-    @extend %abs-center;
-    @include opacity(0.9);
-  }
-  &::before {
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: .625em;
-    background: $white;
-    content: '';
-    @include translate3d(0, 1.125em, 0);
-    @include transition;
-  }
-  figcaption {
-    left: 0;
-    bottom: 0;
-    @include transition;    
-  }
-  h3 {
-    position: absolute;
-    bottom: .5em;
-    i {
-      position: relative;
-      bottom: 1em;
-      margin-left: -.25em;
-      @include transition;
-      @include transparent;
-    }
-  }  
-  &:hover {
-    img {
-      @include opacity(0.4);
-    }
-    &::before {
-      @include translate3d(0,0, 0);
-  }
-    figcaption {
-      @include opaque;
-      bottom: -1em;
-    }
-    h3, i {
-      bottom: 0;
-      @include opaque;
-    }
-  }
-}
-
-///***** Roxy *****////
-.sassy-roxy {
-  background: linear-gradient(45deg,#ff89e9 0,#05abe0 100%);
-  img {
-    width: calc(100% + 60px);
-    @include translate3d(-50px,0,0);
-  }
-  figcaption{
-    h3 {
-      margin-top: 25%;
-      margin-left: 7%;
-    }
-    p {
-      margin-left: 7%;
-      margin-right: 7%;
-      margin-bottom: 5%;
-      @include transparent;
-      @include translate3d(-1em,0,0);
-    }
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border: 1px solid #fff;
-      content: '';
-      opacity: 0;
-      @include translate3d(-20px,0,0);
-      @include transition;
-    }
-  }
-  &:hover {
-    img {
-      opacity: .7;
-      @include translate3d(0,0,0);
-    }
-    figcaption {
-      &::before, p {
-        @include opaque;
-        @include translate3d(0,0,0);
-      }    
-    }
-  }
-}
-
 ///***** Chico *****////
 .sassy-chico {
   img {
@@ -289,6 +442,7 @@ $default-transition-duration : .35s;
   }
   figcaption{
     text-align: center;
+    @extend %abs-center;
     h3 {
       margin-top: 20%;
     }
@@ -296,16 +450,12 @@ $default-transition-duration : .35s;
       margin-left: 22%;
       margin-right: 22%;
       margin-bottom: 5%;
-      margin-top: 2em;
+      margin-top: 1em;
       @include transparent;
       @include scale(1.25);
     }
     &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      @extend %abs-center;
       border: 1px solid #fff;
       content: '';
       @include transparent;
@@ -327,85 +477,109 @@ $default-transition-duration : .35s;
   }
 }
 
-///***** Dexter *****////
-$curious-blue: rgba(37,141,200,1);
-$sepia: rgba(104,60,19,1);
+///***** Milo *****////
 
-.sassy-dexter {
-  @include background-image(linear-gradient($curious-blue, $sepia));
-  h3 {
-    margin-top: 11%;
-    margin-left: 7%;
+
+///***** SET 2 *****////
+
+///***** Julia *****////
+
+///***** Goliath *****////   ////****This should probably have a psuedo after the p instead****///
+.sassy-goliath {  
+  img {
+    @include backface-visibility(hidden);
+    background: #df4e4e;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+  }
+  h3, p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   p {
-    position: absolute;
-    bottom: 2em;
-    margin: 0 7%;
+    font-size: 90%;
     opacity: 0;
-    @include translate3d(0,-100px,0);
-  }
-  figcaption::after {
-    position: absolute;
-    bottom: 3em;
-    height: calc(50% - 2em);
-    width: 100%;
-    border: 7px solid $white;
-    content: '';
-    @include transition;
-    @include translate3d(0,-100%,0);
+    @include translate3d(0,3em,0);
   }
   &:hover {
     img {
-      opacity: 0.4;
+      @include translate3d(0,-30%,0);
+    }
+    h3 {
+      @include translate3d(0,-2em,0);
     }
     p {
-      @include opaque;
-      @include translate3d(0,40%,0);
-    }
-    figcaption::after {
-      @include translate3d(0,30%,0);
-      bottom: 2em;
+      opacity: 1;
+      @include translate3d(0,0,0);
     }
   }
 }
 
-///***** Ruby *****////
-.sassy-ruby {
-  img {
-    opacity: 0.7;
-    @include scale(1.25);
+///***** Hera *****////
+
+///***** Winston *****////
+
+///***** Selena *****////
+
+///***** Terry *****////
+
+///***** Phoebe *****////
+
+///***** Appolo *****////
+
+///***** Kira *****////
+.sassy-kira {
+  background: $white;
+  figcaption {
+    @extend %abs-center;
   }
-  figcaption{
-    text-align: center;
-    h3 {
-      margin-top: 20%;
-      @include translate3d(0, 1.125em, 0);
-    }
-    p {
-      margin-bottom: 5%;
-      margin-top: 2em;
-      padding: 3em;
-      border:1px solid white;
-      @include transparent;
-      @include transform(translate3d(0,1.125em,0) scale(1.1));
+  ul {
+    @include transition;
+    width: 100%;
+    background: rgba($white, 1);
+    height: .25em;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 1.25em .75em;
+      @include transition(all .35s ease .3s);        
+      a {
+        font: 1.5em serif;
+        color: $figcaption-color--icon;
+        @include transparent;
+        @include transition(all .35s ease-out .1s);
+        &:hover {
+          color: darken($figcaption-color--icon, 20);
+          @include opacity(.8);
+          @include transition(all .1s ease-in);
+        }
+      }
     }
   }
   &:hover {
     img {
-      @include opacity(.5);
-      @include scale(1);
-    }
-    figcaption {
-      h3 {
-        @include translate3d(0, 0, 0);
-      }
-      p {
+      opacity: 0.5;
+    }    
+    ul {
+      background: rgba($white, 0.8);
+      margin-top: 3em;
+      height: 4em;
+      a {     
         @include opaque;
-        @include transform(translate3d(0,0,0) scale(1));
       }
     }
   }
 }
+
+///***** Steve *****////
+
+///***** Moses *****////
+
+///***** Jazz *****////
 
 ///***** Ming *****////
 .sassy-ming {
@@ -460,9 +634,19 @@ $sepia: rgba(104,60,19,1);
   }
 }
 
+///***** Lexi *****////
+
+///***** Duke *****////
+
+
+///***** Additional Styles *****////
+
 ///***** Kiri *****////
 .sassy-kiri {
-  background-color: $white;  
+  background-color: $white; 
+  figcaption {
+    @extend %abs-center;
+  }
   ul {
     @include transition;
     width: 100%;
@@ -501,55 +685,15 @@ $sepia: rgba(104,60,19,1);
         }
       }
     }
-
-  }
-}
-
-
-///***** Kira *****////
-.sassy-kira {
-  background: $white;
-  ul {
-    @include transition;
-    width: 100%;
-    background: rgba($white, 1);
-    height: .25em;
-    list-style: none;
-    li {
-      display: inline-block;
-      margin: 1.25em .75em;
-      @include transition(all .35s ease .3s);        
-      a {
-        font: 1.5em serif;
-        color: $figcaption-color--icon;
-        @include transparent;
-        @include transition(all .35s ease-out .1s);
-        &:hover {
-          color: darken($figcaption-color--icon, 20);
-          @include opacity(.8);
-          @include transition(all .1s ease-in);
-        }
-      }
-    }
-  }
-  &:hover {
-    img {
-      opacity: 0.5;
-    }    
-    ul {
-      background: rgba($white, 0.8);
-      margin-top: 3em;
-      height: 4em;
-      a {     
-        @include opaque;
-      }
-    }
   }
 }
 
 ///***** Kora *****////
 .sassy-kora {
   background: $white;
+  figcaption {
+    @extend %abs-center;
+  }
   ul {
     @include transition;
     width: 100%;
@@ -596,45 +740,6 @@ $sepia: rgba(104,60,19,1);
     }
   }
 }
-
-
-///***** Goliath *****////
-.sassy-goliath {
-  background: #df4e4e;
-  figcaption {
-    h3 {
-      position: absolute;
-      top: 100;
-      bottom: 0;
-      left: 0;
-      padding: 1.75em;
-    }
-    p {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 30px;
-      font-size: 90%;
-      opacity: 0;
-      @include translate3d(0,50px,0);
-    }
-  }
-  &:hover {
-    img {
-      @include translate3d(0,-80px,0);
-    }
-    figcaption {
-      h3 {
-        @include translate3d(0,-100px,0);
-      }
-      p {
-        opacity: 1;
-        @include translate3d(0,0,0);
-      }
-    }
-  }
-}
-
 
 /*
 Media Queries
