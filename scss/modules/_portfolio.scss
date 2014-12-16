@@ -11,9 +11,10 @@ $default-transition-duration : .35s;
 .portfolio-grid {
   font-family: $font-stack--display;
   font-weight: $font-weight--light;
+  @include container(100%);
   figure {
     background-color: $portfolio-background;
-    @include span(4 of 12 no-gutters);
+    @include span(1 of 3);
     height: 400px;
     position: relative;
     overflow: hidden;    
@@ -27,7 +28,6 @@ $default-transition-duration : .35s;
       min-width: 100%;
       max-width: 120%;
       position: relative;
-      display: block;
       @include transition;
     }
     figcaption { 
@@ -74,10 +74,9 @@ $default-transition-duration : .35s;
 
 ///***** Lily *****////
 .sassy-lily {
-  img {    
-    width: calc(100% + 3em);
-    opacity: .7;
-    @include translate3d(-2.5em,0,0);
+  img {
+    width: calc(100% + 60px);
+    @include translate3d(-50px,0,0);
   }
   figcaption {
     position: absolute;
@@ -96,6 +95,7 @@ $default-transition-duration : .35s;
   &:hover {
     img {
       opacity: .9;
+      @include translate3d(0,0,0);
     }
     h3, p {
       opacity: 1;
@@ -257,7 +257,80 @@ $default-transition-duration : .35s;
 
 
 
-///***** Zoe *****////
+///***** Zoe *****////  ///***** Should span 100% of img *****////
+
+.sassy-zoe {
+  figcaption {
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    height: 3.75em;
+    background: $white;
+    @include translate3d(0,200%,0);
+    @include transition;
+  }
+  h3 {
+    color: $copy;
+    float: left;
+    display: inline-block;
+    @include translate3d(0,200%,0);
+  }
+  p {
+    &.description {
+      position: absolute;
+      text-align: center;
+      bottom: 8em;
+      padding: 2em;
+      color: #fff;
+      text-transform: none;
+      @include transparent;
+      @include transition;
+    }
+    &.icon-links a {
+      float: right;
+      color: #3c4a50;
+      font-size: 1.4em;
+      @include transition;
+      @include translate3d(0,200%,0);
+      span::before {
+        display: inline-block;
+        padding: 8px 10px;
+        font-family: 'SilenceKillsDesign-Icons';
+        speak: none;
+      }
+    }
+  }
+  &:hover {
+    p {
+      &.description {
+        opacity: 1;
+      }
+      &.icon-links a {
+        @include translate3d(0,0,0);
+        &:hover, &:focus  {
+          color: $sk-blue;
+        }
+        &:nth-child(3) {
+          @include transition-delay(.1s);
+        }
+        &:nth-child(2) {
+          @include transition-delay(.15s);
+        }
+        &:first-child {
+          @include transition-delay(.2s);
+        }
+      }
+    }
+    figcaption {
+      @include translate3d(0,0,0);
+    }
+    h3 {
+      @include translate3d(0,0,0);
+      @include transition-delay(.05s);
+    }
+  }
+}
+
 
 ///***** Oscar *****////
 

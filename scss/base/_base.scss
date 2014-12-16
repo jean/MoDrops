@@ -12,6 +12,7 @@ body {
   font-size: $base__font-size;
   font-family: $font-stack--sans;
   color: $copy;
+  text-rendering: optimizeLegibility;
 }
 
 section {  
@@ -57,6 +58,7 @@ h4 {
 }
 
 p {
+  text-rendering: optimizeLegibility;
   line-height: 1.65;
 }
 
