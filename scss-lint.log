@@ -25,24 +25,8 @@
       "reason": "Properties should be ordered background-color, cursor, height, overflow, position"
     },
     {
-      "linter": "TrailingSemicolon",
-      "line": 24,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Declaration should not have a space before the terminating semicolon"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 25,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
       "linter": "PropertySortOrder",
-      "line": 27,
+      "line": 24,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -50,7 +34,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 27,
+      "line": 24,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -58,7 +42,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 32,
+      "line": 29,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -66,23 +50,23 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 34,
-      "column": 7,
-      "length": 31,
+      "line": 31,
+      "column": 1,
+      "length": 1,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
       "linter": "PropertySortOrder",
-      "line": 34,
+      "line": 36,
       "column": 7,
-      "length": 31,
+      "length": 21,
       "severity": "warning",
-      "reason": "Properties should be ordered color, margin-bottom, margin-left, margin-right, margin-top, position, text-transform, width"
+      "reason": "Properties should be ordered color, margin, position, text-transform, width"
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 47,
+      "line": 46,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -90,7 +74,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 47,
+      "line": 46,
       "column": 7,
       "length": 20,
       "severity": "warning",
@@ -98,7 +82,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 48,
+      "line": 47,
       "column": 9,
       "length": 20,
       "severity": "warning",
@@ -106,7 +90,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 51,
+      "line": 50,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -114,7 +98,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 53,
+      "line": 52,
       "column": 7,
       "length": 14,
       "severity": "warning",
@@ -122,7 +106,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 56,
+      "line": 55,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -130,7 +114,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 56,
+      "line": 55,
       "column": 7,
       "length": 7,
       "severity": "warning",
@@ -138,7 +122,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 60,
+      "line": 59,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -146,7 +130,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 62,
+      "line": 61,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -154,7 +138,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 62,
+      "line": 61,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -162,7 +146,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 66,
+      "line": 65,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -170,7 +154,7 @@
     },
     {
       "linter": "UnnecessaryParentReference",
-      "line": 67,
+      "line": 66,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -178,7 +162,7 @@
     },
     {
       "linter": "Comment",
-      "line": 73,
+      "line": 72,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -186,7 +170,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 78,
+      "line": 77,
       "column": 5,
       "length": 24,
       "severity": "warning",
@@ -194,7 +178,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 79,
+      "line": 78,
       "column": 27,
       "length": 4,
       "severity": "warning",
@@ -202,7 +186,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 79,
+      "line": 78,
       "column": 32,
       "length": 1,
       "severity": "warning",
@@ -210,7 +194,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 80,
+      "line": 79,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -218,7 +202,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 82,
+      "line": 81,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -226,7 +210,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 85,
+      "line": 84,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -234,7 +218,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 87,
+      "line": 86,
       "column": 26,
       "length": 1,
       "severity": "warning",
@@ -242,7 +226,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 87,
+      "line": 86,
       "column": 28,
       "length": 4,
       "severity": "warning",
@@ -250,7 +234,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 88,
+      "line": 87,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -258,7 +242,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 90,
+      "line": 89,
       "column": 5,
       "length": 17,
       "severity": "warning",
@@ -266,7 +250,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 91,
+      "line": 90,
       "column": 26,
       "length": 1,
       "severity": "warning",
@@ -274,7 +258,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 91,
+      "line": 90,
       "column": 28,
       "length": 3,
       "severity": "warning",
@@ -282,7 +266,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 94,
+      "line": 93,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -290,7 +274,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 97,
+      "line": 96,
       "column": 7,
       "length": 11,
       "severity": "warning",
@@ -298,7 +282,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 98,
+      "line": 97,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -306,7 +290,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 98,
+      "line": 97,
       "column": 30,
       "length": 1,
       "severity": "warning",
@@ -314,7 +298,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 99,
+      "line": 98,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -322,7 +306,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 100,
+      "line": 99,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -330,7 +314,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 101,
+      "line": 100,
       "column": 7,
       "length": 10,
       "severity": "warning",
@@ -338,7 +322,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 102,
+      "line": 101,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -346,7 +330,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 102,
+      "line": 101,
       "column": 31,
       "length": 4,
       "severity": "warning",
@@ -354,7 +338,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 111,
+      "line": 110,
       "column": 5,
       "length": 21,
       "severity": "warning",
@@ -362,7 +346,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 111,
+      "line": 110,
       "column": 22,
       "length": 3,
       "severity": "warning",
@@ -370,7 +354,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 113,
+      "line": 112,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -378,7 +362,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 115,
+      "line": 114,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -386,7 +370,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 115,
+      "line": 114,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -394,7 +378,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 119,
+      "line": 118,
       "column": 7,
       "length": 31,
       "severity": "warning",
@@ -402,7 +386,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 124,
+      "line": 123,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -410,7 +394,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 128,
+      "line": 127,
       "column": 24,
       "length": 3,
       "severity": "warning",
@@ -418,7 +402,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 129,
+      "line": 128,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -426,31 +410,31 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 131,
+      "line": 130,
       "column": 7,
       "length": 31,
       "severity": "warning",
       "reason": "Properties should be ordered bottom, color"
     },
     {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 133,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be preceded by an empty line"
-    },
-    {
       "linter": "SingleLinePerSelector",
-      "line": 133,
+      "line": 132,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Each selector in a comma sequence should be on its own line"
     },
     {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 132,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
       "linter": "UnnecessaryParentReference",
-      "line": 133,
+      "line": 132,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -458,7 +442,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 133,
+      "line": 132,
       "column": 7,
       "length": 15,
       "severity": "warning",
@@ -466,7 +450,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 145,
+      "line": 144,
       "column": 22,
       "length": 3,
       "severity": "warning",
@@ -474,31 +458,31 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 146,
+      "line": 145,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 148,
-      "column": 5,
-      "length": 10,
-      "severity": "warning",
-      "reason": "Properties should be ordered background, bottom, content, height, left, position, width, z-index"
-    },
-    {
       "linter": "DeclarationOrder",
-      "line": 148,
+      "line": 147,
       "column": 5,
       "length": 10,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
+      "linter": "PropertySortOrder",
+      "line": 147,
+      "column": 5,
+      "length": 10,
+      "severity": "warning",
+      "reason": "Properties should be ordered background, bottom, content, height, left, position, width, z-index"
+    },
+    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 158,
+      "line": 157,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -506,7 +490,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 160,
+      "line": 159,
       "column": 5,
       "length": 7,
       "severity": "warning",
@@ -514,7 +498,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 160,
+      "line": 159,
       "column": 5,
       "length": 7,
       "severity": "warning",
@@ -522,7 +506,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 163,
+      "line": 162,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -530,7 +514,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 165,
+      "line": 164,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -538,7 +522,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 167,
+      "line": 166,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -546,7 +530,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 168,
+      "line": 167,
       "column": 7,
       "length": 18,
       "severity": "warning",
@@ -554,7 +538,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 168,
+      "line": 167,
       "column": 7,
       "length": 18,
       "severity": "warning",
@@ -562,7 +546,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 174,
+      "line": 173,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -570,7 +554,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 177,
+      "line": 176,
       "column": 24,
       "length": 3,
       "severity": "warning",
@@ -578,7 +562,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 178,
+      "line": 177,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -586,7 +570,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 180,
+      "line": 179,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -594,7 +578,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 181,
+      "line": 180,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -602,7 +586,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 185,
+      "line": 184,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -610,7 +594,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 186,
+      "line": 185,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -618,31 +602,31 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 187,
+      "line": 186,
       "column": 7,
       "length": 9,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
-      "linter": "DeclarationOrder",
-      "line": 196,
-      "column": 5,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
       "linter": "PropertySortOrder",
-      "line": 196,
+      "line": 195,
       "column": 5,
       "length": 18,
       "severity": "warning",
       "reason": "Properties should be ordered bottom, min-height, position"
     },
     {
+      "linter": "DeclarationOrder",
+      "line": 195,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 200,
+      "line": 199,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -650,31 +634,31 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 202,
+      "line": 201,
       "column": 5,
       "length": 14,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
-      "linter": "SingleLinePerSelector",
-      "line": 205,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Each selector in a comma sequence should be on its own line"
-    },
-    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 205,
+      "line": 204,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be preceded by an empty line"
     },
     {
+      "linter": "SingleLinePerSelector",
+      "line": 204,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
       "linter": "DeclarationOrder",
-      "line": 206,
+      "line": 205,
       "column": 7,
       "length": 11,
       "severity": "warning",
@@ -682,31 +666,31 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 209,
+      "line": 208,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
+      "linter": "DeclarationOrder",
+      "line": 210,
+      "column": 7,
+      "length": 8,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
       "linter": "PropertySortOrder",
-      "line": 211,
+      "line": 210,
       "column": 7,
       "length": 8,
       "severity": "warning",
       "reason": "Properties should be ordered border-bottom, border-top, bottom, left, right, top"
     },
     {
-      "linter": "DeclarationOrder",
-      "line": 211,
-      "column": 7,
-      "length": 8,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
       "linter": "SpaceAfterComma",
-      "line": 215,
+      "line": 214,
       "column": 22,
       "length": 1,
       "severity": "warning",
@@ -714,31 +698,31 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 219,
+      "line": 218,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "DeclarationOrder",
-      "line": 221,
-      "column": 7,
-      "length": 6,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
       "linter": "PropertySortOrder",
-      "line": 221,
+      "line": 220,
       "column": 7,
       "length": 6,
       "severity": "warning",
       "reason": "Properties should be ordered border-left, border-right, bottom, left, right, top"
     },
     {
+      "linter": "DeclarationOrder",
+      "line": 220,
+      "column": 7,
+      "length": 6,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
       "linter": "SpaceAfterComma",
-      "line": 227,
+      "line": 226,
       "column": 22,
       "length": 1,
       "severity": "warning",
@@ -746,7 +730,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 230,
+      "line": 229,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -754,7 +738,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 232,
+      "line": 231,
       "column": 5,
       "length": 15,
       "severity": "warning",
@@ -762,7 +746,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 234,
+      "line": 233,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -770,7 +754,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 236,
+      "line": 235,
       "column": 5,
       "length": 16,
       "severity": "warning",
@@ -778,7 +762,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 239,
+      "line": 238,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -786,7 +770,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 244,
+      "line": 243,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -794,7 +778,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 246,
+      "line": 245,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -802,7 +786,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 246,
+      "line": 245,
       "column": 7,
       "length": 20,
       "severity": "warning",
@@ -810,7 +794,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 250,
+      "line": 249,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -818,7 +802,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 251,
+      "line": 250,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -826,23 +810,23 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 264,
+      "line": 262,
       "column": 5,
-      "length": 9,
+      "length": 18,
       "severity": "warning",
-      "reason": "Properties should be ordered background, bottom, height, padding, top"
+      "reason": "Properties should be ordered background, bottom, height, margin, padding, position, top, width"
     },
     {
       "linter": "DeclarationOrder",
-      "line": 264,
+      "line": 262,
       "column": 5,
-      "length": 9,
+      "length": 18,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 269,
+      "line": 270,
       "column": 26,
       "length": 1,
       "severity": "warning",
@@ -850,7 +834,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 269,
+      "line": 270,
       "column": 28,
       "length": 4,
       "severity": "warning",
@@ -858,7 +842,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 271,
+      "line": 272,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -866,7 +850,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 273,
+      "line": 274,
       "column": 5,
       "length": 12,
       "severity": "warning",
@@ -874,7 +858,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 274,
+      "line": 275,
       "column": 5,
       "length": 11,
       "severity": "warning",
@@ -882,7 +866,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 276,
+      "line": 277,
       "column": 26,
       "length": 1,
       "severity": "warning",
@@ -890,15 +874,15 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 276,
-      "column": 28,
-      "length": 4,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
       "line": 277,
+      "column": 28,
+      "length": 4,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 278,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -907,30 +891,46 @@
     {
       "linter": "PropertySortOrder",
       "line": 280,
-      "column": 7,
+      "column": 5,
       "length": 18,
       "severity": "warning",
-      "reason": "Properties should be ordered bottom, color, padding, position, text-align, text-transform"
+      "reason": "Properties should be ordered bottom, padding, position, text-align, text-transform"
     },
     {
       "linter": "DeclarationOrder",
       "line": 280,
-      "column": 7,
+      "column": 5,
       "length": 18,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 288,
+      "line": 286,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "DeclarationOrder",
+      "linter": "PropertySortOrder",
+      "line": 288,
+      "column": 5,
+      "length": 16,
+      "severity": "warning",
+      "reason": "Properties should be ordered float, list-style"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
       "line": 290,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 291,
       "column": 7,
       "length": 12,
       "severity": "warning",
@@ -938,15 +938,15 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 290,
+      "line": 292,
       "column": 7,
-      "length": 12,
+      "length": 39,
       "severity": "warning",
-      "reason": "Properties should be ordered color, float, font-size"
+      "reason": "Properties should be ordered color, display, font-family, font-size, padding, speak"
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 294,
+      "line": 296,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -954,87 +954,87 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 294,
+      "line": 296,
       "column": 30,
       "length": 4,
       "severity": "warning",
       "reason": "Commas in mixin arguments should be followed by a single space"
     },
     {
-      "linter": "SelectorDepth",
-      "line": 295,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Selector should have depth of applicability no greater than 3, but was 4"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 295,
-      "column": 7,
-      "length": 13,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
-    },
-    {
-      "linter": "PropertySortOrder",
-      "line": 297,
-      "column": 9,
-      "length": 17,
-      "severity": "warning",
-      "reason": "Properties should be ordered display, font-family, padding, speak"
-    },
-    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 302,
+      "line": 300,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 305,
-      "column": 7,
-      "length": 14,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 307,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 308,
-      "column": 7,
-      "length": 15,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 309,
-      "column": 30,
+      "line": 303,
+      "column": 28,
       "length": 1,
       "severity": "warning",
       "reason": "Commas in mixin arguments should be followed by a single space"
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 309,
-      "column": 32,
+      "line": 303,
+      "column": 30,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 304,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 306,
+      "column": 28,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 306,
+      "column": 30,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 308,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 310,
+      "column": 28,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 310,
+      "column": 30,
       "length": 1,
       "severity": "warning",
       "reason": "Commas in mixin arguments should be followed by a single space"
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 310,
+      "line": 311,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1042,87 +1042,63 @@
     },
     {
       "linter": "SpaceBeforeBrace",
-      "line": 310,
+      "line": 311,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Opening curly brace `{` should be preceded by one space"
     },
     {
+      "linter": "NestingDepth",
+      "line": 311,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Nesting should be no greater than 3, but was 4"
+    },
+    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 312,
+      "line": 313,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
+      "linter": "NestingDepth",
+      "line": 316,
+      "column": 9,
+      "length": 19,
+      "severity": "warning",
+      "reason": "Nesting should be no greater than 3, but was 4"
+    },
+    {
+      "linter": "Indentation",
+      "line": 317,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Line should be indented 10 spaces, but was indented 8 spaces"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 317,
+      "column": 35,
+      "length": 4,
+      "severity": "warning",
+      "reason": "`0.1` should be written without a leading zero as `.1`"
+    },
+    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 315,
+      "line": 320,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 318,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 323,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 325,
-      "column": 28,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 325,
-      "column": 30,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 326,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 328,
-      "column": 28,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 328,
-      "column": 30,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
     },
     {
       "linter": "DeclarationOrder",
-      "line": 342,
+      "line": 335,
       "column": 5,
       "length": 12,
       "severity": "warning",
@@ -1130,7 +1106,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 342,
+      "line": 335,
       "column": 14,
       "length": 3,
       "severity": "warning",
@@ -1138,7 +1114,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 344,
+      "line": 337,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1146,7 +1122,7 @@
     },
     {
       "linter": "SpaceBeforeBrace",
-      "line": 345,
+      "line": 338,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1154,7 +1130,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 346,
+      "line": 339,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -1162,7 +1138,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 348,
+      "line": 341,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1170,7 +1146,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 350,
+      "line": 343,
       "column": 5,
       "length": 15,
       "severity": "warning",
@@ -1178,7 +1154,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 352,
+      "line": 345,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1186,7 +1162,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 354,
+      "line": 347,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -1194,7 +1170,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 354,
+      "line": 347,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -1202,7 +1178,7 @@
     },
     {
       "linter": "SpaceAfterPropertyColon",
-      "line": 358,
+      "line": 351,
       "column": 5,
       "length": 22,
       "severity": "warning",
@@ -1210,7 +1186,7 @@
     },
     {
       "linter": "ColorKeyword",
-      "line": 358,
+      "line": 351,
       "column": 12,
       "length": 15,
       "severity": "warning",
@@ -1218,7 +1194,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 360,
+      "line": 353,
       "column": 36,
       "length": 1,
       "severity": "warning",
@@ -1226,7 +1202,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 360,
+      "line": 353,
       "column": 38,
       "length": 7,
       "severity": "warning",
@@ -1234,7 +1210,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 361,
+      "line": 354,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1242,7 +1218,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 366,
+      "line": 359,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1250,7 +1226,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 369,
+      "line": 362,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1258,7 +1234,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 372,
+      "line": 365,
       "column": 38,
       "length": 1,
       "severity": "warning",
@@ -1266,7 +1242,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 372,
+      "line": 365,
       "column": 40,
       "length": 1,
       "severity": "warning",
@@ -1274,7 +1250,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 379,
+      "line": 372,
       "column": 31,
       "length": 5,
       "severity": "warning",
@@ -1282,7 +1258,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 379,
+      "line": 372,
       "column": 37,
       "length": 8,
       "severity": "warning",
@@ -1290,7 +1266,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 380,
+      "line": 373,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1298,7 +1274,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 381,
+      "line": 374,
       "column": 5,
       "length": 24,
       "severity": "warning",
@@ -1306,7 +1282,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 382,
+      "line": 375,
       "column": 27,
       "length": 4,
       "severity": "warning",
@@ -1314,7 +1290,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 382,
+      "line": 375,
       "column": 32,
       "length": 1,
       "severity": "warning",
@@ -1322,7 +1298,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 383,
+      "line": 376,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1330,7 +1306,7 @@
     },
     {
       "linter": "SpaceBeforeBrace",
-      "line": 384,
+      "line": 377,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1338,7 +1314,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 386,
+      "line": 379,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1346,7 +1322,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 388,
+      "line": 381,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1354,7 +1330,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 390,
+      "line": 383,
       "column": 7,
       "length": 15,
       "severity": "warning",
@@ -1362,7 +1338,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 393,
+      "line": 386,
       "column": 29,
       "length": 3,
       "severity": "warning",
@@ -1370,7 +1346,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 393,
+      "line": 386,
       "column": 33,
       "length": 1,
       "severity": "warning",
@@ -1378,7 +1354,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 394,
+      "line": 387,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1386,7 +1362,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 396,
+      "line": 389,
       "column": 7,
       "length": 19,
       "severity": "warning",
@@ -1394,7 +1370,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 400,
+      "line": 393,
       "column": 29,
       "length": 5,
       "severity": "warning",
@@ -1402,7 +1378,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 400,
+      "line": 393,
       "column": 35,
       "length": 1,
       "severity": "warning",
@@ -1410,7 +1386,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 403,
+      "line": 396,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1418,7 +1394,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 406,
+      "line": 399,
       "column": 7,
       "length": 11,
       "severity": "warning",
@@ -1426,7 +1402,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 407,
+      "line": 400,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -1434,7 +1410,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 407,
+      "line": 400,
       "column": 30,
       "length": 1,
       "severity": "warning",
@@ -1442,7 +1418,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 408,
+      "line": 401,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1450,7 +1426,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 410,
+      "line": 403,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1458,7 +1434,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 410,
+      "line": 403,
       "column": 7,
       "length": 13,
       "severity": "warning",
@@ -1466,7 +1442,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 412,
+      "line": 405,
       "column": 30,
       "length": 1,
       "severity": "warning",
@@ -1474,7 +1450,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 412,
+      "line": 405,
       "column": 32,
       "length": 1,
       "severity": "warning",
@@ -1482,7 +1458,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 423,
+      "line": 416,
       "column": 21,
       "length": 2,
       "severity": "warning",
@@ -1490,7 +1466,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 423,
+      "line": 416,
       "column": 24,
       "length": 3,
       "severity": "warning",
@@ -1498,7 +1474,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 423,
+      "line": 416,
       "column": 28,
       "length": 3,
       "severity": "warning",
@@ -1506,7 +1482,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 424,
+      "line": 417,
       "column": 14,
       "length": 3,
       "severity": "warning",
@@ -1514,7 +1490,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 424,
+      "line": 417,
       "column": 18,
       "length": 2,
       "severity": "warning",
@@ -1522,7 +1498,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 424,
+      "line": 417,
       "column": 21,
       "length": 2,
       "severity": "warning",
@@ -1530,7 +1506,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 430,
+      "line": 423,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1538,7 +1514,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 431,
+      "line": 424,
       "column": 7,
       "length": 18,
       "severity": "warning",
@@ -1546,11 +1522,51 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 431,
+      "line": 424,
       "column": 7,
       "length": 18,
       "severity": "warning",
       "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 433,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 435,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Properties should be ordered bottom, left, opacity, position"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 435,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 439,
+      "column": 26,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 439,
+      "column": 29,
+      "length": 5,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -1561,48 +1577,8 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "PropertySortOrder",
-      "line": 442,
-      "column": 5,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Properties should be ordered bottom, left, opacity, position"
-    },
-    {
-      "linter": "DeclarationOrder",
-      "line": 442,
-      "column": 5,
-      "length": 18,
-      "severity": "warning",
-      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 446,
-      "column": 26,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 446,
-      "column": 29,
-      "length": 5,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 447,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
       "linter": "LeadingZero",
-      "line": 450,
+      "line": 443,
       "column": 16,
       "length": 3,
       "severity": "warning",
@@ -1610,7 +1586,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 451,
+      "line": 444,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1618,7 +1594,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 454,
+      "line": 447,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -1626,7 +1602,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 454,
+      "line": 447,
       "column": 30,
       "length": 1,
       "severity": "warning",
@@ -1634,7 +1610,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 455,
+      "line": 448,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1642,7 +1618,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 457,
+      "line": 450,
       "column": 7,
       "length": 8,
       "severity": "warning",
@@ -1650,7 +1626,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 466,
+      "line": 459,
       "column": 22,
       "length": 3,
       "severity": "warning",
@@ -1658,7 +1634,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 467,
+      "line": 460,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1666,7 +1642,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 470,
+      "line": 463,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1674,7 +1650,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 472,
+      "line": 465,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1682,7 +1658,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 472,
+      "line": 465,
       "column": 7,
       "length": 9,
       "severity": "warning",
@@ -1690,7 +1666,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 473,
+      "line": 466,
       "column": 9,
       "length": 14,
       "severity": "warning",
@@ -1698,7 +1674,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 473,
+      "line": 466,
       "column": 9,
       "length": 14,
       "severity": "warning",
@@ -1706,7 +1682,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 484,
+      "line": 477,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1714,7 +1690,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 490,
+      "line": 483,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1722,7 +1698,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 493,
+      "line": 486,
       "column": 24,
       "length": 3,
       "severity": "warning",
@@ -1730,7 +1706,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 494,
+      "line": 487,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1738,31 +1714,31 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 497,
+      "line": 490,
       "column": 7,
       "length": 3,
       "severity": "warning",
       "reason": "Nesting should be no greater than 3, but was 4"
     },
     {
-      "linter": "SingleLinePerSelector",
-      "line": 498,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Each selector in a comma sequence should be on its own line"
-    },
-    {
       "linter": "SelectorDepth",
-      "line": 498,
+      "line": 491,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Selector should have depth of applicability no greater than 3, but was 4"
     },
     {
+      "linter": "SingleLinePerSelector",
+      "line": 491,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
       "linter": "DeclarationOrder",
-      "line": 499,
+      "line": 492,
       "column": 11,
       "length": 11,
       "severity": "warning",
@@ -1770,7 +1746,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 502,
+      "line": 495,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1778,7 +1754,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 503,
+      "line": 496,
       "column": 7,
       "length": 2,
       "severity": "warning",
@@ -1786,7 +1762,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 515,
+      "line": 508,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1794,7 +1770,7 @@
     },
     {
       "linter": "SpaceBeforeBrace",
-      "line": 516,
+      "line": 509,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1802,7 +1778,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 517,
+      "line": 510,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -1810,7 +1786,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 519,
+      "line": 512,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1818,7 +1794,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 521,
+      "line": 514,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1826,7 +1802,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 523,
+      "line": 516,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -1834,7 +1810,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 523,
+      "line": 516,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -1842,7 +1818,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 529,
+      "line": 522,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1850,7 +1826,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 531,
+      "line": 524,
       "column": 7,
       "length": 19,
       "severity": "warning",
@@ -1858,7 +1834,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 538,
+      "line": 531,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1866,7 +1842,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 543,
+      "line": 536,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1874,7 +1850,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 545,
+      "line": 538,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1882,7 +1858,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 545,
+      "line": 538,
       "column": 7,
       "length": 13,
       "severity": "warning",
@@ -1890,7 +1866,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 565,
+      "line": 558,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1898,7 +1874,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 567,
+      "line": 560,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -1906,7 +1882,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 570,
+      "line": 563,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1914,7 +1890,7 @@
     },
     {
       "linter": "SingleLinePerSelector",
-      "line": 571,
+      "line": 564,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1922,7 +1898,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 572,
+      "line": 565,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -1930,7 +1906,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 575,
+      "line": 568,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -1938,7 +1914,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 577,
+      "line": 570,
       "column": 5,
       "length": 14,
       "severity": "warning",
@@ -1946,7 +1922,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 579,
+      "line": 572,
       "column": 26,
       "length": 1,
       "severity": "warning",
@@ -1954,8 +1930,56 @@
     },
     {
       "linter": "SpaceAfterComma",
+      "line": 572,
+      "column": 28,
+      "length": 3,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 573,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 576,
+      "column": 28,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 576,
+      "column": 31,
+      "length": 3,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 577,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SpaceAfterComma",
       "line": 579,
       "column": 28,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Commas in mixin arguments should be followed by a single space"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 579,
+      "column": 31,
       "length": 3,
       "severity": "warning",
       "reason": "Commas in mixin arguments should be followed by a single space"
@@ -1969,56 +1993,8 @@
       "reason": "Rule declaration should be followed by an empty line"
     },
     {
-      "linter": "SpaceAfterComma",
-      "line": 583,
-      "column": 28,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 583,
-      "column": 31,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 584,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 586,
-      "column": 28,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "SpaceAfterComma",
-      "line": 586,
-      "column": 31,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Commas in mixin arguments should be followed by a single space"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 587,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
       "linter": "DeclarationOrder",
-      "line": 589,
+      "line": 582,
       "column": 7,
       "length": 10,
       "severity": "warning",
@@ -2026,7 +2002,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 590,
+      "line": 583,
       "column": 28,
       "length": 1,
       "severity": "warning",
@@ -2034,7 +2010,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 590,
+      "line": 583,
       "column": 30,
       "length": 1,
       "severity": "warning",
@@ -2042,7 +2018,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 610,
+      "line": 603,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2050,7 +2026,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 612,
+      "line": 605,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2058,7 +2034,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 615,
+      "line": 608,
       "column": 5,
       "length": 11,
       "severity": "warning",
@@ -2066,7 +2042,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 619,
+      "line": 612,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2074,7 +2050,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 620,
+      "line": 613,
       "column": 7,
       "length": 21,
       "severity": "warning",
@@ -2082,7 +2058,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 623,
+      "line": 616,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2090,7 +2066,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 623,
+      "line": 616,
       "column": 7,
       "length": 2,
       "severity": "warning",
@@ -2098,7 +2074,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 624,
+      "line": 617,
       "column": 9,
       "length": 17,
       "severity": "warning",
@@ -2106,7 +2082,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 624,
+      "line": 617,
       "column": 9,
       "length": 17,
       "severity": "warning",
@@ -2114,7 +2090,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 628,
+      "line": 621,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2122,7 +2098,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 629,
+      "line": 622,
       "column": 11,
       "length": 42,
       "severity": "warning",
@@ -2130,7 +2106,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 635,
+      "line": 628,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2138,7 +2114,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 638,
+      "line": 631,
       "column": 16,
       "length": 3,
       "severity": "warning",
@@ -2146,7 +2122,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 639,
+      "line": 632,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2154,7 +2130,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 641,
+      "line": 634,
       "column": 32,
       "length": 3,
       "severity": "warning",
@@ -2162,7 +2138,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 642,
+      "line": 635,
       "column": 7,
       "length": 15,
       "severity": "warning",
@@ -2170,7 +2146,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 644,
+      "line": 637,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2178,7 +2154,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 644,
+      "line": 637,
       "column": 7,
       "length": 2,
       "severity": "warning",
@@ -2186,7 +2162,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 662,
+      "line": 655,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2194,7 +2170,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 664,
+      "line": 657,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -2202,7 +2178,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 664,
+      "line": 657,
       "column": 5,
       "length": 18,
       "severity": "warning",
@@ -2210,7 +2186,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 667,
+      "line": 660,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2218,7 +2194,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 668,
+      "line": 661,
       "column": 7,
       "length": 15,
       "severity": "warning",
@@ -2226,7 +2202,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 670,
+      "line": 663,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2234,7 +2210,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 672,
+      "line": 665,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -2242,7 +2218,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 672,
+      "line": 665,
       "column": 7,
       "length": 16,
       "severity": "warning",
@@ -2250,7 +2226,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 678,
+      "line": 671,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2258,7 +2234,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 680,
+      "line": 673,
       "column": 7,
       "length": 19,
       "severity": "warning",
@@ -2266,7 +2242,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 685,
+      "line": 678,
       "column": 24,
       "length": 3,
       "severity": "warning",
@@ -2274,7 +2250,7 @@
     },
     {
       "linter": "SpaceAfterComma",
-      "line": 685,
+      "line": 678,
       "column": 28,
       "length": 3,
       "severity": "warning",
@@ -2282,7 +2258,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 688,
+      "line": 681,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2290,7 +2266,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 691,
+      "line": 684,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2298,7 +2274,47 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 694,
+      "line": 687,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "NestingDepth",
+      "line": 689,
+      "column": 7,
+      "length": 3,
+      "severity": "warning",
+      "reason": "Nesting should be no greater than 3, but was 4"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 691,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SingleLinePerSelector",
+      "line": 692,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
+      "linter": "NestingDepth",
+      "line": 692,
+      "column": 7,
+      "length": 13,
+      "severity": "warning",
+      "reason": "Nesting should be no greater than 3, but was 4"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 695,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2308,53 +2324,13 @@
       "linter": "NestingDepth",
       "line": 696,
       "column": 7,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 698,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "SingleLinePerSelector",
-      "line": 699,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Each selector in a comma sequence should be on its own line"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 699,
-      "column": 7,
-      "length": 13,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 702,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 703,
-      "column": 7,
       "length": 10,
       "severity": "warning",
       "reason": "Nesting should be no greater than 3, but was 4"
     },
     {
       "linter": "LeadingZero",
-      "line": 704,
+      "line": 697,
       "column": 40,
       "length": 3,
       "severity": "warning",
@@ -2362,11 +2338,27 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 720,
+      "line": 713,
       "column": 1,
       "length": 1,
       "severity": "warning",
       "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 715,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 718,
+      "column": 5,
+      "length": 11,
+      "severity": "warning",
+      "reason": "Properties should be ordered background, height, list-style, width"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -2374,27 +2366,11 @@
       "column": 1,
       "length": 1,
       "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "PropertySortOrder",
-      "line": 725,
-      "column": 5,
-      "length": 11,
-      "severity": "warning",
-      "reason": "Properties should be ordered background, height, list-style, width"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 729,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
       "reason": "Rule declaration should be preceded by an empty line"
     },
     {
       "linter": "DeclarationOrder",
-      "line": 730,
+      "line": 723,
       "column": 7,
       "length": 21,
       "severity": "warning",
@@ -2402,7 +2378,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 734,
+      "line": 727,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2410,7 +2386,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 734,
+      "line": 727,
       "column": 7,
       "length": 2,
       "severity": "warning",
@@ -2418,7 +2394,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 737,
+      "line": 730,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2426,7 +2402,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 743,
+      "line": 736,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2434,11 +2410,51 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 746,
+      "line": 739,
       "column": 16,
       "length": 3,
       "severity": "warning",
       "reason": "`0.5` should be written without a leading zero as `.5`"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 740,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 742,
+      "column": 32,
+      "length": 3,
+      "severity": "warning",
+      "reason": "`0.8` should be written without a leading zero as `.8`"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 743,
+      "column": 7,
+      "length": 15,
+      "severity": "warning",
+      "reason": "Properties should be ordered background, height, margin-top"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 745,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "NestingDepth",
+      "line": 745,
+      "column": 7,
+      "length": 3,
+      "severity": "warning",
+      "reason": "Nesting should be no greater than 3, but was 4"
     },
     {
       "linter": "EmptyLineBetweenBlocks",
@@ -2446,51 +2462,11 @@
       "column": 1,
       "length": 1,
       "severity": "warning",
-      "reason": "Rule declaration should be followed by an empty line"
-    },
-    {
-      "linter": "LeadingZero",
-      "line": 749,
-      "column": 32,
-      "length": 3,
-      "severity": "warning",
-      "reason": "`0.8` should be written without a leading zero as `.8`"
-    },
-    {
-      "linter": "PropertySortOrder",
-      "line": 750,
-      "column": 7,
-      "length": 15,
-      "severity": "warning",
-      "reason": "Properties should be ordered background, height, margin-top"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 752,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
-      "reason": "Rule declaration should be preceded by an empty line"
-    },
-    {
-      "linter": "NestingDepth",
-      "line": 752,
-      "column": 7,
-      "length": 3,
-      "severity": "warning",
-      "reason": "Nesting should be no greater than 3, but was 4"
-    },
-    {
-      "linter": "EmptyLineBetweenBlocks",
-      "line": 754,
-      "column": 1,
-      "length": 1,
-      "severity": "warning",
       "reason": "Rule declaration should be preceded by an empty line"
     },
     {
       "linter": "SelectorDepth",
-      "line": 754,
+      "line": 747,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2498,7 +2474,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 755,
+      "line": 748,
       "column": 11,
       "length": 17,
       "severity": "warning",
@@ -2506,7 +2482,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 755,
+      "line": 748,
       "column": 11,
       "length": 17,
       "severity": "warning",
@@ -2514,7 +2490,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 767,
+      "line": 760,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2522,7 +2498,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 769,
+      "line": 762,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2530,7 +2506,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 771,
+      "line": 764,
       "column": 5,
       "length": 19,
       "severity": "warning",
@@ -2538,7 +2514,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 772,
+      "line": 765,
       "column": 5,
       "length": 11,
       "severity": "warning",
@@ -2546,7 +2522,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 778,
+      "line": 771,
       "column": 7,
       "length": 21,
       "severity": "warning",
@@ -2554,7 +2530,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 783,
+      "line": 776,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2562,7 +2538,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 783,
+      "line": 776,
       "column": 7,
       "length": 2,
       "severity": "warning",
@@ -2570,7 +2546,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 784,
+      "line": 777,
       "column": 9,
       "length": 17,
       "severity": "warning",
@@ -2578,7 +2554,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 784,
+      "line": 777,
       "column": 9,
       "length": 17,
       "severity": "warning",
@@ -2586,7 +2562,7 @@
     },
     {
       "linter": "SelectorDepth",
-      "line": 788,
+      "line": 781,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2594,7 +2570,7 @@
     },
     {
       "linter": "DeclarationOrder",
-      "line": 789,
+      "line": 782,
       "column": 11,
       "length": 42,
       "severity": "warning",
@@ -2602,7 +2578,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 796,
+      "line": 789,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2610,7 +2586,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 799,
+      "line": 792,
       "column": 16,
       "length": 3,
       "severity": "warning",
@@ -2618,7 +2594,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 800,
+      "line": 793,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2626,7 +2602,7 @@
     },
     {
       "linter": "LeadingZero",
-      "line": 803,
+      "line": 796,
       "column": 32,
       "length": 3,
       "severity": "warning",
@@ -2634,7 +2610,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 804,
+      "line": 797,
       "column": 7,
       "length": 15,
       "severity": "warning",
@@ -2642,7 +2618,7 @@
     },
     {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 806,
+      "line": 799,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2650,15 +2626,31 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 806,
+      "line": 799,
       "column": 7,
       "length": 3,
       "severity": "warning",
       "reason": "Nesting should be no greater than 3, but was 4"
     },
     {
+      "linter": "SelectorDepth",
+      "line": 803,
+      "column": 11,
+      "length": 19,
+      "severity": "warning",
+      "reason": "Selector should have depth of applicability no greater than 3, but was 4"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 804,
+      "column": 39,
+      "length": 5,
+      "severity": "warning",
+      "reason": "`0.15` should be written without a leading zero as `.15`"
+    },
+    {
       "linter": "EmptyLineBetweenBlocks",
-      "line": 809,
+      "line": 807,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2666,7 +2658,7 @@
     },
     {
       "linter": "NestingDepth",
-      "line": 810,
+      "line": 808,
       "column": 7,
       "length": 2,
       "severity": "warning",
@@ -2674,7 +2666,7 @@
     },
     {
       "linter": "Comment",
-      "line": 817,
+      "line": 815,
       "column": 1,
       "length": 1,
       "severity": "warning",
@@ -2682,7 +2674,7 @@
     },
     {
       "linter": "PropertySortOrder",
-      "line": 833,
+      "line": 831,
       "column": 5,
       "length": 11,
       "severity": "warning",
@@ -2690,7 +2682,7 @@
     },
     {
       "linter": "FinalNewline",
-      "line": 1123,
+      "line": 1121,
       "column": 1,
       "length": 1,
       "severity": "warning",
