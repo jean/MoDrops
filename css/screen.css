@@ -1646,6 +1646,10 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transition: all 0.35s ease-in-out;
 }
 /* line 23, ../scss/modules/_portfolio.scss */
+.portfolio-grid figure:last-child {
+  width: 100%;
+}
+/* line 26, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure img {
   min-height: 100%;
   min-width: 100%;
@@ -1656,10 +1660,13 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 30, ../scss/modules/_portfolio.scss */
+/* line 33, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure figcaption {
-  margin: 8.33333%;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
   width: 83.33333%;
+  margin-top: 8%;
+  margin-bottom: 8%;
   position: absolute;
   color: #ffffff;
   text-transform: uppercase;
@@ -1667,12 +1674,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 46, ../scss/modules/_portfolio.scss */
+/* line 47, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure figcaption::before, .portfolio-grid figure figcaption::after {
   pointer-events: none;
   content: '';
 }
-/* line 51, ../scss/modules/_portfolio.scss */
+/* line 52, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure h3 {
   font-size: 2em;
   font-weight: 300;
@@ -1681,12 +1688,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 55, ../scss/modules/_portfolio.scss */
+/* line 56, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure h3 strong {
   font-weight: 700;
   margin-left: -.25em;
 }
-/* line 60, ../scss/modules/_portfolio.scss */
+/* line 61, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure p {
   font-weight: 300;
   line-height: 1.2;
@@ -1696,7 +1703,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transition: all 0.35s ease-in-out;
   font-size: 95%;
 }
-/* line 66, ../scss/modules/_portfolio.scss */
+/* line 67, ../scss/modules/_portfolio.scss */
 .portfolio-grid figure a {
   font: 0/0 serif;
   text-shadow: none;
@@ -1704,26 +1711,26 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
 }
 
 /* Individual effects */
-/* line 76, ../scss/modules/_portfolio.scss */
+/* line 77, ../scss/modules/_portfolio.scss */
 .sassy-lily img {
   width: calc(100% + 60px);
   -moz-transform: translate3d(-50px, 0, 0);
   -webkit-transform: translate3d(-50px, 0, 0);
   transform: translate3d(-50px, 0, 0);
 }
-/* line 80, ../scss/modules/_portfolio.scss */
+/* line 81, ../scss/modules/_portfolio.scss */
 .sassy-lily figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-/* line 85, ../scss/modules/_portfolio.scss */
+/* line 86, ../scss/modules/_portfolio.scss */
 .sassy-lily h3 {
   -moz-transform: translate3d(0, 0.5em, 0);
   -webkit-transform: translate3d(0, 0.5em, 0);
   transform: translate3d(0, 0.5em, 0);
 }
-/* line 88, ../scss/modules/_portfolio.scss */
+/* line 89, ../scss/modules/_portfolio.scss */
 .sassy-lily p {
   margin-top: .25em;
   -moz-transform: translate3d(0, 3em, 0);
@@ -1737,14 +1744,14 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.15s;
   transition: all 0.35s ease 0.15s;
 }
-/* line 95, ../scss/modules/_portfolio.scss */
+/* line 96, ../scss/modules/_portfolio.scss */
 .sassy-lily:hover img {
   opacity: .9;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 99, ../scss/modules/_portfolio.scss */
+/* line 100, ../scss/modules/_portfolio.scss */
 .sassy-lily:hover h3, .sassy-lily:hover p {
   opacity: 1;
   -moz-transform: translate3d(0, -0.5em, 0);
@@ -1752,7 +1759,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translate3d(0, -0.5em, 0);
 }
 
-/* line 107, ../scss/modules/_portfolio.scss */
+/* line 108, ../scss/modules/_portfolio.scss */
 .sassy-sadie {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U2ZTZmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -1761,12 +1768,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   background-image: -webkit-linear-gradient(#0d0d0d, #e6e6f2);
   background-image: linear-gradient(#0d0d0d, #e6e6f2);
 }
-/* line 109, ../scss/modules/_portfolio.scss */
+/* line 110, ../scss/modules/_portfolio.scss */
 .sassy-sadie img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 113, ../scss/modules/_portfolio.scss */
+/* line 114, ../scss/modules/_portfolio.scss */
 .sassy-sadie figcaption {
   text-align: center;
   bottom: 0;
@@ -1775,7 +1782,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 117, ../scss/modules/_portfolio.scss */
+/* line 118, ../scss/modules/_portfolio.scss */
 .sassy-sadie figcaption p {
   color: #ffffff;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1786,7 +1793,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transition: all 0.35s ease-in-out;
   margin-top: 20%;
 }
-/* line 124, ../scss/modules/_portfolio.scss */
+/* line 125, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZTZmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -1795,17 +1802,17 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   background-image: -webkit-linear-gradient(#e6e6f2, #0d0d0d);
   background-image: linear-gradient(#e6e6f2, #0d0d0d);
 }
-/* line 126, ../scss/modules/_portfolio.scss */
+/* line 127, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 129, ../scss/modules/_portfolio.scss */
+/* line 130, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover figcaption {
   color: #ffffff;
   bottom: 5%;
 }
-/* line 132, ../scss/modules/_portfolio.scss */
+/* line 133, ../scss/modules/_portfolio.scss */
 .sassy-sadie:hover figcaption::before, .sassy-sadie:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1814,12 +1821,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translate3d(0, 0, 0);
 }
 
-/* line 142, ../scss/modules/_portfolio.scss */
+/* line 143, ../scss/modules/_portfolio.scss */
 .sassy-honey img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 146, ../scss/modules/_portfolio.scss */
+/* line 147, ../scss/modules/_portfolio.scss */
 .sassy-honey::before {
   z-index: 1;
   position: absolute;
@@ -1837,7 +1844,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 158, ../scss/modules/_portfolio.scss */
+/* line 159, ../scss/modules/_portfolio.scss */
 .sassy-honey figcaption {
   left: 0;
   bottom: 0;
@@ -1846,12 +1853,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 163, ../scss/modules/_portfolio.scss */
+/* line 164, ../scss/modules/_portfolio.scss */
 .sassy-honey h3 {
   position: absolute;
   bottom: .5em;
 }
-/* line 166, ../scss/modules/_portfolio.scss */
+/* line 167, ../scss/modules/_portfolio.scss */
 .sassy-honey h3 i {
   position: relative;
   bottom: 1em;
@@ -1863,31 +1870,31 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 175, ../scss/modules/_portfolio.scss */
+/* line 176, ../scss/modules/_portfolio.scss */
 .sassy-honey:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 178, ../scss/modules/_portfolio.scss */
+/* line 179, ../scss/modules/_portfolio.scss */
 .sassy-honey:hover::before {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 181, ../scss/modules/_portfolio.scss */
+/* line 182, ../scss/modules/_portfolio.scss */
 .sassy-honey:hover figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   bottom: -1em;
 }
-/* line 185, ../scss/modules/_portfolio.scss */
+/* line 186, ../scss/modules/_portfolio.scss */
 .sassy-honey:hover h3, .sassy-honey:hover i {
   bottom: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
-/* line 194, ../scss/modules/_portfolio.scss */
+/* line 195, ../scss/modules/_portfolio.scss */
 .sassy-layla img {
   position: absolute;
   min-height: 120%;
@@ -1897,12 +1904,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translateY(1em);
   transform: translateY(1em);
 }
-/* line 200, ../scss/modules/_portfolio.scss */
+/* line 201, ../scss/modules/_portfolio.scss */
 .sassy-layla figcaption {
   padding: 2.5em;
   text-align: center;
 }
-/* line 204, ../scss/modules/_portfolio.scss */
+/* line 205, ../scss/modules/_portfolio.scss */
 .sassy-layla figcaption:before, .sassy-layla figcaption:after {
   content: '';
   position: absolute;
@@ -1911,7 +1918,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 209, ../scss/modules/_portfolio.scss */
+/* line 210, ../scss/modules/_portfolio.scss */
 .sassy-layla figcaption:before {
   top: 2em;
   right: 0;
@@ -1928,7 +1935,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
 }
-/* line 219, ../scss/modules/_portfolio.scss */
+/* line 220, ../scss/modules/_portfolio.scss */
 .sassy-layla figcaption:after {
   top: 0;
   right: 2em;
@@ -1945,7 +1952,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
-/* line 230, ../scss/modules/_portfolio.scss */
+/* line 231, ../scss/modules/_portfolio.scss */
 .sassy-layla h3 {
   margin-top: 15%;
   -moz-transform: translateY(-0.75em);
@@ -1953,7 +1960,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translateY(-0.75em);
   transform: translateY(-0.75em);
 }
-/* line 234, ../scss/modules/_portfolio.scss */
+/* line 235, ../scss/modules/_portfolio.scss */
 .sassy-layla p {
   margin: .5em 2em;
   -moz-transform: translateY(0.5em);
@@ -1963,7 +1970,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 240, ../scss/modules/_portfolio.scss */
+/* line 241, ../scss/modules/_portfolio.scss */
 .sassy-layla:hover img {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -1972,7 +1979,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 245, ../scss/modules/_portfolio.scss */
+/* line 246, ../scss/modules/_portfolio.scss */
 .sassy-layla:hover figcaption::before, .sassy-layla:hover figcaption::after {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -1981,7 +1988,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 250, ../scss/modules/_portfolio.scss */
+/* line 251, ../scss/modules/_portfolio.scss */
 .sassy-layla:hover h3, .sassy-layla:hover p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1991,15 +1998,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translateY(0);
 }
 
-/* line 261, ../scss/modules/_portfolio.scss */
+/* line 263, ../scss/modules/_portfolio.scss */
 .sassy-zoe figcaption {
-  position: absolute;
-  width: 100% !important;
-  margin: 0 !important;
   top: auto;
   bottom: 0;
-  padding: 1em 2em;
-  height: 4em !important;
+  padding: 1em;
+  height: 3.75em;
   background: #ffffff;
   -moz-transform: translate3d(0, 200%, 0);
   -webkit-transform: translate3d(0, 200%, 0);
@@ -2009,7 +2013,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 273, ../scss/modules/_portfolio.scss */
+/* line 272, ../scss/modules/_portfolio.scss */
 .sassy-zoe h3 {
   color: #435a6b;
   float: left;
@@ -2019,26 +2023,25 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translate3d(0, 200%, 0);
 }
 /* line 279, ../scss/modules/_portfolio.scss */
-.sassy-zoe p {
+.sassy-zoe p.description {
   position: absolute;
   text-align: center;
-  bottom: 9em;
-  padding: 3em;
+  bottom: 8em;
+  padding: 2em;
+  color: #fff;
   text-transform: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
-/* line 287, ../scss/modules/_portfolio.scss */
-.sassy-zoe ul {
-  list-style: none;
+/* line 289, ../scss/modules/_portfolio.scss */
+.sassy-zoe p.icon-links a {
   float: right;
-}
-/* line 290, ../scss/modules/_portfolio.scss */
-.sassy-zoe ul li {
-  color: #435a6b;
-  font-family: 'silencekillsdesign-icons';
-  font-size: 1.3em;
-  padding: .25em .375em;
+  color: #3c4a50;
+  font-size: 1.4em;
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -2046,16 +2049,56 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -moz-transform: translate3d(0, 200%, 0);
   -webkit-transform: translate3d(0, 200%, 0);
   transform: translate3d(0, 200%, 0);
+}
+/* line 295, ../scss/modules/_portfolio.scss */
+.sassy-zoe p.icon-links a span::before {
   display: inline-block;
+  padding: 8px 10px;
+  font-family: 'SilenceKillsDesign-Icons';
   speak: none;
 }
-/* line 302, ../scss/modules/_portfolio.scss */
+/* line 305, ../scss/modules/_portfolio.scss */
+.sassy-zoe:hover p.description {
+  opacity: 1;
+}
+/* line 308, ../scss/modules/_portfolio.scss */
+.sassy-zoe:hover p.icon-links a {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 310, ../scss/modules/_portfolio.scss */
+.sassy-zoe:hover p.icon-links a:hover, .sassy-zoe:hover p.icon-links a:focus {
+  color: #0888F0;
+}
+/* line 313, ../scss/modules/_portfolio.scss */
+.sassy-zoe:hover p.icon-links a:nth-child(3) {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/* line 316, ../scss/modules/_portfolio.scss */
+.sassy-zoe:hover p.icon-links a:nth-child(2) {
+  -moz-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+/* line 319, ../scss/modules/_portfolio.scss */
+.sassy-zoe:hover p.icon-links a:first-child {
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* line 324, ../scss/modules/_portfolio.scss */
 .sassy-zoe:hover figcaption {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 305, ../scss/modules/_portfolio.scss */
+/* line 327, ../scss/modules/_portfolio.scss */
 .sassy-zoe:hover h3 {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -2065,44 +2108,8 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
-/* line 309, ../scss/modules/_portfolio.scss */
-.sassy-zoe:hover li {
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-/* line 311, ../scss/modules/_portfolio.scss */
-.sassy-zoe:hover li:hover, .sassy-zoe:hover li:focus {
-  color: #0888F0;
-}
-/* line 316, ../scss/modules/_portfolio.scss */
-.sassy-zoe:hover li:nth-child(1) {
-  -moz-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-/* line 316, ../scss/modules/_portfolio.scss */
-.sassy-zoe:hover li:nth-child(2) {
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-/* line 316, ../scss/modules/_portfolio.scss */
-.sassy-zoe:hover li:nth-child(3) {
-  -moz-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-/* line 321, ../scss/modules/_portfolio.scss */
-.sassy-zoe:hover p {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
 
-/* line 334, ../scss/modules/_portfolio.scss */
+/* line 341, ../scss/modules/_portfolio.scss */
 .sassy-ruby img {
   opacity: 0.7;
   -moz-transform: scale(1.25, 1.25);
@@ -2110,18 +2117,18 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 338, ../scss/modules/_portfolio.scss */
+/* line 345, ../scss/modules/_portfolio.scss */
 .sassy-ruby figcaption {
   text-align: center;
 }
-/* line 342, ../scss/modules/_portfolio.scss */
+/* line 349, ../scss/modules/_portfolio.scss */
 .sassy-ruby h3 {
   margin-top: 15%;
   -moz-transform: translate3d(0, 1.125em, 0);
   -webkit-transform: translate3d(0, 1.125em, 0);
   transform: translate3d(0, 1.125em, 0);
 }
-/* line 346, ../scss/modules/_portfolio.scss */
+/* line 353, ../scss/modules/_portfolio.scss */
 .sassy-ruby p {
   position: absolute;
   bottom: 0;
@@ -2135,7 +2142,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translate3d(0, 1.125em, 0) scale(1.1);
   transform: translate3d(0, 1.125em, 0) scale(1.1);
 }
-/* line 356, ../scss/modules/_portfolio.scss */
+/* line 363, ../scss/modules/_portfolio.scss */
 .sassy-ruby:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -2144,13 +2151,13 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 360, ../scss/modules/_portfolio.scss */
+/* line 367, ../scss/modules/_portfolio.scss */
 .sassy-ruby:hover h3 {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 363, ../scss/modules/_portfolio.scss */
+/* line 370, ../scss/modules/_portfolio.scss */
 .sassy-ruby:hover p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2160,22 +2167,22 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translate3d(0, 0, 0) scale(1);
 }
 
-/* line 371, ../scss/modules/_portfolio.scss */
+/* line 378, ../scss/modules/_portfolio.scss */
 .sassy-roxy {
   background: linear-gradient(45deg, #ff4d67, #0888f0);
 }
-/* line 373, ../scss/modules/_portfolio.scss */
+/* line 380, ../scss/modules/_portfolio.scss */
 .sassy-roxy img {
   width: calc(100% + 60px);
   -moz-transform: translate3d(-50px, 0, 0);
   -webkit-transform: translate3d(-50px, 0, 0);
   transform: translate3d(-50px, 0, 0);
 }
-/* line 379, ../scss/modules/_portfolio.scss */
+/* line 386, ../scss/modules/_portfolio.scss */
 .sassy-roxy figcaption h3 {
   margin: 25% 7% .5em;
 }
-/* line 382, ../scss/modules/_portfolio.scss */
+/* line 389, ../scss/modules/_portfolio.scss */
 .sassy-roxy figcaption p {
   margin-left: 7%;
   margin-right: 7%;
@@ -2185,7 +2192,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translate3d(-1em, 0, 0);
   transform: translate3d(-1em, 0, 0);
 }
-/* line 388, ../scss/modules/_portfolio.scss */
+/* line 395, ../scss/modules/_portfolio.scss */
 .sassy-roxy figcaption::before {
   border: 1px solid #fff;
   content: '';
@@ -2198,14 +2205,14 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 398, ../scss/modules/_portfolio.scss */
+/* line 405, ../scss/modules/_portfolio.scss */
 .sassy-roxy:hover img {
   opacity: .7;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 403, ../scss/modules/_portfolio.scss */
+/* line 410, ../scss/modules/_portfolio.scss */
 .sassy-roxy:hover figcaption::before, .sassy-roxy:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2214,7 +2221,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translate3d(0, 0, 0);
 }
 
-/* line 419, ../scss/modules/_portfolio.scss */
+/* line 426, ../scss/modules/_portfolio.scss */
 .sassy-dexter {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI1OGRjOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY4M2MxMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -2223,7 +2230,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   background-image: -webkit-linear-gradient(#258dc8, #683c13);
   background-image: linear-gradient(#258dc8, #683c13);
 }
-/* line 423, ../scss/modules/_portfolio.scss */
+/* line 430, ../scss/modules/_portfolio.scss */
 .sassy-dexter figcaption::after {
   position: absolute;
   right: -1em;
@@ -2237,7 +2244,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 434, ../scss/modules/_portfolio.scss */
+/* line 441, ../scss/modules/_portfolio.scss */
 .sassy-dexter p {
   position: absolute;
   bottom: 0;
@@ -2247,11 +2254,11 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translate3d(0, -100px, 0);
   transform: translate3d(0, -100px, 0);
 }
-/* line 442, ../scss/modules/_portfolio.scss */
+/* line 449, ../scss/modules/_portfolio.scss */
 .sassy-dexter:hover img {
   opacity: 0.4;
 }
-/* line 445, ../scss/modules/_portfolio.scss */
+/* line 452, ../scss/modules/_portfolio.scss */
 .sassy-dexter:hover p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2259,22 +2266,22 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 449, ../scss/modules/_portfolio.scss */
+/* line 456, ../scss/modules/_portfolio.scss */
 .sassy-dexter:hover figcaption::after {
   top: 50%;
   bottom: -1em;
 }
 
-/* line 458, ../scss/modules/_portfolio.scss */
+/* line 465, ../scss/modules/_portfolio.scss */
 .sassy-sarah img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 463, ../scss/modules/_portfolio.scss */
+/* line 470, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption h3 {
   margin-bottom: .5em;
 }
-/* line 465, ../scss/modules/_portfolio.scss */
+/* line 472, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption h3::after {
   height: .125em;
   display: block;
@@ -2291,7 +2298,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-/* line 478, ../scss/modules/_portfolio.scss */
+/* line 485, ../scss/modules/_portfolio.scss */
 .sassy-sarah figcaption p {
   -moz-transform: translate(125%, 0);
   -ms-transform: translate(125%, 0);
@@ -2304,23 +2311,23 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 485, ../scss/modules/_portfolio.scss */
+/* line 492, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 488, ../scss/modules/_portfolio.scss */
+/* line 495, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 491, ../scss/modules/_portfolio.scss */
+/* line 498, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover figcaption h3::after, .sassy-sarah:hover figcaption h3 p {
   width: 100%;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 496, ../scss/modules/_portfolio.scss */
+/* line 503, ../scss/modules/_portfolio.scss */
 .sassy-sarah:hover figcaption p {
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -2330,22 +2337,22 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   opacity: 1;
 }
 
-/* line 506, ../scss/modules/_portfolio.scss */
+/* line 513, ../scss/modules/_portfolio.scss */
 .sassy-chico img {
   -moz-transform: scale(1.125, 1.125);
   -ms-transform: scale(1.125, 1.125);
   -webkit-transform: scale(1.125, 1.125);
   transform: scale(1.125, 1.125);
 }
-/* line 509, ../scss/modules/_portfolio.scss */
+/* line 516, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption {
   text-align: center;
 }
-/* line 512, ../scss/modules/_portfolio.scss */
+/* line 519, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption h3 {
   margin-top: 20%;
 }
-/* line 515, ../scss/modules/_portfolio.scss */
+/* line 522, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption p {
   margin-left: 22%;
   margin-right: 22%;
@@ -2358,7 +2365,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 523, ../scss/modules/_portfolio.scss */
+/* line 530, ../scss/modules/_portfolio.scss */
 .sassy-chico figcaption::before {
   border: 1px solid #fff;
   content: '';
@@ -2373,7 +2380,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
 }
-/* line 533, ../scss/modules/_portfolio.scss */
+/* line 540, ../scss/modules/_portfolio.scss */
 .sassy-chico:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -2382,7 +2389,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 538, ../scss/modules/_portfolio.scss */
+/* line 545, ../scss/modules/_portfolio.scss */
 .sassy-chico:hover figcaption::before, .sassy-chico:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2392,26 +2399,26 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: scale(1, 1);
 }
 
-/* line 555, ../scss/modules/_portfolio.scss */
+/* line 562, ../scss/modules/_portfolio.scss */
 .sassy-goliath img {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background: #df4e4e;
 }
-/* line 559, ../scss/modules/_portfolio.scss */
+/* line 566, ../scss/modules/_portfolio.scss */
 .sassy-goliath figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-/* line 564, ../scss/modules/_portfolio.scss */
+/* line 571, ../scss/modules/_portfolio.scss */
 .sassy-goliath h3, .sassy-goliath p {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-/* line 569, ../scss/modules/_portfolio.scss */
+/* line 576, ../scss/modules/_portfolio.scss */
 .sassy-goliath p {
   font-size: 90%;
   opacity: 0;
@@ -2419,19 +2426,19 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: translate3d(0, 3em, 0);
   transform: translate3d(0, 3em, 0);
 }
-/* line 575, ../scss/modules/_portfolio.scss */
+/* line 582, ../scss/modules/_portfolio.scss */
 .sassy-goliath:hover img {
   -moz-transform: translate3d(0, -30%, 0);
   -webkit-transform: translate3d(0, -30%, 0);
   transform: translate3d(0, -30%, 0);
 }
-/* line 578, ../scss/modules/_portfolio.scss */
+/* line 585, ../scss/modules/_portfolio.scss */
 .sassy-goliath:hover h3 {
   -moz-transform: translate3d(0, -2em, 0);
   -webkit-transform: translate3d(0, -2em, 0);
   transform: translate3d(0, -2em, 0);
 }
-/* line 581, ../scss/modules/_portfolio.scss */
+/* line 588, ../scss/modules/_portfolio.scss */
 .sassy-goliath:hover p {
   opacity: 1;
   -moz-transform: translate3d(0, 0, 0);
@@ -2439,11 +2446,11 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: translate3d(0, 0, 0);
 }
 
-/* line 601, ../scss/modules/_portfolio.scss */
+/* line 608, ../scss/modules/_portfolio.scss */
 .sassy-kira {
   background: #ffffff;
 }
-/* line 606, ../scss/modules/_portfolio.scss */
+/* line 613, ../scss/modules/_portfolio.scss */
 .sassy-kira ul {
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -2454,7 +2461,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   height: .25em;
   list-style: none;
 }
-/* line 612, ../scss/modules/_portfolio.scss */
+/* line 619, ../scss/modules/_portfolio.scss */
 .sassy-kira ul li {
   display: inline-block;
   margin: 1.25em .75em;
@@ -2464,7 +2471,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.3s;
   transition: all 0.35s ease 0.3s;
 }
-/* line 616, ../scss/modules/_portfolio.scss */
+/* line 623, ../scss/modules/_portfolio.scss */
 .sassy-kira ul li a {
   font: 1.5em serif;
   color: #435a6b;
@@ -2476,7 +2483,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.1s;
   transition: all 0.35s ease-out 0.1s;
 }
-/* line 621, ../scss/modules/_portfolio.scss */
+/* line 628, ../scss/modules/_portfolio.scss */
 .sassy-kira ul li a:hover {
   color: #1c252c;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
@@ -2486,23 +2493,23 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
-/* line 630, ../scss/modules/_portfolio.scss */
+/* line 637, ../scss/modules/_portfolio.scss */
 .sassy-kira:hover img {
   opacity: 0.5;
 }
-/* line 633, ../scss/modules/_portfolio.scss */
+/* line 640, ../scss/modules/_portfolio.scss */
 .sassy-kira:hover ul {
   background: rgba(255, 255, 255, 0.8);
   margin-top: 3em;
   height: 4em;
 }
-/* line 637, ../scss/modules/_portfolio.scss */
+/* line 644, ../scss/modules/_portfolio.scss */
 .sassy-kira:hover ul a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
-/* line 652, ../scss/modules/_portfolio.scss */
+/* line 659, ../scss/modules/_portfolio.scss */
 .sassy-ming img {
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
@@ -2510,12 +2517,12 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: scale(1.05, 1.05);
   opacity: .9;
 }
-/* line 656, ../scss/modules/_portfolio.scss */
+/* line 663, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption {
   text-align: center;
   padding: 7%;
 }
-/* line 660, ../scss/modules/_portfolio.scss */
+/* line 667, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption h3 {
   margin-top: 10%;
   -moz-transform: scale(1, 1);
@@ -2523,7 +2530,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 664, ../scss/modules/_portfolio.scss */
+/* line 671, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption p {
   margin-left: 22%;
   margin-right: 22%;
@@ -2536,7 +2543,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1.5, 1.5);
   transform: scale(1.5, 1.5);
 }
-/* line 672, ../scss/modules/_portfolio.scss */
+/* line 679, ../scss/modules/_portfolio.scss */
 .sassy-ming figcaption::before {
   border: 2px solid #fff;
   content: '';
@@ -2550,11 +2557,11 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale3d(1.4, 1.4, 1);
   transform: scale3d(1.4, 1.4, 1);
 }
-/* line 682, ../scss/modules/_portfolio.scss */
+/* line 689, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover {
   background-color: #e6e6f2;
 }
-/* line 684, ../scss/modules/_portfolio.scss */
+/* line 691, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
@@ -2563,14 +2570,14 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 689, ../scss/modules/_portfolio.scss */
+/* line 696, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover figcaption h3 {
   -moz-transform: scale(0.9, 0.9);
   -ms-transform: scale(0.9, 0.9);
   -webkit-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9);
 }
-/* line 692, ../scss/modules/_portfolio.scss */
+/* line 699, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover figcaption::before, .sassy-ming:hover figcaption p {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2579,16 +2586,16 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 696, ../scss/modules/_portfolio.scss */
+/* line 703, ../scss/modules/_portfolio.scss */
 .sassy-ming:hover figcaption::before {
   background-color: rgba(13, 13, 13, 0.8);
 }
 
-/* line 711, ../scss/modules/_portfolio.scss */
+/* line 718, ../scss/modules/_portfolio.scss */
 .sassy-kiri {
   background-color: #ffffff;
 }
-/* line 716, ../scss/modules/_portfolio.scss */
+/* line 723, ../scss/modules/_portfolio.scss */
 .sassy-kiri ul {
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -2599,7 +2606,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   height: .25em;
   list-style: none;
 }
-/* line 722, ../scss/modules/_portfolio.scss */
+/* line 729, ../scss/modules/_portfolio.scss */
 .sassy-kiri ul li {
   display: inline-block;
   margin-left: 0;
@@ -2610,7 +2617,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.3s;
   transition: all 0.35s ease 0.3s;
 }
-/* line 727, ../scss/modules/_portfolio.scss */
+/* line 734, ../scss/modules/_portfolio.scss */
 .sassy-kiri ul li a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -2620,7 +2627,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.2s;
   transition: all 0.35s ease-out 0.2s;
 }
-/* line 730, ../scss/modules/_portfolio.scss */
+/* line 737, ../scss/modules/_portfolio.scss */
 .sassy-kiri ul li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -2629,21 +2636,21 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: opacity 0.1s ease-in;
   transition: opacity 0.1s ease-in;
 }
-/* line 738, ../scss/modules/_portfolio.scss */
+/* line 745, ../scss/modules/_portfolio.scss */
 .sassy-kiri:hover img {
   opacity: 0.5;
 }
-/* line 741, ../scss/modules/_portfolio.scss */
+/* line 748, ../scss/modules/_portfolio.scss */
 .sassy-kiri:hover ul {
   background: rgba(255, 255, 255, 0.8);
   margin-top: 3em;
   height: 4em;
 }
-/* line 745, ../scss/modules/_portfolio.scss */
+/* line 752, ../scss/modules/_portfolio.scss */
 .sassy-kiri:hover ul li {
   margin: 1.25em .75em;
 }
-/* line 747, ../scss/modules/_portfolio.scss */
+/* line 754, ../scss/modules/_portfolio.scss */
 .sassy-kiri:hover ul li a {
   font: 1.5em serif;
   color: #0888F0;
@@ -2651,11 +2658,11 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   opacity: 1;
 }
 
-/* line 758, ../scss/modules/_portfolio.scss */
+/* line 765, ../scss/modules/_portfolio.scss */
 .sassy-kora {
   background: #ffffff;
 }
-/* line 763, ../scss/modules/_portfolio.scss */
+/* line 770, ../scss/modules/_portfolio.scss */
 .sassy-kora ul {
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -2669,7 +2676,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transform: rotateX(-360deg);
   transform: rotateX(-360deg);
 }
-/* line 770, ../scss/modules/_portfolio.scss */
+/* line 777, ../scss/modules/_portfolio.scss */
 .sassy-kora ul li {
   display: inline-block;
   margin: 1.25em .75em;
@@ -2685,18 +2692,18 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition: all 0.35s 0;
   transition: all 0.35s 0;
 }
-/* line 776, ../scss/modules/_portfolio.scss */
+/* line 783, ../scss/modules/_portfolio.scss */
 .sassy-kora ul li a {
   font: 1.5em serif;
   color: #435a6b;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
 }
-/* line 781, ../scss/modules/_portfolio.scss */
+/* line 788, ../scss/modules/_portfolio.scss */
 .sassy-kora ul li a:hover {
   color: #1c252c;
   -moz-transform: rotateX(360deg);
@@ -2704,16 +2711,16 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   transform: rotateX(360deg);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-/* line 791, ../scss/modules/_portfolio.scss */
+/* line 798, ../scss/modules/_portfolio.scss */
 .sassy-kora:hover img {
   opacity: 0.5;
 }
-/* line 794, ../scss/modules/_portfolio.scss */
+/* line 801, ../scss/modules/_portfolio.scss */
 .sassy-kora:hover ul {
   -moz-transform: rotateX(0deg);
   -webkit-transform: rotateX(0deg);
@@ -2722,7 +2729,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   margin-top: 3em;
   height: 4em;
 }
-/* line 799, ../scss/modules/_portfolio.scss */
+/* line 806, ../scss/modules/_portfolio.scss */
 .sassy-kora:hover ul li {
   -moz-transform: rotateX(0deg);
   -webkit-transform: rotateX(0deg);
@@ -2733,35 +2740,7 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
   -webkit-transition-delay: 0.3s;
   transition: all 0.35s ease 0.3s;
 }
-/* line 803, ../scss/modules/_portfolio.scss */
-.sassy-kora:hover ul li:nth-child(1) {
-  -moz-transition-delay: 0.15s;
-  -o-transition-delay: 0.15s;
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-/* line 803, ../scss/modules/_portfolio.scss */
-.sassy-kora:hover ul li:nth-child(2) {
-  -moz-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-/* line 803, ../scss/modules/_portfolio.scss */
-.sassy-kora:hover ul li:nth-child(3) {
-  -moz-transition-delay: 0.45s;
-  -o-transition-delay: 0.45s;
-  -webkit-transition-delay: 0.45s;
-  transition-delay: 0.45s;
-}
-/* line 803, ../scss/modules/_portfolio.scss */
-.sassy-kora:hover ul li:nth-child(4) {
-  -moz-transition-delay: 0.6s;
-  -o-transition-delay: 0.6s;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-/* line 808, ../scss/modules/_portfolio.scss */
+/* line 810, ../scss/modules/_portfolio.scss */
 .sassy-kora:hover ul a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -2771,18 +2750,18 @@ nav a:hover::before, nav a:hover::after, nav a:focus::before, nav a:focus::after
 Media Queries
 */
 @media screen and (max-width: 69.5em) {
-  /* line 820, ../scss/modules/_portfolio.scss */
+  /* line 822, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure {
     width: 50%;
   }
 
-  /* line 824, ../scss/modules/_portfolio.scss */
+  /* line 826, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure figcaption {
     font-size: 90%;
   }
 }
 @media screen and (max-width: 41.5em) {
-  /* line 830, ../scss/modules/_portfolio.scss */
+  /* line 832, ../scss/modules/_portfolio.scss */
   .portfolio-grid figure {
     width: 100%;
     height: 350px;

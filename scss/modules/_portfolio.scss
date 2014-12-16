@@ -20,6 +20,9 @@ $default-transition-duration : .35s;
     overflow: hidden;    
     cursor: pointer;    
     @include transition;
+    &:last-child {
+      width: 100%
+    }
     img {
       min-height: 100%;
       min-width: 100%;
@@ -28,13 +31,11 @@ $default-transition-duration : .35s;
       @include transition;
     }
     figcaption { 
-      //      margin-left: span(span 1 of 12);
-      //      margin-right: span(span 1 of 12);
-      //      width: span(10 of 12);
-      //      margin-top: 8%;
-      //      margin-bottom: 8%;
-      margin: span(1 of 12);
-      width: span(10);
+      margin-left: span(span 1 of 12);
+      margin-right: span(span 1 of 12);
+      width: span(10 of 12);
+      margin-top: 8%;
+      margin-bottom: 8%;
       position: absolute;
       //      top: 0;
       //      left: 0;
@@ -257,15 +258,13 @@ $default-transition-duration : .35s;
 
 
 ///***** Zoe *****////  ///***** Should span 100% of img *****////
+
 .sassy-zoe {
   figcaption {
-    position: absolute;
-    width: 100% !important;
-    margin: 0 !important;
     top: auto;
     bottom: 0;
-    padding: 1em 2em;
-    height: 4em !important;
+    padding: 1em;
+    height: 3.75em;
     background: $white;
     @include translate3d(0,200%,0);
     @include transition;
@@ -277,28 +276,51 @@ $default-transition-duration : .35s;
     @include translate3d(0,200%,0);
   }
   p {
-    position: absolute;
-    text-align: center;
-    bottom: 9em;
-    padding: 3em;
-    text-transform: none;
-    @include transparent;
-  }
-  ul {
-    list-style: none;
-    float: right;    
-    li {
-      color: $copy;
-      font-family: 'silencekillsdesign-icons';
-      font-size: 1.3em;
-      padding: .25em .375em;
+    &.description {
+      position: absolute;
+      text-align: center;
+      bottom: 8em;
+      padding: 2em;
+      color: #fff;
+      text-transform: none;
+      @include transparent;
+      @include transition;
+    }
+    &.icon-links a {
+      float: right;
+      color: #3c4a50;
+      font-size: 1.4em;
       @include transition;
       @include translate3d(0,200%,0);
-      display: inline-block;
-      speak: none;
+      span::before {
+        display: inline-block;
+        padding: 8px 10px;
+        font-family: 'SilenceKillsDesign-Icons';
+        speak: none;
+      }
     }
   }
   &:hover {
+    p {
+      &.description {
+        opacity: 1;
+      }
+      &.icon-links a {
+        @include translate3d(0,0,0);
+        &:hover, &:focus  {
+          color: $sk-blue;
+        }
+        &:nth-child(3) {
+          @include transition-delay(.1s);
+        }
+        &:nth-child(2) {
+          @include transition-delay(.15s);
+        }
+        &:first-child {
+          @include transition-delay(.2s);
+        }
+      }
+    }
     figcaption {
       @include translate3d(0,0,0);
     }
@@ -306,21 +328,6 @@ $default-transition-duration : .35s;
       @include translate3d(0,0,0);
       @include transition-delay(.05s);
     }
-    li {
-      @include translate3d(0,0,0);
-      &:hover, &:focus  {
-        color: $sk-blue;
-      }      
-      // Iteration to delay transitions.
-      @for $i from 1 through 3 {
-        &:nth-child(#{$i}) { 
-        @include transition-delay(0.1s * $i); 
-      }
-    }
-  } 
-    p {
-      @include opaque;    
-    }       
   }
 }
 
@@ -777,12 +784,12 @@ $sepia: rgba(104,60,19,1);
         font: 1.5em serif;
         color: $figcaption-color--icon;
         @include transparent;        
-        @include transition(all .4s ease-in-out);
+        @include transition(all .35s ease-out);
         &:hover {
           color: darken($figcaption-color--icon, 20);
           @include rotateX(360deg);
           @include opacity(.8);
-          @include transition(all .3s ease-in-out);
+          @include transition(all .2s ease-in);
         }
       }
     }
@@ -799,11 +806,6 @@ $sepia: rgba(104,60,19,1);
       li {
         @include rotateX(0deg);
         @include transition(all .35s ease .3s);
-        @for $i from 1 through 4 {
-          &:nth-child(#{$i}) { 
-            @include transition-delay(0.15s * $i); 
-          }
-      }
       }
       a {        
         @include opaque;
