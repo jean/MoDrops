@@ -54,7 +54,7 @@ $default-transition-duration : .35s;
       @include transition;
       font-size: 95%;
     }
-    & a {
+    & a.view-more {
       @include squish-text;
     }
   }
@@ -309,14 +309,14 @@ $default-transition-duration : .35s;
       // Iteration to delay transitions.
       @for $i from 1 through 3 {
         &:nth-child(#{$i}) { 
-        @include transition-delay(0.1s * $i); 
-      }
+          @include transition-delay(0.1s * $i); 
+        }
     }
   } 
-    p {
-      @include opaque;    
-    }       
-  }
+  p {
+    @include opaque;    
+  }       
+}
 }
 
 
@@ -561,7 +561,6 @@ $default-transition-duration : .35s;
     @include translate3d(0,0,300px);
   }
   figcaption {
-    padding: 2.5em;
     @extend %abs-center;
     text-align: center;
     &:before, &:after {
@@ -569,28 +568,25 @@ $default-transition-duration : .35s;
       top: 50%;
       left: 50%;
       content: '';
-      background: $white;
+      background-color: $white;
+      height: 1px;
+      width: 80%;
+      @include translate3d(-50%,-50%,0);
       @include transition;
     }
-    &:before {
-      @include scale(0,1);
-      border-top: 1px solid $white;
-      border-bottom: 1px solid $white;      
-    }
-    &:after {
-      border-right: 1px solid $white;
-      border-left: 1px solid $white;
-      @include scale(1,0);
-    }
+  }
+  h3, p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   h3 {
-    margin-top: 15%;
-    @include translateY(-.75em);
+    top: 15%;
   }
   p {
-    margin: .5em 2em;
-    @include translateY(.5em);
-    @include transparent;
+    bottom: 15%;
+    padding: .25em 2em;
   }
   &:hover {
     img {
@@ -598,14 +594,20 @@ $default-transition-duration : .35s;
       @include translate3d(0,0,0);
     }
     figcaption {
-      &::before, &::after {
-        @include scale(1);
-        @include opaque;
+      &::before {
+        @include opacity(.6);
+        @include transform(translate3d(-50%,-50%,0) rotate(45deg));
+      } 
+      &::after {
+        @include opacity(.6);
+        @include transform(translate3d(-50%,-50%,0) rotate(-45deg));
       }
     }
-    h3, p {
-      @include opaque;
-      @include translateY(0);
+    h3 {
+      top: 25%;
+    }
+    p {
+      bottom: 25%;
     }
   }
 }
@@ -742,11 +744,91 @@ $sepia: rgba(104,60,19,1);
 }
 
 ///***** Milo *****////
-
+.sassy-milo {
+  background: #2e5d5a;
+  img {
+    max-width: none;
+    width: calc(100% + 60px);
+    @include transform(translate3d(-30px,0,0) scale(1.12));
+  }
+  figcaption {
+    @extend %abs-center;
+  }
+  h3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  p {
+    padding: 0 10px 0 0;
+    width: 50%;
+    border-right: 1px solid #fff;
+    text-align: right;
+    opacity: 0;
+    @include translate3d(-40px,0,0);
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+      @include transform(translate3d(0,0,0) scale(1));
+    }
+    p {
+      opacity: 1;
+      @include translate3d(0,0,0);
+    }
+  }
+}
 
 ///***** SET 2 *****////
 
 ///***** Julia *****////
+.sassy-julia {
+  background: #2f3238;
+  img {
+    max-width: none;
+    @include transition(opacity 1s, transform 1s);
+  }
+  figcaption {
+    @extend %abs-center;
+    text-align: left;
+  }
+  h3 {
+    position: relative;
+    margin-bottom: span(.5 of 12);
+  }
+  p {
+    display: inline-block;
+    margin: 0 0 0.25em;
+    padding: 0.4em 1em;
+    background: rgba(255,255,255,0.9);
+    color: $copy;
+    text-transform: none;
+    font-size: 75%;
+    @include translate3d(-360px,0,0);
+    // Iteration to delay transitions.
+    @for $i from 1 through 3 {
+      &:nth-of-type(#{$i}) { 
+        @include transition-delay(0.07s * $i); 
+      }
+  }
+}
+&:hover {
+  p {
+    opacity: 1;
+    @include translate3d(0,0,0);
+    // Iteration to delay transitions.
+    @for $i from 1 through 3 {
+      &:nth-of-type(#{$i}) { 
+        @include transition-delay(0.07s * $i); 
+      }
+  }
+}
+img {
+  opacity: 0.4;
+  @include scale(1.1);
+}
+}
+}
 
 ///***** Goliath *****////   ////****This should probably have a psuedo after the p instead****///
 .sassy-goliath {  
@@ -786,10 +868,203 @@ $sepia: rgba(104,60,19,1);
 ///***** Hera *****////
 
 ///***** Winston *****////
+.sassy-winston {
+  background: #162633;
+  text-align: left;
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    margin: 0 !important;
+    padding: span(1 of 12);
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/triangle.svg) no-repeat center center;
+      background-size: 100% 100%;
+      content: '';
+      @include transition;
+      @include rotate3d(0,0,1,45deg);
+      @include transform-origin(0 100% 0);
+    }
+  } 
+  h3 {
+    @include translate3d(0,1em,0);
+  }
+  p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1.5em;
+    opacity: 0;
+    a {
+      @include transition;
+      @include translate3d(0,3.5em,0);
+      margin: 0 10px;
+      color: red !important;
+      font-size: 170%;
+      // Iteration to delay transitions.
+      @for $i from 2 through 3 {
+        &:nth-of-type(#{$i}) { 
+          @include transition-delay(0.05s * $i); 
+        }
+    }
+      &:hover, &:focus {
+        color: blue !important;
+        @include transition(all .2s);
+      }
+    }
+  }
+  &:hover {
+    img {
+      opacity: 0.6;
+    }
+    figcaption::before {
+      opacity: 0.7;
+      @include rotate3d(0,0,1,20deg);
+    }
+    h3 {
+      @include translate3d(0,0,0);
+    }
+    p {
+      opacity: 1;
+    }
+    a {
+      opacity: 1;
+      @include translate3d(0,0,0);
+    }
+  }
+}
 
-///***** Selena *****////
 
-///***** Terry *****////
+///***** Selena *****////  ///***** NEEDS FIXED *****////
+.sassy-selena {
+  background: $white;
+  border: 0em solid $white;
+  figcaption {
+    @extend %abs-center;
+  }
+  img {
+    opacity: .9;
+    @include transform-origin(50% 50% 0);    
+  }
+  h3 {
+    @include translateY(1.125em);
+  }
+  p {
+    @include transparent;
+    @include transform(perspective(1000px) rotate3d(1, 0, 0, 90deg));
+    @include transform-origin(50% 50% 0); 
+  }
+  &:hover, &:focus {
+    border: .5em solid $white;
+    img {
+      @include scale3d(.95, .95, 1);
+    }
+    h3 {
+      @include translate3d(0,0,0);
+    }
+    p {
+      @include transform(perspective(1000px) rotate3d(1, 0, 0, 0));
+    }
+  }
+}
+
+///***** Terry *****////   ///***** Completely Fucked *****////  
+//@extend-elements
+//original selectors
+//figure.effect-terry figcaption::before, figure.effect-terry figcaption::after
+%terry {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-style: solid;
+  border-color: #101010;
+  content: '';
+  @include transition;
+}
+
+
+@media screen and (max-width: 920px) {
+  figure.effect-terry h2 {
+    padding: 0.75em 10px;
+    font-size: 120%;
+  }
+}
+figure.effect-terry {
+  background: #34495e;
+  &::before {
+    @extend %terry;
+    right: 0;
+    bottom: 0;
+    border-width: 0 70px 60px 0;
+    @include translate3d(70px,60px,0);
+  }
+  &::after {
+    @extend %terry;
+    top: 0;
+    left: 0;
+    border-width: 15px 0 0 15px;
+    @include translate3d(-15px,-15px,0);
+  }
+  figcaption {
+    padding: 1em;
+    @extend %abs-center;
+  }
+  img {
+    opacity: 0.85;
+  }
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.4em 10px;
+    width: 50%;
+    @include translate3d(100%,0,0);
+  }
+  &:hover {
+    figcaption {
+      &::before, &::after {
+        @include translate3d(0,0,0);
+      }
+    }
+    img {
+      opacity: 0.6;
+    }
+    h3 {
+      @include translate3d(0,0,0);
+    }
+    p a {
+      @include translate3d(0,0,0);
+      opacity: 1;
+      // Iteration to delay transitions.
+      @for $i from 1 through 4 {
+        &:nth-of-type(#{$i}) { 
+          @include transition-delay(0.05s * $i); 
+        }
+      }
+    }
+  }
+  p a {
+    @include transition;
+    display: block;
+    margin-bottom: 1em;
+    color: #fff;
+    opacity: 0;
+    @include translate3d(90px,0,0);
+    &:hover {
+      color: #f3cf3f;
+    }
+    &:focus {
+      color: #f3cf3f;
+    }
+  }
+}
 
 ///***** Phoebe *****////
 
@@ -840,6 +1115,53 @@ $sepia: rgba(104,60,19,1);
 }
 
 ///***** Steve *****////
+.sassy-steve {
+  z-index: 1;
+  overflow: visible;
+  background: $black;
+  text-align: center;
+  @include transform(perspective(1000px) translate3d(0,0,0em));
+  @include box-shadow(0 .125em .625em rgba($black, 0));
+  figcaption {
+    z-index: 1;
+    @extend %abs-center;
+  }
+  img {
+    opacity: 1;
+    @include transform(perspective(1000px) translate3d(0,0,0));
+  }
+  h3 {
+    margin-top: 1em;
+    z-index: -1;
+    width: 100%;
+    color: $copy !important;
+    background: $white;
+    padding: .5em;
+    @include transition;
+    @include box-shadow(0 1px .625em rgba($black, 0.5));
+  }
+  p {
+    background: $white;
+    color: $copy;
+    margin-top: 1em;
+    padding: 0.5em;
+    font-weight: 800;
+    opacity: 0;
+    @include scale3d(0.9,0.9,1);
+    @include box-shadow(0 1px .375em rgba($black, 0.5));
+  }
+  &:hover {
+    @include transform(perspective(1000px) translate3d(0,0,1.25em));
+    @include box-shadow(0 .125em .625em rgba($black, 0.8));
+    p {
+      opacity: 1;
+      @include scale3d(1,1,1);
+    }
+    h3:before {
+      opacity: 0;
+    }
+  }
+}
 
 ///***** Moses *****////
 
@@ -1002,21 +1324,26 @@ $sepia: rgba(104,60,19,1);
             @include transition-delay(0.15s * $i); 
           }
       }
-      }
-      a {        
-        @include opaque;
-      }
+    }
+    a {        
+      @include opaque;
     }
   }
+}
 }
 
 /*
 Media Queries
 */
 
+@media screen and (max-width: 1280px) {
+  .portfolio-grid {
+    font-size: 70%;
+  }
+
 @media screen and (max-width: 69.5em) {
   .portfolio-grid figure {
-    width: 50%;
+    @include span(1.5 of 3);
   }
 
   .portfolio-grid figure figcaption {
