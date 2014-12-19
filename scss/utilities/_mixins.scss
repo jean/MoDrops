@@ -13,7 +13,6 @@
   }
 }
 
-
 // BEM selectors
 @mixin e($element) {
   &__#{$element} {
@@ -24,6 +23,18 @@
 @mixin m($modifier) {
   &--#{$modifier} {
     @content;
+  }
+}
+
+// Font Smoothing
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
   }
 }
 

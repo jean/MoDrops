@@ -1,17 +1,17 @@
 $big-section-bg: $sk-light-gray;
 $inline-link-color: $sk-blue;
 $inline-link-hover: $sk-blue;
-$inline-link-bg: $sk-pink;
+$inline-link-bg: $sk-blue;
 $inline-link-border: $sk-blue;
 
 
 .big-copy {
-  @include backface-visibility(hidden);
-  font-family: $font-stack--display;
+  z-index: 1; /* needed for setting pseudo-element z-index */
   overflow: hidden;
+  font-family: $font-stack--display;  
   padding: span(1 of 12) span(2 of 12);
+  @include backface-visibility(hidden);
   p {
-    font-family: $font-stack--display;
     font-weight: $font-weight--light;
     font-style: normal;
     font-size: 2.5em;
@@ -30,44 +30,55 @@ $inline-link-border: $sk-blue;
     &::before, &::after {
       position: absolute;
       content: '';
-      z-index: -1;
-      width: 100%;
-      height: 100%;
       @include transition;
     }
   }
 }
 
 /* Fade in background */
-.link-fadeinbg a {
-  border-bottom: 1px solid rgba($inline-link-border, 0.4);
-  &:hover, &:focus {
-    color: darken($inline-link-color, 5);
-    border-color: rgba($inline-link-border, 0);
-    background-color: rgba($inline-link-bg, 0.1);
+.link-fadeinbg {
+//  background: $sk-light-gray;
+  a {
+    border-bottom: 1px solid rgba($inline-link-border, 0.4);
+    &:hover, &:focus {
+      color: darken($inline-link-color, 5);
+      border-color: rgba($inline-link-border, 0);
+      background-color: rgba($inline-link-bg, 0.1);
+    }
   }
 }
 
 /* Slide up background */
-.link-slideup a {
-  &::before {
-    position: absolute;
-    background-color: rgba($inline-link-bg, 0.2);
-    @include translateY(85%);
-  }
-  &:hover::before, &:focus::before {
-    @include translateY(0);
+.link-slideup { 
+  background: lighten($sk-light-gray, 10);
+  a {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($inline-link-bg, 0.2);
+      @include translateY(95%);
+    }
+    &:hover::before, &:focus::before {
+      @include translateY(0);
+    }
   }
 }
 
 /* Slide right */
-.link-slideright a {
-  &::before {
-    background: rgba($inline-link-bg, 0.2);
-    @include transform(scaleY(0.618) translateX(-100%));
-  }
-  &:hover::before, &:focus::before {
-    @include transform(scaleY(0.618) translateX(0));
+.link-slideright {
+  background: darken($sk-light-gray, 10);
+  a {
+    &::before {
+      background: rgba($inline-link-bg, 0.2);
+      @include transform(scaleY(0.618) translateX(-100%));
+    }
+    &:hover::before, &:focus::before {
+      @include transform(scaleY(0.618) translateX(0));
+    }
   }
 }
 
