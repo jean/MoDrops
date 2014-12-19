@@ -1,7 +1,7 @@
-$big-section-bg: $sk-pink;
+$big-section-bg: $sk-light-gray;
 $inline-link-color: $sk-blue;
 $inline-link-hover: $sk-blue;
-$inline-link-bg: $sk-blue;
+$inline-link-bg: $sk-pink;
 $inline-link-border: $sk-blue;
 
 
@@ -9,9 +9,7 @@ $inline-link-border: $sk-blue;
   @include backface-visibility(hidden);
   font-family: $font-stack--display;
   overflow: hidden;
-  margin-left: span(2);
-  margin-right: span(2);
-  padding: 6em 0;
+  padding: span(1 of 12) span(2 of 12);
   p {
     font-family: $font-stack--display;
     font-weight: $font-weight--light;
@@ -74,3 +72,57 @@ $inline-link-border: $sk-blue;
 }
 
 
+/* Scale up bounce */
+.link-scaleupbounce {
+  color: $inline-link-color;
+  a {
+    vertical-align: bottom;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -5px;
+      z-index: -1;
+      @include box-sizing(content-box);
+      padding: 0 5px;
+      width: 100%;
+      height: 100%;
+      background-color: $inline-link-bg;
+      content: '';
+      opacity: 0;
+      @include transition;
+      @include transition-timing-function(cubic-bezier(0.25,0.25,0.325,1.39));
+      @include scale(0);
+    }
+    &:hover::before, &:focus::before {
+      opacity: 1;
+      @include scale(1);
+    }
+  }
+}
+
+/* Scale up */
+
+/* Scale down */
+
+/* Flip */
+
+/* Border */
+
+/* Skewed */
+
+/* SVG line */
+
+/* SVG marker */
+
+/* Text up line */
+
+/* Tooltip overlay */
+
+/* Arrow */
+
+/* Curtain */
+
+/* Text scale */
+
+/* Text fall */

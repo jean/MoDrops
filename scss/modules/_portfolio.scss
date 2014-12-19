@@ -14,8 +14,10 @@ $default-transition-duration : .35s;
   @include container(100%);
   figure {
     background-color: $portfolio-background;
-    @include span(1 of 3);
+//    @include span(1 of 3);
+    width: span(1 of 3);
     height: 400px;
+    float: left;
     position: relative;
     overflow: hidden;    
     cursor: pointer;    
@@ -37,7 +39,19 @@ $default-transition-duration : .35s;
       &::before, &::after {
         pointer-events: none;
         content: '';
-      }      
+      }
+      > a.view-more {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
     }
     h3 {        
       font-size: 2em;
@@ -53,9 +67,6 @@ $default-transition-duration : .35s;
       line-height: 1.2;
       @include transition;
       font-size: 95%;
-    }
-    & a.view-more {
-      @include squish-text;
     }
   }
 }
@@ -1157,15 +1168,101 @@ figure.effect-terry {
       opacity: 1;
       @include scale3d(1,1,1);
     }
-    h3:before {
-      opacity: 0;
-    }
   }
 }
 
 ///***** Moses *****////
+.sassy-moses {
+  background: linear-gradient(-45deg, #EC65B7 0,#05E0D8 100%);
+  img {
+    opacity: 0.85;
+  }
+  figcaption {
+    @extend %abs-center;
+  }
+  h3, p {
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    border: 2px solid $white;
+  }
+  h3 {    
+    text-align: left;
+    @include translate3d(10px,10px,0);
+  }
+  p {
+    float: right;
+    text-align: right;
+    opacity: 0;
+    @include translate3d(-50%,-50%,0);
+  }
+  &:hover {
+    h3, p {
+      opacity: 1;
+      @include translate3d(0,0,0);
+    }
+    img {
+      opacity: 0.6;
+    }
+  }
+}
 
 ///***** Jazz *****////
+.sassy-jazz {
+  background: linear-gradient(-45deg, #f3cf3f 0,#f33f58 100%);
+  img {
+    opacity: 0.9;
+  }
+  figcaption {
+    text-align: center;
+    @extend %abs-center;
+    margin: 0 !important;
+    padding: span(1 of 12);
+    width: 100% !important;
+    @include transition;
+  }
+  h3 {
+    opacity: 1;
+    @include scale3d(0.8,0.8,1);
+    padding-top: 26%;
+  }
+  p {
+    opacity: 1;
+    @include scale3d(0.8,0.8,1);
+    padding: 0.5em 2em;
+    text-transform: none;
+    font-size: 0.85em;
+    opacity: 0;
+  }
+  &:hover {
+    img {
+      opacity: 0.7;
+      @include scale3d(1.05,1.05,1);
+    }
+    h3, p {
+      opacity: 1;
+      @include scale3d(1,1,1);
+    }
+    figcaption::after {
+      opacity: 1;
+      @include transform(rotate3d(0,0,1,45deg) scale3d(1,1,1));
+    }
+  }
+  figcaption::after {
+    @include transition;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    content: '';
+    opacity: 0;
+    @include transform(rotate3d(0,0,1,45deg) scale3d(1,0,1));
+    @include transform-origin(50%,50%,0);
+  }
+}
 
 ///***** Ming *****////
 .sassy-ming {
@@ -1221,8 +1318,100 @@ figure.effect-terry {
 }
 
 ///***** Lexi *****////
+.sassy-lexi {
+  background: linear-gradient(-45deg, #000 0,#fff 100%);
+  img {
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    @include translate3d(10px,10px,0);
+  }
+  figcaption {
+    text-align: center;
+    @extend %abs-center;
+    margin: 0 !important;
+    padding: span(1 of 12);
+    width: 100% !important;
+    @include transition;
+    &::before {
+      position: absolute;
+      right: -100px;
+      bottom: -100px;
+      width: 300px;
+      height: 300px;
+      border: 2px solid $white;    
+      content: '';
+      opacity: 0;
+      @include transition;
+      @include border-radius(50%);
+      @include box-shadow(0 0 0 900px rgba(255,255,255,0.2));
+      @include scale3d(0.5,0.5,1);
+      @include transform-origin(50%,50%,0);
+    }
+  }
+  h3 {
+    text-align: left;
+    @include translate3d(.25em,.25em,0);
+  }
+  p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.5em 1.5em 0;
+    width: 140px;
+    text-align: right;
+    opacity: 0;
+    @include translate3d(20px,20px,0);
+  }
+  &:hover {
+    img {
+      opacity: 0.6;
+      @include translate3d(0,0,0);
+    }
+    h3, p {
+      opacity: 1;
+      @include translate3d(0,0,0);
+    }
+    figcaption::before {
+      opacity: 1;
+      @include scale3d(1,1,1);
+    }
+  }
+}
 
-///***** Duke *****////
+///***** Duke *****////   ///***** BROKEN *****//// 
+.sassy-duke {
+  background: linear-gradient(-45deg, #34495e 0,#cc6055 100%);
+  figcaption {
+    @extend %abs-center;
+  }
+  h3 {
+    @include scale3d(0.8,0.8,1);
+    @include transform-origin(50%, 100%, 0);
+  }
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 2px solid #fff;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    @include scale3d(0.8,0.8,1);
+    @include transform-origin(50%, -100%, 0);
+  }
+  &:hover {
+    img {
+      opacity: 0.1;
+      @include scale3d(2,2,1);
+    }
+    h3, p {
+      opacity: 1;
+      @include scale3d(1,1,1);
+    }
+  }
+}
 
 
 ///***** Additional Styles *****////
@@ -1323,13 +1512,13 @@ figure.effect-terry {
           &:nth-child(#{$i}) { 
             @include transition-delay(0.15s * $i); 
           }
+        }
+      }
+      a {        
+        @include opaque;
       }
     }
-    a {        
-      @include opaque;
-    }
   }
-}
 }
 
 /*
@@ -1338,10 +1527,14 @@ Media Queries
 
 @media screen and (max-width: 1280px) {
   .portfolio-grid {
-    font-size: 70%;
+    font-size: 85%;
+    figure {
+      height: 350px;
+    }
   }
+}
 
-@media screen and (max-width: 69.5em) {
+@media screen and (max-width: 71em) {
   .portfolio-grid figure {
     @include span(1.5 of 3);
   }
@@ -1353,294 +1546,7 @@ Media Queries
 
 @media screen and (max-width: 41.5em) {
   .portfolio-grid figure {
-    width: 100%;
+    width: span(3 of 3);
     height: 350px;
   }
 }
-
-
-//////////////CODE FROM DESKTOP
-
-//$porfolio-background: $sk-blue;
-//$figcaption-color: $white;
-//$figcaption-color--h: $white;
-//$figcaption-color--p: $white;
-//
-//
-//.portfolio-grid {
-//  @include layout(full no-gutter)
-//    figure {
-//      position: relative;
-//      z-index: 1;
-//      overflow: hidden;
-//      @include span(4 of 12 no-gutter);
-//      height: 400px;
-//      background: darken($porfolio-background, 20);
-//      cursor: pointer;
-//      img {
-//        position: relative;
-//        display: block;
-//        min-height: 100%;
-//        min-width: 100%;
-//        opacity: 0.8;
-//      }
-//      figcaption {
-//        @include font-smoothing(on);
-//        font-weight: 300;
-//        font-size: 1em;
-//        position: absolute;
-//        color: $figcaption-color;
-//        text-transform: uppercase;
-//        width: 100%;
-//        @include backface-visibility(hidden);
-//        &::before, &::after {
-//          pointer-events: none;
-//        }
-//        h3 {
-//          text-transform: uppercase;
-//          font-size: 2.25em;
-//          color: $figcaption-color--h;
-//          span {
-//            font-weight: 800;
-//            margin-left: -.225em;
-//          }
-//        }
-//        p {
-//          color: $figcaption-color--p;
-//        }
-//      }
-//      a {
-//        position: absolute;
-//        top: 0;
-//        left: 0;
-//        z-index: 1000;
-//        text-indent: 200%;
-//        white-space: nowrap;
-//        font-size: 0;
-//        @include transparent;
-//      }
-//    }
-//}
-//
-///* Individual effects */
-//
-///*---------------*/
-///***** Lily *****/
-///*---------------*/
-//
-//.effect-lily {
-//  img {
-//    max-width: none;
-//    width: calc(100% + 50px);
-//    @include transition(opacity 0.35s, transform .35s);
-//    @include translate3d(-40px,0,0);
-//  }
-//  figcaption {
-//    text-align: left;
-//    padding: 2em;
-//    width: 100%;
-//    height: 50%;
-//    color: $white;
-//    h3, p {
-//      @include translate3d(0,40px,0);
-//      @include transition(opacity 0.4s, transform .35s ease .05s);
-//    }
-//    p {
-//      @include transparent;
-//    }
-//  }
-//  &:hover {
-//    img, h3, p {
-//      @include opaque;
-//      @include translate3d(0,0,0);
-//    }
-//  }
-//}
-//
-///*---------------*/
-///***** Sadie *****/
-///*---------------*/
-//
-//.effect-sadie {
-//  figcaption{
-//    h3 {
-//      display: block;
-//      z-index: 10000;
-//      top: 50%;
-//      color: $white;
-//      @include translate3d(0,40px,0);
-//      @include transition(opacity 0.4s, transform .35s ease .05s);
-//    }
-//    p {
-//      @inclue transparent;
-//      @include translate3d(0,40px,0);
-//      @include transition(opacity 0.4s, transform .35s ease .05s);
-//    }
-//    &:hover {
-//      img, h3, p {
-//        @include opaque;
-//        @include translate3d(0,0,0);
-//      }
-//    }
-//  }
-//}
-//
-///*
-//Media Queries
-//*/
-//
-//@media screen and (max-width: 69.5em) {
-//  .portfolio-grid figure {
-//    width: 50%;
-//  }
-//
-//  .portfolio-grid figure figcaption {
-//    font-size: 90%;
-//  }
-//}
-//
-//
-//@media screen and (max-width: 41.5em) {
-//
-//  .portfolio-grid figure {
-//    width: 100%;
-//  }
-//}
-
-
-
-
-
-
-//
-//$porfolio-background: $sk-blue;
-//$figcaption-color: $white;
-//$figcaption-color--h: $white;
-//$figcaption-color--p: $white;
-//
-//
-//.portfolio-grid {
-//  @include layout(full no-gutters nest);
-//  figure {
-//    position: relative;
-//    z-index: 1;
-//    overflow: hidden;
-//    @include span(1 of 3 no-gutters);
-//    height: 400px;
-//    background: darken($porfolio-background, 20);
-//    cursor: pointer;
-//    img {
-//      position: relative;
-//      display: block;
-//      min-height: 100%;
-//      opacity: 0.8;
-//    }
-//    figcaption {
-//      @include font-smoothing(on);
-//      font-weight: 300;
-//      font-size: 1em;
-//      position: absolute;
-//      top: 0;
-//      left: 0;
-//      width: 100%;
-//      height: 100%;
-//      padding: 5%;
-//      color: $figcaption-color;
-//      text-transform: uppercase;
-//      @include backface-visibility(hidden);
-//      &::before, &::after {
-//        pointer-events: none;
-//      }
-//      h3 {
-//        font-size: 2em;
-//        color: $figcaption-color--h;
-//        span {
-//          font-weight: 800;
-//          margin-left: -.185em;
-//        }
-//      }
-//      p {
-//        color: $figcaption-color--p;
-//      }
-//    }
-//    a {
-//      z-index: 1000;
-//      text-indent: 200%;
-//      white-space: nowrap;
-//      font-size: 0;
-//      opacity: 0;
-//    }
-//  }
-//}
-//
-///* Individual effects */
-//
-///*---------------*/
-///***** Lily *****/
-///*---------------*/
-//
-//.effect-lily {
-//    img {
-//      max-width: none;
-//      width: calc(100% + 50px);
-//      @include transition(opacity 0.35s, transform .35s);
-//      @include translate3d(-40px,0,0);
-//    }
-//    figcaption {
-//      text-align: left;
-//      position: absolute;
-//      padding: 2em;
-//      width: 100%;
-//      height: 50%;
-//      color: $white;
-//      h3, p {
-//        @include translate3d(0,40px,0);
-//        @include transition(opacity 0.4s, transform .35s ease .05s);
-//      }
-//      p {
-//        @include transparent;
-//      }
-//    }
-//    &:hover {
-//      img, h3, p {
-//        @include opaque;
-//        @include translate3d(0,0,0);
-//      }
-//    }
-//  }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-///*
-//Media Queries
-//*/
-//
-//@media screen and (max-width: 69.5em) {
-//  .portfolio-grid figure {
-//    width: 50%;
-//  }
-//
-//  .portfolio-grid figure figcaption {
-//    font-size: 90%;
-//  }
-//}
-//
-//
-//@media screen and (max-width: 41.5em) {
-//
-//  .portfolio-grid figure {
-//    width: 100%;
-//  }
-//}

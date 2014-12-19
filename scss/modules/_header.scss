@@ -26,12 +26,11 @@ header {
   }
 }
 
-
 nav {
   display: block;
   background: $nav-bg-color;
-  margin: 1em auto;
-  padding: $less-padding;
+  margin: 1em auto 0;
+  padding: 1em .5em;
   text-align: $nav-align;  
   & a {
     color: $nav-link-color;

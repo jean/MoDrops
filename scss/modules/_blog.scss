@@ -5,6 +5,7 @@
     height: 400px;
     background-color: $sk-blue;
     overflow: hidden;
+    @include span(12 of 12);
     img {
       position: absolute;  
       top: 50%;

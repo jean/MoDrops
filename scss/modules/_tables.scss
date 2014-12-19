@@ -39,8 +39,11 @@ table {
   text-align: left;
   width: 100%;
   @extend %alternate-rows--basic;
-}	
-
+}
+caption {
+  padding: 1em auto;
+  font-size: 2em;
+}
 thead {
   background-color: $table-header-bg;
   color: $white;

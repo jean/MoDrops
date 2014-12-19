@@ -1,11 +1,452 @@
 {
   "C:\\Users\\CWILLI~1\\AppData\\Local\\Temp/scss-lint/tmp.scss": [
     {
-      "line": 1646,
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 13,
       "column": 1,
       "length": 1,
-      "severity": "error",
-      "reason": "Syntax Error: Invalid CSS after \"//}\": expected \"}\", was \"\""
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 15,
+      "column": 5,
+      "length": 32,
+      "severity": "warning",
+      "reason": "Properties should be ordered font-family, font-size, font-style, font-weight, line-height"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 19,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 21,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Properties should be ordered color, display, outline, overflow, position, text-decoration, vertical-align, white-space"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 21,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "SingleLinePerSelector",
+      "line": 30,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 31,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 31,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Properties should be ordered content, height, position, width, z-index"
+    },
+    {
+      "linter": "Comment",
+      "line": 41,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 43,
+      "column": 54,
+      "length": 3,
+      "severity": "warning",
+      "reason": "`0.4` should be written without a leading zero as `.4`"
+    },
+    {
+      "linter": "SingleLinePerSelector",
+      "line": 44,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 44,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 45,
+      "column": 5,
+      "length": 36,
+      "severity": "warning",
+      "reason": "Properties should be ordered background-color, border-color, color"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 47,
+      "column": 45,
+      "length": 3,
+      "severity": "warning",
+      "reason": "`0.1` should be written without a leading zero as `.1`"
+    },
+    {
+      "linter": "Comment",
+      "line": 51,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 54,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 54,
+      "column": 5,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Properties should be ordered background-color, position"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 55,
+      "column": 45,
+      "length": 3,
+      "severity": "warning",
+      "reason": "`0.2` should be written without a leading zero as `.2`"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 57,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SingleLinePerSelector",
+      "line": 58,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
+      "linter": "Comment",
+      "line": 63,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 66,
+      "column": 5,
+      "length": 38,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 66,
+      "column": 39,
+      "length": 3,
+      "severity": "warning",
+      "reason": "`0.2` should be written without a leading zero as `.2`"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 67,
+      "column": 31,
+      "length": 5,
+      "severity": "warning",
+      "reason": "`0.618` should be written without a leading zero as `.618`"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 68,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SingleLinePerSelector",
+      "line": 69,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 70,
+      "column": 31,
+      "length": 5,
+      "severity": "warning",
+      "reason": "`0.618` should be written without a leading zero as `.618`"
+    },
+    {
+      "linter": "Comment",
+      "line": 75,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 78,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 79,
+      "column": 5,
+      "length": 22,
+      "severity": "warning",
+      "reason": "Properties should be ordered font-weight, vertical-align"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 81,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be preceded by an empty line"
+    },
+    {
+      "linter": "PropertySortOrder",
+      "line": 82,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Properties should be ordered background-color, content, height, left, opacity, padding, position, top, width, z-index"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 82,
+      "column": 7,
+      "length": 18,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 94,
+      "column": 56,
+      "length": 4,
+      "severity": "warning",
+      "reason": "Commas in function arguments should be followed by a single space"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 94,
+      "column": 56,
+      "length": 4,
+      "severity": "warning",
+      "reason": "`0.25` should be written without a leading zero as `.25`"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 94,
+      "column": 61,
+      "length": 4,
+      "severity": "warning",
+      "reason": "Commas in function arguments should be followed by a single space"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 94,
+      "column": 61,
+      "length": 4,
+      "severity": "warning",
+      "reason": "`0.25` should be written without a leading zero as `.25`"
+    },
+    {
+      "linter": "LeadingZero",
+      "line": 94,
+      "column": 66,
+      "length": 5,
+      "severity": "warning",
+      "reason": "`0.325` should be written without a leading zero as `.325`"
+    },
+    {
+      "linter": "SpaceAfterComma",
+      "line": 94,
+      "column": 66,
+      "length": 5,
+      "severity": "warning",
+      "reason": "Commas in function arguments should be followed by a single space"
+    },
+    {
+      "linter": "EmptyLineBetweenBlocks",
+      "line": 96,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Rule declaration should be followed by an empty line"
+    },
+    {
+      "linter": "SingleLinePerSelector",
+      "line": 97,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Each selector in a comma sequence should be on its own line"
+    },
+    {
+      "linter": "DeclarationOrder",
+      "line": 98,
+      "column": 7,
+      "length": 10,
+      "severity": "warning",
+      "reason": "Rule sets should be ordered as follows: @extends, @includes without @content, properties, @includes with @content, nested rule sets"
+    },
+    {
+      "linter": "Comment",
+      "line": 104,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 106,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 108,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 110,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 112,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 114,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 116,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 118,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 120,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 122,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 124,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "Comment",
+      "line": 126,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
+    },
+    {
+      "linter": "FinalNewline",
+      "line": 128,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Files should end with a trailing newline"
+    },
+    {
+      "linter": "Comment",
+      "line": 128,
+      "column": 1,
+      "length": 1,
+      "severity": "warning",
+      "reason": "Use `//` comments everywhere"
     }
   ]
 }
