@@ -1,4 +1,78 @@
 // ==========================================================================
+// Naver Plugin
+// ==========================================================================
+.naver {
+  margin: 0;
+  &.enabled {
+    .naver-handle {
+      display: block;
+    }
+    .naver-wrapper {
+      height: 0;
+      overflow: hidden;
+    }
+    .naver-container {
+      background: #ffffff;
+      border: 1px solid #cccccc;
+      border-width: 0 1px 1px;
+    }
+  }
+  &.open .naver-handle:after {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: none;
+    @include box-shadow(none);
+    color: #cccccc;
+    content: "\00d7";
+    @include font-size(medium);
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+  }
+  .naver-handle {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    color: #111111;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 15px;
+    position: relative;
+    @include user-select(none);
+    &:after {
+      height: 3px;
+      width: 15px;
+      position: absolute;
+      top: 0;
+      right: 15px;
+      bottom: 0;
+      background: #cccccc;
+      @include box-shadow(0 5px 0 #cccccc, 0 -5px 0 #cccccc);
+      content: '';
+      display: block;
+      margin: auto 0;
+    }
+  }
+  .naver-wrapper {
+    border: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .naver-container:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+}
+
+// ==========================================================================
 // Grid display
 // ==========================================================================
 

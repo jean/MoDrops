@@ -1,3 +1,22 @@
+// Headlines
+%headline-1 {
+  font-family: $font-stack--display;
+  font-weight: $font-weight--light;
+  letter-spacing: $letter-space;
+  @include font-size(xlarge);
+  line-height: 1.2;
+  margin-bottom: .25em;
+}
+
+%headline-2 {
+  font-family: $font-stack--display;
+  font-weight: $font-weight--light;
+  letter-spacing: $letter-space;
+  @include font-size(large); 
+  line-height: 1.2;  
+  margin-bottom: .5em;
+}
+
 .body-copy {
   font-weight: $font-weight--normal;
   font-family: $font-stack--serif;

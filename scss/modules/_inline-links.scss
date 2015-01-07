@@ -13,8 +13,8 @@ $inline-link-border: $sk-blue;
   @include backface-visibility(hidden);
   p {
     font-weight: $font-weight--light;
-    font-style: normal;
-    font-size: 2.5em;
+    @include font-size(large);
+    @include trailer(0);
     line-height: 1.65;
   }
   a {

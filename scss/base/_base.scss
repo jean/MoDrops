@@ -8,6 +8,7 @@
 }
 
 body {
+  @include baseline-grid-background(1.65em, $shadow);
   @include container();
   font-size: $base__font-size;
   font-family: $font-stack--sans;
@@ -44,6 +45,7 @@ h1 {
 h2 {
   @extend %headline-2;
 }
+
 h3 {
   font-weight: $font-weight--light;
   font-size: em(30px);
@@ -59,7 +61,8 @@ h4 {
 
 p {
   text-rendering: optimizeLegibility;
-  line-height: 1.65;
+  @include font-size(base-font-size);
+  @include trailer;
 }
 
 button {

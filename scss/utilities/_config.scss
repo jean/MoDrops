@@ -1,3 +1,5 @@
+//could create a variable for font import to simplify this step for the end user
+
 // Font Imports
 $font-url--google   : 'http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,900italic|Droid+Serif:400,400italic,700italic|Raleway:200,300,400,700';
 //$font-url--google   : 'http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700italic';
@@ -8,7 +10,6 @@ $font-stack--display  : 'Raleway', Arial, sans-serif;
 $font-stack--sans     : 'Lato', Helvetica, Arial, sans-serif;
 $font-stack--serif    : 'Droid Serif', Lucida, Georgia, serif;
 
-
 // Font Weights
 $font-weight--thinner    : 100;
 $font-weight--thin       : 200;
@@ -16,6 +17,34 @@ $font-weight--light      : 300;
 $font-weight--normal     : 400;
 $font-weight--bold       : 700;
 $font-weight--ultra-bold : 900;
+
+// The base font size
+$base-font-size: 18px;
+// Base line height
+$base-line-height: 30px;
+// Rhythm unit (Compass vertical rhythm)
+$rhythm-unit: “rem”;
+
+//Font Sizes
+$tiny-font-size: 10px;
+$tiny-font-leading: 0.75;
+
+$small-font-size: 14px;
+$small-font-leading: 0.75;
+
+$base-font-size: 18px;
+$base-font-leading: 1;
+
+$medium-font-size: 36px;
+$medium-font-leading: 1.25;
+
+$large-font-size: 44px;
+$large-font-leading: 1.25;
+
+$xlarge-font-size: 60px;
+$xlarge-font-leading: 1.5;
+
+//$grid-background-baseline-height: 2.625em;
 
 //Styling Guide inspired by Guy Routledge
 //SRC: http://www.guyroutledge.co.uk/blog/style-guide-colours-with-sass/
