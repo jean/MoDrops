@@ -1530,28 +1530,54 @@ figure.effect-terry {
 Media Queries
 */
 
-@media screen and (max-width: 1280px) {
-  .portfolio-grid {
-    font-size: 85%;
-    figure {
-      height: 350px;
-    }
-  }
-}
 
-@media screen and (max-width: 71em) {
+@include mq(small) {
   .portfolio-grid figure {
-    @include span(1.5 of 3);
-  }
-
-  .portfolio-grid figure figcaption {
-    font-size: 90%;
-  }
-}
-
-@media screen and (max-width: 41.5em) {
-  .portfolio-grid figure {
-    width: span(3 of 3);
+    width: span(1 of 1);
     height: 350px;
   }
 }
+
+@include mq(medium) {
+  .portfolio-grid figure {
+    width: span(1 of 2);
+    height: 350px;
+  }
+}
+@include mq(large) {
+  .portfolio-grid figure {
+    width: span(1 of 3);
+    height: 350px;
+  }
+  @include mq(xl) {
+    .portfolio-grid figure {
+      width: span(1 of 4);
+      height: 350px;
+    }
+}
+}
+//@media screen and (max-width: 1280px) {
+//  .portfolio-grid {
+//    font-size: 85%;
+//    figure {
+//      height: 350px;
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: 71em) {
+//  .portfolio-grid figure {
+//    @include span(1.5 of 3);
+//  }
+//
+//  .portfolio-grid figure figcaption {
+//    font-size: 90%;
+//  }
+//}
+
+//@media screen and (max-width: 41.5em) {
+//  .portfolio-grid figure {
+//    width: span(3 of 3);
+//    height: 350px;
+//  }
+//}

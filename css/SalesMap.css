@@ -1,0 +1,428 @@
+.whitaker {
+  fill:#6E0D86;
+  stroke:#fff;
+  stroke-width:0.1783;
+}
+g:hover { 
+  fill: red;
+}
+
+.NH
+{
+	background-image : url(img/MAP/NH.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 911px;
+	top : 90px;
+}
+.PA
+{
+	background-image : url(img/MAP/PA.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 785px;
+	top : 181px;
+  outline: 1px solid black;
+  fill: black;
+}
+.OH_1_
+{
+	background-image : url(img/MAP/OH_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 713px;
+	top : 198px;
+}
+.NJ_1_
+{
+	background-image : url(img/MAP/NJ_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 879px;
+	top : 193px;
+}
+.CO
+{
+	background-image : url(img/MAP/CO.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 286px;
+	top : 227px;
+}
+.CA
+{
+	background-image : url(img/MAP/CA.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 35px;
+	top : 148px;
+}
+.AZ_1_
+{
+	background-image : url(img/MAP/AZ_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 161px;
+	top : 304px;
+}
+.RI_1_
+{
+	background-image : url(img/MAP/RI_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 930px;
+	top : 165px;
+}
+.ID
+{
+	background-image : url(img/MAP/ID.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 168px;
+	top : 23px;
+}
+.NM_1_
+{
+	background-image : url(img/MAP/NM_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 268px;
+	top : 319px;
+}
+.SD_1_
+{
+	background-image : url(img/MAP/SD_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 388px;
+	top : 123px;
+}
+.OK_1_
+{
+	background-image : url(img/MAP/OK_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 394px;
+	top : 330px;
+}
+.MT
+{
+	background-image : url(img/MAP/MT.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 213px;
+	top : 26px;
+}
+.ND_1_
+{
+	background-image : url(img/MAP/ND_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 394px;
+	top : 53px;
+}
+.WY
+{
+	background-image : url(img/MAP/WY.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 264px;
+	top : 130px;
+}
+.x23_separator
+{
+	background-image : url(img/MAP/x23_separator.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 1px;
+	top : 446px;
+}
+.WI
+{
+	background-image : url(img/MAP/WI.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 573px;
+	top : 103px;
+}
+.SC_1_
+{
+	background-image : url(img/MAP/SC_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 760px;
+	top : 356px;
+}
+.NE_1_
+{
+	background-image : url(img/MAP/NE_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 384px;
+	top : 190px;
+}
+.UT
+{
+	background-image : url(img/MAP/UT.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 196px;
+	top : 190px;
+}
+.TX_1_
+{
+	background-image : url(img/MAP/TX_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 316px;
+	top : 342px;
+}
+.WV
+{
+	background-image : url(img/MAP/WV.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 762px;
+	top : 229px;
+}
+.TN_1_
+{
+	background-image : url(img/MAP/TN_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 629px;
+	top : 324px;
+}
+.NC_1_
+{
+	background-image : url(img/MAP/NC_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 741px;
+	top : 306px;
+}
+.VT_1_
+{
+	background-image : url(img/MAP/VT_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 888px;
+	top : 98px;
+}
+.MD_1_
+{
+	background-image : url(img/MAP/MD_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 811px;
+	top : 234px;
+}
+.NY_1_
+{
+	background-image : url(img/MAP/NY_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 797px;
+	top : 106px;
+}
+.OR
+{
+	background-image : url(img/MAP/OR.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 48px;
+	top : 57px;
+}
+.DE_1_
+{
+	background-image : url(img/MAP/DE_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 875px;
+	top : 231px;
+}
+.FL_1_
+{
+	background-image : url(img/MAP/FL_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 687px;
+	top : 457px;
+}
+.DC
+{
+	background-image : url(img/MAP/DC_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 856px;
+	top : 255px;
+}
+.GA_1_
+{
+	background-image : url(img/MAP/GA_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 717px;
+	top : 365px;
+}
+.LA_1_
+{
+	background-image : url(img/MAP/LA_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 560px;
+	top : 425px;
+}
+.MA_1_
+{
+	background-image : url(img/MAP/MA_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 901px;
+	top : 143px;
+}
+.MS_1_
+{
+	background-image : url(img/MAP/MS_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 609px;
+	top : 375px;
+}
+.VA_1_
+{
+	background-image : url(img/MAP/VA_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 748px;
+	top : 249px;
+}
+.MN_1_
+{
+	background-image : url(img/MAP/MN_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 504px;
+	top : 49px;
+}
+.NV
+{
+	background-image : url(img/MAP/NV.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 102px;
+	top : 168px;
+}
+.WA
+{
+	background-image : url(img/MAP/WA.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 81px;
+	top : 0px;
+}
+.AK
+{
+	background-image : url(img/MAP/AK.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 3px;
+	top : 455px;
+  fill-color: #f27a24 !important;
+}
+.AL
+{
+	background-image : url(img/MAP/AL.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 668px;
+	top : 371px;
+}
+.CT_1_
+{
+	background-image : url(img/MAP/CT_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 902px;
+	top : 166px;
+}
+.IA_1_
+{
+	background-image : url(img/MAP/IA_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 513px;
+	top : 182px;
+}
+.KY_1_
+{
+	background-image : url(img/MAP/KY_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 640px;
+	top : 274px;
+}
+.AR_1_
+{
+	background-image : url(img/MAP/AR_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 548px;
+	top : 343px;
+}
+.HI_1_
+{
+	background-image : url(img/MAP/HI_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 293px;
+	top : 549px;
+}
+.KS_1_
+{
+	background-image : url(img/MAP/KS_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 413px;
+	top : 262px;
+}
+.IL_1_
+{
+	background-image : url(img/MAP/IL_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 601px;
+	top : 202px;
+}
+.MO_1_
+{
+	background-image : url(img/MAP/MO_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 527px;
+	top : 250px;
+}
+.MI
+{
+	background-image : url(img/MAP/MI.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 611px;
+	top : 72px;
+}
+.ME_1_
+{
+	background-image : url(img/MAP/ME_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 922px;
+	top : 32px;
+}
+.IN_1_
+{
+	background-image : url(img/MAP/IN_1_.png);
+	background-repeat : no-repeat;
+	position : absolute ;
+	left : 665px;
+	top : 213px;
+}

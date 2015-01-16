@@ -132,7 +132,8 @@
 // Breakpoints
 $brkpoint--sm    : 1px;
 $brkpoint--md    : 768px;
-$brkpoint--lg    : 1100px;
+$brkpoint--lg    : 992px;
+$brkpoint--xl    : 1200px;
 
 @mixin mq($break) {
   @if $break == "small" {
@@ -146,7 +147,12 @@ $brkpoint--lg    : 1100px;
     }
   }
   @else if $break == "large" {
-    @media (min-width: $brkpoint--lg) {
+    @media (min-width: $brkpoint--lg + 1) {
+      @content;
+    }
+  }
+  @else if $break == "xl" {
+    @media (min-width: $brkpoint--xl) {
       @content;
     }
   }

@@ -1,0 +1,331 @@
+.map-container {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  @include clearfix;
+}
+
+.sales-map {
+  width: 100%;
+  height: auto;
+}
+
+.haggard {
+  fill: #8000ff;
+  stroke: #000000;
+  stroke-width: 0.1783;
+  &:hover {
+    fill: darken(#8000ff, 10);
+  }
+}
+
+.has-tooltip{
+  position:relative;
+  .tooltip{
+    pointer-events: none;
+    position:absolute;
+    z-index:9999;
+    left:50%;
+    top:-40px;
+    opacity:0;
+    @include single-transition(ease-out, opacity, 300ms, 0ms);
+    span{
+      display:block;
+      white-space:nowrap;
+      position:relative;
+      background:rgba(0,0,0,0.6);
+      @include border-radius(3px);
+      padding:0px 8px;
+      left:-50%;
+      font-size:14px;
+      color:#fff;
+      &:after {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-top-color: rgba(0,0,0,0.6);
+        border-width: 6px;
+        left: 50%;
+        margin-left: -6px;
+      }
+    }
+  }
+  &:hover span{
+    opacity:1;
+  }
+}
+#link{
+  margin:100px;
+  display:block;
+  float:left;
+  line-height:1.5;
+}
+
+.state {
+  background-repeat : no-repeat;
+  position : absolute;  
+  .nh {
+    background-image: url(NH.png);
+    left: 911pt;
+    top: 90pt;
+    outline: 1px solid black;
+  }
+  .pa {
+    background-image: url(Pa.png);
+    left: 785pt;
+    top: 181pt;
+  }
+  .oh {
+    background-image: url(OH_1_.png);
+    left: 713pt;
+    top: 198pt;
+  }
+  .nj {
+    background-image: url(NJ_1_.png);
+    left: 879pt;
+    top: 193pt;
+  }
+  .co {
+    background-image: url(CO.png);    
+    left: 286pt;
+    top: 227pt;
+  }
+  .ca {
+    background-image: url(CA.png);    
+    left: 35pt;
+    top: 148pt;
+  }
+  .az {
+    background-image: url(AZ_1_.png);    
+    left: 161pt;
+    top: 304pt;
+  }
+  .ri {
+    background-image: url(RI_1_.png);    
+    left: 930pt;
+    top: 165pt;
+  }
+  .id {
+    background-image: url(ID.png);    
+    left: 168pt;
+    top: 23pt;
+  }
+  .nm {
+    background-image: url(NM_1_.png);    
+    left: 268pt;
+    top: 319pt;
+  }
+  .sc {
+    background-image: url(SD_1_.png);    
+    left: 388pt;
+    top: 123pt;
+  }
+  .ok {
+    background-image: url(OK_1_.png);    
+    left: 394pt;
+    top: 330pt;
+  }
+  .mt {
+    background-image: url(MT.png);    
+    left: 213pt;
+    top: 26pt;
+  }
+  .nd {
+    background-image: url(ND_1_.png);    
+    left: 394pt;
+    top: 53pt;
+  }
+  .wy {
+    background-image: url(WY.png);    
+    left: 264pt;
+    top: 130pt;
+  }
+  .separator {
+    background-image: url(x23_separator.png);    
+    left: 1pt;
+    top: 446pt;
+  }
+  .wi {
+    background-image: url(WI.png);    
+    left: 573pt;
+    top: 103pt;
+  }
+  .sc {
+    background-image: url(SC_1_.png);    
+    left: 760pt;
+    top: 356pt;
+  }
+  .ne {
+    background-image: url(NE_1_.png);    
+    left: 384pt;
+    top: 190pt;
+  }
+  .ut {
+    background-image: url(UT.png);    
+    left: 196pt;
+    top: 190pt;
+  }
+  .tx {
+    background-image: url(TX_1_.png);    
+    left: 316pt;
+    top: 342pt;
+  }
+  .wv {
+    background-image: url(WV.png);    
+    left: 762pt;
+    top: 229pt;
+  }
+  .tn {
+    background-image: url(TN_1_.png);    
+    left: 629pt;
+    top: 324pt;
+  }
+  .nc {
+    background-image: url(NC_1_.png);    
+    left: 741pt;
+    top: 306pt;
+  }
+  .vt {
+    background-image: url(VT_1_.png);    
+    left: 888pt;
+    top: 98pt;
+  }
+  .md {
+    background-image: url(MD_1_.png);    
+    left: 811pt;
+    top: 234pt;
+  }
+  .ny {
+    background-image: url(NY_1_.png);    
+    left: 797pt;
+    top: 106pt;
+  }
+  .or {
+    background-image: url(OR.png);    
+    left: 48pt;
+    top: 57pt;
+  }
+  .de {
+    background-image: url(DE_1_.png);    
+    left: 875pt;
+    top: 231pt;
+  }
+  .fl {
+    background-image: url(FL_1_.png);    
+    left: 687pt;
+    top: 457pt;
+  }
+  .dc {
+    background-image: url(DC_1_.png);    
+    left: 856pt;
+    top: 255pt;
+  }
+  .ga {
+    background-image: url(GA_1_.png);    
+    left: 717pt;
+    top: 365pt;
+  }
+  .la {
+    background-image: url(LA_1_.png);    
+    left: 560pt;
+    top: 425pt;
+  }
+  .ma {
+    background-image: url(MA_1_.png);    
+    left: 901pt;
+    top: 143pt;
+  }
+  .ms {
+    background-image: url(MS_1_.png);    
+    left: 609pt;
+    top: 375pt;
+  }
+  .va {
+    background-image: url(VA_1_.png);    
+    left: 748pt;
+    top: 249pt;
+  }
+  .mn {
+    background-image: url(MN_1_.png);    
+    left: 504pt;
+    top: 49pt;
+  }
+  .nv {
+    background-image: url(NV.png);    
+    left: 102pt;
+    top: 168pt;
+  }
+  .wa {
+    background-image: url(WA.png);    
+    left: 81pt;
+    top: 0;
+  }
+  .ak {
+    background-image: url(AK.png);    
+    left: 3pt;
+    top: 455pt;
+  }
+  .al {
+    background-image: url(AL.png);    
+    left: 668pt;
+    top: 371pt;
+  }
+  .ct {
+    background-image: url(CT_1_.png);    
+    left: 902pt;
+    top: 166pt;
+  }
+  .ia {
+    background-image: url(IA_1_.png);    
+    left: 513pt;
+    top: 182pt;
+  }
+  .ky {
+    background-image: url(KY_1_.png);    
+    left: 640pt;
+    top: 274pt;
+  }
+  .ar {
+    background-image: url(AR_1_.png);    
+    left: 548pt;
+    top: 343pt;
+  }
+  .hi {
+    background-image: url(HI_1_.png);    
+    left: 293pt;
+    top: 549pt;
+  }
+  .ks {
+    background-image: url(KS_1_.png);    
+    left: 413pt;
+    top: 262pt;
+  }
+  .il {
+    background-image: url(IL_1_.png);    
+    left: 601pt;
+    top: 202pt;
+  }
+  .mo {
+    background-image: url(MO_1_.png);    
+    left: 527pt;
+    top: 250pt;
+  }
+  .mi {
+    background-image: url(MI.png);    
+    left: 611pt;
+    top: 72pt;
+  }
+  .me {
+    background-image: url(ME_1_.png);    
+    left: 922pt;
+    top: 32pt;
+  }
+  .in {
+    background-image: url(IN_1_.png);    
+    left: 665pt;
+    top: 213pt;
+  }
+}
